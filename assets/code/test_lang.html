@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+    <title></title>
+    <style type="text/css">
+        body {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 24px;
+        }
+        /* load a proper font for Arabic text */
+        @font-face {
+            font-family: AmiriWeb;
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://furesh.github.io/slides/fonts/amiri/amiri-regular.ttf') format('truetype');
+        }
+        /* necessary fix for correctly rendering Arabic */
+        *[lang^="ar"]{
+/*            direction:rtl;*/
+            /* use special font */
+/*            font-family: AmiriWeb;*/
+        }
+        /* necessary code for bidirectional text */
+        *[lang^="en"]{
+            direction:ltr;
+            font-family: sans-serif;
+        }
+        *[lang*="ar-Latn-"]{
+            direction:ltr;
+            font-family: Gentium Sans;
+            font-style: italic;
+        }
+        div {
+            clear: none;
+        }
+        div {
+            width: 70%;
+/*            float: right;*/
+        }
+        aside {
+            font-size: 0.7em;
+            width: 20%;
+/*            float: left;*/
+/*            clear: both;*/
+        }
+        div {
+            clear: both;
+        }
+        div, aside {
+            float: right;
+            padding-right: 1em;
+            padding-left: 1em;
+        }
+        div,
+        p,
+        aside {
+            margin-block-start: 0em;
+            margin-block-end: 0em;
+        }
+    </style>
+</head>
+<body>
+    <div lang="ar">
+        <h1>أميركا وعلماء العرب</h1>
+        <p>كانت أميركا مجهولة عند أبناء القرن الخامس عشر بدليل أن المؤرخين في ذلك العهد لم يذكروا عنها سوى أخبار اكتشافها في أواخر ذلك القرن غير أن كلام ايراتوستينيس واسترابون اليونانيين اللذين عُنيا بفن الجغرافيا بنحو ٢٠٠ سنة ق. م. يستدل منه على أن القدماء كانوا يتحدثون بوجود قارة مجهولة في أيامهم.</p>
+    </div>
+    <aside lang="en">Zakham „<a href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">Amīrkā wa-ʿulamāʾ al-ʿArab</a>“, al-Muqtabas 1(2), 1907</aside>
+    <div lang="ar">
+        <h1>امىرکا وعلماء العرٮ</h1>
+        <p>کاںٮ امىرکا محهوله عںد اٮںا الٯرں الحامس عسر ٮدلىل اں المورحىں ڡى دلک العهد لم ىدکروا عںها سوى احٮار اکٮساڡها ڡى اواحر دلک الٯرں عىر اں کلام اىراٮوسٮىںىس واسٮراٮوں الىوںاںىىں اللدىں عںىا ٮڡں الحعراڡىا ٮںحو ٢٠٠ سںه ٯ. م. ىسٮدل مںه على اں الٯدما کاںوا ىٮحدٮوں ٮوحود ٯاره محهوله ڡى اىامهم.</p>
+    </div>
+    <aside lang="en">The pseudo-rasm of the above generated with <a href="https://suchmaske.github.io/rasmifize/demo/">rasmifize</a></aside>
+    <div lang="ar-Latn-x-ijmes">
+        <h1>Amīrkā wa ʿulamāʾ al-ʿarab</h1>
+        <p>Kānat Amīrkā majhūla ʿinda abnāʾ al-qarn al-khāmis ʿashr bi-dalīl anna al-muʾarikhīn fī dhalika al-ʿahd lam yadhkarū ʿanhā siwā akhbār iktishāfihā fī awākhir dhalika al-qarn</p>
+    </div>
+    <aside lang="en">IJMES transcription of the above into Latin script</aside>
+</body>
+</html>

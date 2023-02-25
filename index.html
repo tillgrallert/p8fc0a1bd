@@ -1,0 +1,1557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Till Grallert" />
+  <meta name="dcterms.date" content="2023-02-15" />
+  <meta name="licence" content="http://creativecommons.org/licenses/by-nd/4.0/" />
+  <title>Digitalisierung des Kulturerbes des globalen Südens</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <style type="text/css">
+        /* general settings for the whole page */
+       body,
+       footer,
+       header {
+          display: block;
+          background-color: white;
+          color: black;
+        }
+        body {
+          /*font-family: Helvetica, Arial, sans-serif;*/
+          font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+          font-size: 18px;
+          line-height: 1.5em;
+          text-align: justify;
+          margin-left: auto;
+          margin-right: auto;
+          padding-right: 60px;
+          padding-left: 60px;
+          max-width: 800px;
+          min-width: 300px;
+          word-wrap: break-word;
+          /* counters */
+          counter-reset: p;
+        }
+        /* automatic numbering */
+        body > p{
+          counter-increment: p;
+        }
+        body > p:before {
+          content: "§ " counter(p) " ";
+          direction:ltr;
+          vertical-align:top;
+          font-size: 0.8em;
+          color: gray;
+          display: inline-block;
+          position: relative;
+          left: -60px;
+        }
+        /* section headings */
+        h1, h2, h3, h4, h5 {
+          font-family: "American Typewriter", sans-serif;
+          font-weight: lighter;
+          margin-top: 1em;
+          line-height: 1.2em;
+          text-align: center;
+        }
+
+        /* spacing / padding between paragraphs */
+        p, ol, ul, li {
+          /*margin-left: 1em;*/
+          padding-top: 0.2em;
+          padding-bottom: 0.2em;
+          margin-top: 0;
+          margin-bottom: 0;
+          line-height: 1.5em;
+        }
+        div.footnotes p,
+        section.footnotes p,
+        li p {
+          padding-bottom: 0;
+          padding-top: 0;
+        }
+        /* code */
+        code {
+          font-size: 14px;
+          line-height: 1;
+          padding-bottom: 0;
+          padding-top: 0;
+        }
+
+  /* Scrivener styles  */
+  span.Abbreviation {
+      font-size: 0.9em;
+  /*    text-transform: capitalize;*/
+      font-variant: small-caps;
+  }
+  span.Arabic {
+      direction: rtl;
+      text-align: right;
+  }
+  span.citation {}
+  span.EmphasisCustom {
+      font-style: italic;
+  }
+  span.persName {}
+  span.placeName {}
+  span.StrongCustom {}
+  span.Transcription {
+      font-style: italic;
+  }
+
+        /* images */
+
+        img,
+        figure,
+        div.figure {
+          width: 90%;
+          display: block;
+          clear:both;
+          margin-left: 5%;
+          margin-top: 1em;
+        }
+        img {
+          background-color: rgba(0,0,0,0.04);
+          border-radius: 5px;
+          box-shadow: 2px 2px 5px #000;
+          border:gray solid 1px;
+        }
+
+        /* what about captions? */
+        /* they are provided in @alt (inline images) and <figcaption/> (images separated by empty lines) */
+        /* if I render HMTL with Pandoc and Marked, images are rendered as <div class="figure">
+        <img src="img0030.jpg" alt="Fig. 1, Construction works at the new municipality." /><p class="caption">Fig. 1, Construction works at the new municipality.<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a></p>
+        </div>
+        */
+        figure > img,
+        div.figure img {
+          width: 100%;
+          margin-left: 0;
+          margin-right: 0;
+          position: relative;
+          /*background-color: rgba(0,0,0,0.04);
+          border-radius: 15px;
+          box-shadow: 2px 2px 5px #000;
+          border:gray solid 1px;*/
+        }
+        figcaption,
+        p.caption {
+          width:100%;
+          position:relative;
+          display: block;
+          margin-top: 1em;
+          font-size:0.8em;
+          text-align: right;
+          font-weight:lighter;
+        }
+
+        /* tables */
+        table {
+          /*display: block;*/
+          /*width:inherit;*/
+          /*horizontally centered display*/
+          margin: auto;
+          margin-top: 1em;
+          margin-bottom: 2em;
+          border-collapse: collapse;
+          /* use smaller font-size than the surrounding text*/
+          font-size: 0.8em;
+          }
+
+        tr.header {
+          border-bottom: double black;
+        }
+        tr {
+          border-bottom: 1px solid black;
+        }
+        th,
+        td {
+          text-align: left;
+          padding-bottom: 0.1em;
+          padding-top: 0.1em;
+          padding-left: 0.5em;
+          padding-right: 0.5em;
+        }
+
+        /* links */
+        a {
+          color: orange;
+          text-decoration: none;
+        }
+
+        a:visited {
+          color: #AB1733;
+          text-decoration: none;
+        }
+
+        a:hover, a:active {
+          color: #E62347;
+          text-decoration: underline;
+        }
+        /* footnotes */
+        a.footnote {
+          font-size: 0.7em;
+          vertical-align: super;
+          display: inline-block;
+          padding-left: 0.3em;
+        }
+        /* in case of transcriptions, the html might contain pb elements to indicate page breaks in the original */
+        pb:before {
+          content: " [page " attr(n) "] ";
+          font-size: 0.8em;
+          color:#959595;
+          vertical-align: top;
+          position: relative;
+          display: inline-block;
+          margin-left: 0.5em;
+          margin-right: 0.5em;
+        }
+
+        /* navigation */
+        nav {
+          display: block;
+          position: fixed;
+          /* vertical scrolling */
+          overflow-y: auto;
+          top: 0px;
+          width: 300px;
+          height: 100%;
+          transition: 0.5s;
+          /*background-color: #E3DFE0;*/
+          z-index: 100;
+          padding-left: 10px;
+          padding-right: 10px;
+          font-size: 0.8em;
+          text-align: left;
+        }
+
+        nav {
+          left: -320px;
+        }
+        nav,
+        nav:before {
+          /*background-color: #F0ECEC;*/
+          background-color:#AB1733;
+        }
+        nav *,
+        nav:before {
+          color:white;
+        }
+        nav a:visited,
+        nav a:hover,
+        nav a:active {
+          color:white;
+          text-decoration: none;
+        }
+        /* add button */
+        nav:before {
+          display: block;
+          width: 45px;
+          height: 40px;
+          position: fixed;
+          left: -5px;
+          top: 20px;
+          content: "\2261";
+          font-size: 40px;
+          /*background-color: #E3DFE0;*/
+          /*border-bottom-left-radius: 5px;*/
+          border-bottom-right-radius: 5px;
+          /*border-top-left-radius: 5px;*/
+          border-top-right-radius: 5px;
+          box-sizing: border-box;
+          cursor: pointer;
+          padding-bottom: 5px;
+          padding-left: 15px;
+          padding-right: 10px;
+          padding-top: 5px;
+          transition: 0.5s;
+        }
+        /*hover state*/
+        nav:hover {
+          left: 0px;
+          top: 0px;
+        }
+        nav:hover:before {
+          left: 315px;
+        }
+        nav ul,
+        nav li {
+          list-style: none;
+          padding-top: 0.5em;
+          padding-bottom: 0;
+          /*margin-top: 10px;*/
+          line-height: 1.5em;
+          /*margin-block-start:0;*/
+        }
+        nav ol,
+        nav ul {
+          margin-block-start:0;
+          margin-block-end:0;
+          /* add indention of nested lists */
+          padding-inline-start:20px;
+        }
+        /* footer and header */
+        footer {
+          border-top: 1px solid black;
+          padding-top: 5px;
+          /*fixed display at the bottom of the page */
+          display: block;
+          position: fixed;
+          bottom: 0px;
+          margin-left: 0px;
+          margin-right: 0px;
+          left: 0px;
+          width: 100%;
+          height: 30px;
+          font-family: "Source Sans Pro",sans-serif;
+          font-size: 16px;
+        }
+        footer * {
+          background-color: inherit;
+          font-family: inherit;
+          font-size: inherit;
+          margin-top:0px;
+          margin-bottom: 0px;
+        }
+        span.c_info {
+          display: block;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        footer img {
+          display: inline;
+          background-color: inherit;
+          border-radius: 0px;
+          box-shadow: none;
+          border:none;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+        span.c_license img {
+          width: 60px;
+        }
+        /* badges and shields */
+            #sec-badges {
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            }
+            #sec-badges a,
+            #sec-badges img {
+              display: inline-block;
+              /*height: 20px;*/
+              padding-left: 5px;
+              padding-right: 5px;
+              padding-top: 0px;
+              padding-bottom: 0px;
+              margin: 0;
+            }
+            #sec-badges img {
+              height: 24px;
+              background-color: inherit;
+              border-radius: 0px;
+              box-shadow: none;
+              border:none;
+            }
+          /* author and date */
+          p.date:before {
+            content: "Last edited: "
+          }
+
+        /*  print */
+          @media print {
+            /* general layout */
+            body {
+              font-size: 12pt;
+              max-width: 1200px;
+              padding-right:20mm;
+              padding-left: 20mm;
+              color: black;
+              background-color: white;
+            }
+            /* remove navigation */
+            nav {
+              display: none;
+            }
+            /* footer: commonly contains licence information ; */
+            footer {
+              display: none;
+              /*border-top: 1px solid black;*/
+              /*font-size: 10pt;*/
+            }
+            /* running head with basic information */
+            /* foot notes*/
+            section.footnotes * {
+              padding-top: 0;
+              padding-bottom: 0;
+              padding-right: 0;
+              padding-left: 0;
+            }
+            /* marker */
+            section.footnotes>ol>li {
+              font-size: 8pt;
+              vertical-align: top;
+            }
+            /* content */
+            section.footnotes p {
+              font-size: 10pt;
+              padding-top: 0.5em;
+              padding-bottom: 0.5em;
+            }
+            /* show URLs */
+            a[href]:after {
+              content: " (" attr(href) ") ";
+            }
+          }
+    </style>
+  <style type="text/css">
+  /* these styles mirror oXygen's highlight colours for XML */
+  pre.sourceCode {
+      background-color:white;
+  }
+  code.sourceCode {
+      font-weight:normal;
+      color: black;
+  }
+  /* provide a readible font-size */
+  /*.sourceCode * {
+      font-size: 16px;
+  }*/
+  /* xml element names */
+  .xml > code span.kw {
+    /*color: #0F0F9C;*/
+    color: #000096;
+    font-weight: bold;
+  }
+  /* xml attribute names */
+  .xml > code span.ot {
+    /*color:#FF8041;*/
+    color: #FF9159;
+  }
+  /* xml attribute values */
+  .xml > code span.st {
+    /*color:#993300;*/
+    color: #993300;
+  }
+  /* xml comments */
+  .xml > code span.co {
+    /*color:#167116;*/
+    color: #2F8132;
+    font-style: italic;
+  }
+  /* xml computing instructions: not implemented in Pandoc syntax highlighting */
+  /* .xml > code > span {
+    color:#9132CC;
+  } */
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Digitalisierung des Kulturerbes des globalen
+Südens</h1>
+  <p class="author">
+      Till Grallert  </p>
+<p>
+  <span class="date">2023-02-15</span>
+</p>
+  <p class="licence">licensed as http://creativecommons.org/licenses/by-nd/4.0/</p>
+
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#was-heisst-eigentlich-zugang"
+id="toc-was-heisst-eigentlich-zugang">Was heisst eigentlich
+Zugang?</a></li>
+<li><a href="#die-repräsentative-macht-monolingualer-infrastrukturen"
+id="toc-die-repräsentative-macht-monolingualer-infrastrukturen">Die
+repräsentative Macht monolingualer Infrastrukturen</a></li>
+<li><a href="#bibliography" id="toc-bibliography">Literatur</a></li>
+</ul>
+</nav>
+<p>Die massenhafte Digitalisierung menschlichen Kulturerbes der letzten
+Jahrzehnte von Google Books bis Europeana verkörpert eine Kombination
+von Digitalisierung und World Wide Web, der ein großes und, soviel sei
+vorweg gesagt, uneingelöstes Heilsversprechen innewohnt: jede_r Mensch
+soll ohne Unterschied von Klasse, Religion, Geschlecht oder Herkunft
+uneingeschränkten Zugang zum Wissen der Welt und dem als
+gemeinschaftlich verstandenen Weltkulturerbe haben <span
+class="citation" data-cites="Crymble2021Technology">Zaagsma
+(2022)</span>.<br />
+Ein solches pluralistisches, auf Teilhabe aller fokussiertes und damit
+genuin demokratisches und ermächtigendes Ideal, verweigert sich
+allerdings der Diskussion um die möglichen negativen Auswirkungen einer
+allgemeinen Zugänglichkeit. Die Fragen “<span class="StrongCustom"
+data-custom-style="StrongCustom"><strong>wer</strong></span> hat Zugang
+zu <span class="StrongCustom"
+data-custom-style="StrongCustom"><strong>was</strong></span>?”, “in
+welcher Form?” und “welche <span class="StrongCustom"
+data-custom-style="StrongCustom"><strong>Folgen</strong></span> hat das
+für sie oder andere?” werden von uns häufig auf Diskussionen um
+Datenschutz und Copyright reduziert. Aber schon bei der
+Auseinandersetzung um den 3D-Scan der Büste der Nofretete wird deutlich,
+dass es im Kern um vielschichtige globale Machtverhältnisse, um
+Deutungshoheiten und um das Recht historisch Marginalisierter zu
+sprechen und gehört zu werden, kurz um das Recht auf die eigene
+Geschichte und Geschichten geht.</p>
+<p>Dieses Heilsversprechen verschleiert zum anderen die Abhängigkeit der
+je konkreten Zugänglichkeit von sozio-technischen Infrastrukturen. Diese
+Infrastrukturen verweben Wissensordnungen, Zeichensysteme, juristische
+Normen, soziale und kulturelle Praktiken, wirtschaftliche Interessen und
+technische System und sind damit historisch kontingent. Die
+Infrastrukturen unserer vernetzten Digitalität haben eine Entstehungs-
+und Wirkungsgeschichte und sie sind ein inhärenter Teil der kulturellen
+Hegemonie des des Globalen Nordens, weswegen es uns leicht fällt diese
+Verwobenheit nicht bzw. als die “natürliche” Ordnung der Dinge
+wahrzunehmen. Ein simples Beispiel mag das illustrieren. Digitale Daten
+sind in ihrem Kern winzige, volatile elektrische Ladungen. Damit sie von
+Menschen überhaupt als sinnbehaftete Informationen wahrgenommen werden
+können, benötigen sie multiple Übersetzungsschichten. Für die
+Übersetzung binärer elektrischer Ladungen in lesbare Zeichen bedarf es
+Regeln für die Übersetzung von Sequenzen von Ladungen in Zeichen und die
+Übersetzung dieser Zeichen in für Menschen wahrnehmbare sensorische
+Reize z.B. als auf einem Trägermaterial geschriebener Text, gesprochener
+Laut oder ertastbares Relief. Scheinbar statischer Text auf einem
+Bildschirm wird mindestens 60 mal die Sekunde neu gezeichnet. Dafür
+benötigt es eine stabile Stromversorgung, eine Fülle an endlichen
+natürlichen Ressourcen und menschlicher Arbeitskraft zur Erzeugung und
+Verteilung des Stroms sowie zur Herstellung und Installation des
+Bildschirmes und der für den Betrieb notwendigen Hard- und Software,
+globale Lieferketten, sowie in Standards (und best practices) gegossene
+Wissensordnungen damit all diese Bestandteile zueinander passen und
+miteinander interagieren können.</p>
+<h1 id="was-heisst-eigentlich-zugang">Was heisst eigentlich Zugang?</h1>
+<p>Zugang zu Stromversorgung ist eines der <a
+href="https://sdgs.un.org"><span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Sustainable Development
+Goals</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">SDG</span>)</a> der Vereinten Nationen,
+aber auch 2019 kurz vor Ausbruch der globalen Covid-19 Pandemie hatten
+knapp 800 Millionen Menschen keinen Zugang zu Elektrizität. Fast alle
+davon lebten im Globalen Süden und die überwiegende Mehrheit im
+subsaharischen Afrika <span class="citation"
+data-cites="RitchieEtAl2022Energy">(Ritchie, Roser, und Rosado
+2022)</span>. Die Projektionen der IEA gehen davon aus, dass auch 2030
+660 Millionen Menschen und 33 Prozent der gesamten Bevölkerung Afrikas
+ohne jeglichen Zugang zu Elektrizität sein werden <span class="citation"
+data-cites="WorldEnergyOutlook2020">(<em>World Energy Outlook 2020</em>
+2020, 213)</span>. Wobei Zugang hier heißt, dass eine basale Versorgung
+mit 250–500 kWh pro Jahr und Haushalt gegeben ist. Dieses Budget reicht
+dafür eine einzelne 100 W Glühbirne 6,84 bis 13,69 Stunden pro Tag
+brennen zu lassen. <span class="citation"
+data-cites="2020SDG7Methodology">(<span>„Defining Energy Access: 2020
+Methodology“</span> 2020)</span>. Damit ist deutlich, dass allein
+aufgrund der mangelnden Stromversorgung große Teile der Bevölkerung im
+Globalen Süden von der Teilhabe an Digitalität prinzipiell
+ausgeschlossen sind.</p>
+<p>Batteriebetriebene Geräte helfen bei der Lastverteilung und haben
+generell einen geringeren Stromverbrauch als klassische Glühbirnen. So
+verbrauchen Smartphones als primärer Zugang zu vernetzten
+Dateninfrastrukturen im Globalen Süden etwa 3,5 kWh pro Jahr, sind in
+der Anschaffung aber extrem teuer. Schon ein durchschnittlicher Laptop
+verbraucht aber bei vierstündigem täglichen Betrieb 84 kWh im Jahr.
+Fig. 1 illustriert die Situation mit dem Slogan “Du bist so schön, wie
+eine zusätzliche Stunde Strom”, der Mitte der 2010er Jahre in
+arabischsprachigen Ländern weite Verbreitung fand.</p>
+<figure>
+<img src="assets/images/tweet_%20627223846244847616.png"
+id="fig:strom-baghdad"
+alt="Figure 1: Protestierender am 31. Juli 2015 in Baghdad. Auf dem Schild steht “Liebling, Du bist so schön, wie eine zusätzliche Stunde Strom”, Quelle: Twitter" />
+<figcaption aria-hidden="true">Figure 1: Protestierender am 31. Juli
+2015 in Baghdad. Auf dem Schild steht “Liebling, Du bist so schön, wie
+eine zusätzliche Stunde Strom”, Quelle: <a
+href="https://twitter.com/aya_mansour_11_/status/627223846244847616">Twitter</a></figcaption>
+</figure>
+<p>Universeller Zugang zu Informations- und Kommunikationstechnologien
+(<span class="Abbreviation" data-custom-style="Abbreviation">ICT</span>)
+ist ein weiteres <span class="Abbreviation"
+data-custom-style="Abbreviation">SDG</span>, aber auch 2023 nehmen 36,6
+Prozent der Weltbevölkerung, oder 2,93 Milliarden Menschen, nicht an
+vernetzten Dateninfrastrukturen teil <span class="citation"
+data-cites="Digital2023GlobalOverviewReport2023">(<span>„Digital 2023:
+Global Overview Report“</span> 2023)</span>. Wobei der Zugang zu
+Internetverbindungen global ebenso ungleich verteilt ist, wie die
+Stromversorgung. Das subsaharische Afrika und Südasien sind auch hier
+wieder Regionen, die mit einem Viertel bis zur Hälfte der Bevölkerung
+schlechter versorgt sind als alle anderen Weltregionen. Insgesamt leben
+gut 85 Prozent der Menschen ohne Internetzugang in Afrika und Süd-, Ost-
+und Südostasien <span class="citation"
+data-cites="Digital2023GlobalOverviewReport2023">(<span>„Digital 2023:
+Global Overview Report“</span> 2023)</span>. Dazu kommt, dass
+Internetverbindungen im Globalen Süden, langsamer, instabiler und teurer
+sind.</p>
+<p>Schließlich ist Lesen zu können praktisch eine der
+Grundvoraussetzungen für den Zugang zu Digitalität in unserem Beispiel
+und ein weiteres <span class="Abbreviation"
+data-custom-style="Abbreviation">SDG</span>. Auch dabei sind Menschen in
+Afrika (mit Ausnahme des südlichen Afrika) und Südasien am schlechtesten
+gestellt. Die Alphabetisierungsrate liegt in diesen Regionen zwischen 49
+und 66 Prozent bei Frauen und 67 bis 80 Prozent bei Männern <span
+class="citation"
+data-cites="Digital2023GlobalOverviewReport2023">(<span>„Digital 2023:
+Global Overview Report“</span> 2023)</span>.</p>
+<p>Alphabetisierung ist allerdings an je konkrete Sprachen und Schriften
+in einer grundsätzlich, wenn auch abnehmend, vielsprachigen Welt
+geknüpft. Technische Infrastrukturen hingegen basieren alle auf dem
+Paradigma der lateinischen Schrift und zu ihrer überwiegenden Mehrheit
+auf der englischen Sprache. Dass Bildschirme das Bild horizontale Zeile
+für horizontale Zeile aufbauen und zwar von links nach rechts und von
+oben nach unten ist eben kein Zufall. Inhalte und Interfaces sind durch
+die Sprachen des Globalen Nordens dominiert, die bereits die kolonialen
+Verwaltungssprachen des Globalen Südens waren. Für den globalen Zugang
+zu Digitalität ist dieser <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>linguistic
+imperialism</em></span> eine weitere Hürde <span class="citation"
+data-cites="Phillipson1997RealitiesAndMyths">(Phillipson 1997)</span>.
+Er erfordert von den Menschen des Globalen Südens neben den eigenen
+Muttersprachen und ihren Schriftsystemen auch noch die lateinische
+Schrift und mindestens eine Hegemonialsprache zu erlernen (Siehe fig. 2
+für ein Beispiel).</p>
+<div id="lst:css" class="listing css numberLines">
+<p>Listing 1: Basales CSS</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode numberSource css numberLines"><code class="sourceCode css"><span id="cb1-1"><a href="#cb1-1"></a>body {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="kw">background</span>: <span class="cn">white</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>    <span class="kw">color</span>: <span class="cn">black</span><span class="op">;</span></span>
+<span id="cb1-4"><a href="#cb1-4"></a>}</span></code></pre></div>
+</div>
+<div id="lst:r" class="listing r numberLines">
+<p>Listing 2: Beispiel für Arabisch in R</p>
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode numberSource r numberLines"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="fu">setwd</span>(<span class="st">&quot;/path/to/folder/&quot;</span>)</span>
+<span id="cb2-3"><a href="#cb2-3"></a><span class="fu">load</span>(<span class="st">&quot;oape_stats.rda&quot;</span>)</span>
+<span id="cb2-4"><a href="#cb2-4"></a>المجلات <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;4770057679&quot;</span>, <span class="st">&quot;644997575&quot;</span>, <span class="st">&quot;472450345&quot;</span>, <span class="st">&quot;792756327&quot;</span>)</span>
+<span id="cb2-5"><a href="#cb2-5"></a>المشار.اليها <span class="ot">&lt;-</span> المشار.اليها <span class="sc">%&gt;%</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>    <span class="fu">filter</span>(رقم.فهرس <span class="sc">%in%</span> المجلات)</span>
+<span id="cb2-7"><a href="#cb2-7"></a><span class="fu">write.table</span>(المشار.اليها, <span class="at">file =</span> <span class="st">&quot;csv/oape_stats.csv&quot;</span>, <span class="at">row.names =</span> <span class="cn">FALSE</span>, <span class="at">quote =</span> <span class="cn">TRUE</span>, <span class="at">sep =</span> <span class="st">&quot;,&quot;</span>)</span></code></pre></div>
+</div>
+<figure>
+<img src="assets/images/translatio_interface-languages_annotated.png"
+id="fig:translatio-interface"
+alt="Figure 2: Translatio Bonn: Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün)." />
+<figcaption aria-hidden="true">Figure 2: <a
+href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio
+Bonn</a>: Englisches Interface (gelb), Arabisch in deutscher Umschrift
+(lila), Deutsch (grün).</figcaption>
+</figure>
+<h1 id="die-repräsentative-macht-monolingualer-infrastrukturen">Die
+repräsentative Macht monolingualer Infrastrukturen</h1>
+<p>Arabisch ist vielleicht prominenteste Beispiel für eine sogenannte
+<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>under-resourced
+language</em></span>, obwohl es eine der weltweit wichtigsten <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Sprachen</em></span> mit mehr als
+420 Millionen Sprecher_innen und als eine von nur sechs Arbeitssprachen
+der Vereinten Nationen anerkannt ist. Gleichzeitig ist die arabische
+<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Schrift</em></span> nach Latein
+und Chinesisch die drittwichtigste Schrift der Welt und wird von einer
+Fülle an historischen und zeitgenössischen afrikanischen und asiatischen
+Sprachen, wie z.B. Persisch, Urdu, Pashto, Usbekisch, Uigurisch oder
+Osmanisch, verwendet. Diese Schrift wird horizontal von rechts nach
+links geschrieben (<span class="Abbreviation"
+data-custom-style="Abbreviation">RTL</span>). Die meisten der 28
+Buchstaben werden in Schreibrichtung innerhalb von Worten verbunden.
+Mehrere Buchstaben teilen sich eine Grundform (arab. <span
+class="Transcription" data-custom-style="Transcription">rasm</span>),
+die, abhängig von ihrer Position innerhalb des Strings, bis zu vier
+verschiedene Formen haben kann. Diakritische Zeichen (<span
+class="Transcription" data-custom-style="Transcription">iʿjām</span>) in
+Form von Punkten über- oder unterhalb des <span class="Transcription"
+data-custom-style="Transcription">rasm</span> ermöglichen ansonsten
+gleiche Grundformen zu unterscheiden (figs. 3, 4). Je nach Schreibstil
+(das Arabische kennt sechs kanonische Schreibstile) oder Typefont bilden
+mehrere aufeinanderfolgende Formen Ligaturen. Sowohl Ligaturen als auch
+einzelne Buchstaben sitzen nicht notwendig auf einer einzigen Grundlinie
+und die Grundlinien können aus der Horizontalen geneigt sein. Trotz der
+Vielzahl der Sprachen aus verschiedenen Sprachfamilien, gibt es nur
+wenige Ausnahmen dieser schriftspezifischen Schreibregeln. Wichtig ist,
+dass für die meisten Leser_innen die diakritischen Zeichen nicht
+unbedingt notwendig sind, wie mehrere Ansätze die Zensur zentralisierter
+Sozialer Medien in autoritären Regimen mit Rückgriff auf (eine
+Annäherung an) den <span class="Transcription"
+data-custom-style="Transcription">rasm</span> in den letzten Jahren
+eindrucksvoll belegen. Außerdem ist ihr Gebrauch abhängig von sich
+wandelnden regionalen und kulturellen Präferenzen. So werden in einigen
+Regionen diakritische Zeichen bei einigen Buchstaben vor allem am Ende
+des Wortes konsequent weggelassen.<a href="#fn1" class="footnote-ref"
+id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
+<div class="columns">
+<div class="column">
+<figure>
+<img src="assets/images/arabic.png" id="fig:zakham-ar"
+alt="Figure 3: Anfang von oclc_4770057679-i_13-div_8.d1e1249" />
+<figcaption aria-hidden="true">Figure 3: Anfang von
+oclc_4770057679-i_13-div_8.d1e1249</figcaption>
+</figure>
+</div><div class="column">
+<figure>
+<img src="assets/images/arabic_rasm.png" id="fig:zakham-ar-rasm"
+alt="Figure 4: Pseudo-rasm des Textes in fig. 3. Mit Pohl ([2020] 2022) erzeugt." />
+<figcaption aria-hidden="true">Figure 4: Pseudo-<span
+class="Transcription" data-custom-style="Transcription">rasm</span> des
+Textes in fig. 3. Mit <span class="citation"
+data-cites="Pohl2022Rasmifize">Pohl ([2020] 2022)</span>
+erzeugt.</figcaption>
+</figure>
+</div>
+</div>
+<p>Computer sind Teil der kulturellen Traditionslinien des Globalen
+Nordens von Gutenbergs Druckerpresse über Telegraph und Schreibmaschinen
+zu Lochkarten und Satzmaschinen. Die mechanische und später
+elektronische Erfassung von komplexen Schriftsystemen mit wesentlich
+größeren Zeichensätzen und anderen Schreibrichtungen als das Lateinische
+wurde hier weder als ausreichend wichtig noch als genügend profitabel
+betrachtet um sie von Anfang an in die Designprozesse um Hardware und
+Standards mit einzubeziehen <span class="citation"
+data-cites="Nemeth2018ArabicHotMetal Singh+2018+TheMachineIn">(Nemeth
+2018; Singh 2018)</span>. Dazu kommt, dass in der Folge der
+Nationsbildungsprozesse des langen neunzehnten Jahrhunderts sich eine
+konzeptuell unzureichende Unterscheidung von Sprachen, Schriften und
+Eingabesystemen auch für Computer durchgesetzt hat. Unicode als der
+inzwischen dominante Standard für die Zeichenkodierung hat zwar von
+Herstellern unabhängigen Austausch und Interoperabilität von Texten in
+arabischer Schrift möglich gemacht, aber gleichzeitig lateinische
+Schriftgrammatik und das Paradigma des Drucks mit beweglichen Lettern
+universalisiert. Wenig überraschend unterstützt Unicode nicht das
+arabische System der Grundformen. Außerdem sind Zeichencodes in einer
+verwirrenden Kombination von Schriften und Nationalsprachen organisiert,
+die zu mehreren Codepoints für den gleichen Glyph führt (also quasi ein
+türkisches und ein deutsches “ü” als verschiedene Buchstaben).<a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> In der Folge muss sich jede_r, die
+arabische Schrift in einen Computer eingibt, sei es für eine Suche oder
+die Arbeit an einer digitalen Edition, für eine der möglichen
+Repräsentation entscheiden. Desweiteren muss sie entweder historische
+und geographische Varianten “normalisieren” oder visuell passende aber
+technisch falsche Glyphen verwenden. Die daraus folgende Vielfalt der
+Zeichenkodierungen für die gleiche Kette an arabischen Buchstaben hängt
+dann zudem maßgeblich von den Sprach- und Tastatureinstellungen des
+Betriebssystems ab <span class="citation"
+data-cites="VeisiEtAl2020KurdishLanguageProcessing">(c.f. Veisi,
+MohammadAmini, und Hosseini 2020)</span>. So bevorzugen es
+beispielsweise Arabischschreibende in Ägypten die beiden Punkte unter
+dem finalen <span class="Transcription"
+data-custom-style="Transcription">yāʾ</span>(U+064A: <span
+class="Arabic" data-custom-style="ArabicScript">ي</span>) am Ende eines
+Wortes wegzulassen. Um diese kulturelle Präferenz digital abzubilden,
+können entweder das Arabische <span class="Transcription"
+data-custom-style="Transcription">alif maqṣūra</span> (U+0649: <span
+class="Arabic" data-custom-style="ArabicScript">ى</span>) oder Persische
+<span class="Transcription" data-custom-style="Transcription">ye</span>
+(U+06CC: <span class="Arabic" data-custom-style="ArabicScript">ی</span>)
+gewählt werden <span class="citation"
+data-cites="TaghiZadehEtAl2017NewHybridStemming">(c.f. Taghi-Zadeh u. a.
+2017)</span>. Leider unterstützen die meisten Suchalgorithmen moderner
+Betriebssysteme und darauf aufsetzende Anwendungssoftware diese Varianz
+nicht und führen ohne zusätzliche Anstrengungen zur Normalisierung oder
+Reduktion von Buchstaben auf den <span class="Transcription"
+data-custom-style="Transcription">rasm</span> durch einzelne
+Entwickler_innen zu einer unbekannten Menge von <span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>false
+negative</em></span>s <span class="citation"
+data-cites="Milo.Martinez+2019+ANewStrategy">(Milo und Martínez
+2019)</span>.</p>
+<p>Doch Zeichenkodierung ist für die Mensch-Maschine Interaktion nicht
+ausreichend, die Codepoints müssen auch korrekt auf einer
+zweidimensionalen Fläche angezeigt werden. Damit sind wir bei einer
+weiteren Schicht der Unzugänglichkeit für das textuelle Erbe des
+Globalen Südens. Denn die korrekte Darstellung arabischer Schriften von
+rechts nach links, rechtsbündig und mit verbundenen Buchstaben ist
+weiterhin unzuverlässig und hängt von Betriebssystem und
+Software-Anwendungen ab. Das gilt auch für das Internet. <span
+class="Abbreviation" data-custom-style="Abbreviation">HTML5</span> ist
+der aktuelle Standard für die Strukturierung und Präsentation von
+Inhalten im World Wide Web. <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML5</span>wird als ein “lebender
+Standard” von der <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Web Hypertext Application
+Technology Working Group</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">WHATWG</span>) unterhalten, einem
+Industriekonsortium, dessen Mitglieder die führenden Hersteller von
+Webbrowsern, darunter Apple, Google, Microsoft und Mozilla, sind. <span
+class="Abbreviation" data-custom-style="Abbreviation">HTML5</span>
+(<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Hypertext Markup
+Language</em></span>) hat, inspiriert durch den älteren <span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Extensible
+Markup Language</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">XML</span>) Standard, ein globales
+<code>@lang</code> Attribute eingeführt. Damit lassen sich die Sprachen
+von Inhalten explizit und eindeutig in Form von <span
+class="Abbreviation" data-custom-style="Abbreviation">BCP 47</span>
+Sprachtags, wie z.B. “de” für deutsch oder “ar-Arab-EG” für arabisch in
+arabischer Schrift mit den für Ägypten üblichen Präferenzen, festlegen
+lassen <span class="citation" data-cites="BCP47">(Network Working Group
+2009)</span>. Doch obwohl <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML5</span> 2008 veröffentlicht wurde
+und weiterhin von einem Industriekonsortium entwickelt wird, nutzt
+keiner der führenden Webbrowser <code>@lang</code> für die Wahl eines
+korrekten Schriftsatzes oder die Entscheidung über die Links- oder
+Rechtsbündigkeit eines Textes in seinem mitgelieferten <span
+class="Abbreviation" data-custom-style="Abbreviation">CSS</span>. Auch
+hier setzen lateinische Schriften die Norm. Selbst wenn eine Webseite
+den Inhalt als arabisch deklariert, wird dieser fälschlich als
+links-bündig angezeigt. Die notwendige Korrektur erfordert nur eine
+(sehr) kurze Zeile Code (<code>*[lang^="ar"] {direction:rtl;}</code>) –
+und zwar von jede_r, die Texte in rechts-nach-links Schriften online
+publizieren will. Auch ist das Problem nicht ausschließlich ästhetischer
+Natur. Satzzeichen am Ende der Zeile rutschen ohne diese Korrektur an
+den Anfang (fig. 5).</p>
+<figure>
+<img src="assets/images/arabic_failure-browser.png"
+id="fig:zakham-ar-failure"
+alt="Figure 5: Fehlerhafte Darstellung von Zakham (1907) in modernen Webbrowsern mit dem mitgelieferten CSS." />
+<figcaption aria-hidden="true">Figure 5: Fehlerhafte Darstellung von
+<span class="citation"
+data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham (1907)</span> in
+modernen Webbrowsern mit dem mitgelieferten <span class="Abbreviation"
+data-custom-style="Abbreviation">CSS</span>.</figcaption>
+</figure>
+<p>Die eingeschränkte Unterstützung ist nicht auf den Konsum von
+Inhalten beschränkt. Digitale wissenschaftliche Editionen (<span
+class="Abbreviation" data-custom-style="Abbreviation">DSE</span> von
+<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Digital Scholarly
+Edition</em></span>) werden den auch von der <span class="Abbreviation"
+data-custom-style="Abbreviation">DFG</span> vorgeschriebenen <span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>best
+practices</em></span> entsprechend in <span class="Abbreviation"
+data-custom-style="Abbreviation">XML</span> ausgezeichnet und folgen
+dabei den Richtlinien der <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Text Encoding
+Initiative</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">TEI/XML</span>) <span class="citation"
+data-cites="TEIP5Guidelines400">(TEI Consortium 2020)</span>. Dabei
+können die Auszeichnungen schnell so umfangreich werden, dass es für die
+leichtere Handhabung durch menschliche Bearbeiter_innen besser ist,
+diese zu verbergen und die Ansicht eines Dokuments mit <span
+class="Abbreviation" data-custom-style="Abbreviation">CSS</span> zu
+gestalten. Allerdings verhält sich Software für die Bearbeitung von
+digitalen Editionen nicht anders als Webbrowser. Zwar haben die
+Entwickler des populären oXygen <span class="Abbreviation"
+data-custom-style="Abbreviation">XML</span> Editors die notwendigen
+Zeilen auf unseren Vorschlag hin 2015 zu ihrem <span
+class="Abbreviation" data-custom-style="Abbreviation">CSS</span>
+hinzugefügt, aber diese Unterstützung ist auf das Arabische und einige
+wenige andere rechtsläufige Schriften sowie <span class="Abbreviation"
+data-custom-style="Abbreviation">TEI/XML</span> beschränkt.</p>
+<p>Dies führt uns schließlich zu einer weiteren Dimension der
+unzureichenden Unterstützung für das Arabische in der Digitalität: die
+Darstellung von bi- oder multidirektionalem Text auf einer
+zweidimensionalen Fläche und, im Besonderen, auf der gleichen Zeile.
+Wenn sich die Direktionalität von Schriftsystemen in einer der
+Dimensionen unterscheidet, also z.B. Linksläufiges Englisch mit
+rechtsläufigem Hebräisch gemischt wird, dann ist es basierend auf der
+Schriftform unmöglich zu entscheiden, ob alle Schriften die gleiche
+Wichtigkeit innerhalb des vorliegenden Textes haben oder welche der
+Schriften Vorrang vor den anderen hat – die logische Zeichenfolge
+anderseits ist eindeutig, da sie nur eine Dimension kennt. Algorithmen
+und Standards lösen das Problem auf eine von zwei Arten: sie betrachten
+Latein als das implizite Paradigma oder sie entscheiden auf der Basis
+des ersten Buchstabens welche Schrift die Hauptschrift eines Textes ist.
+So ist z.B. <span class="Abbreviation"
+data-custom-style="Abbreviation">XML</span> vollständig Unicode-konform,
+was heißt, dass auch die Namen und Werte sämtlicher
+Auszeichnungselemente und -attribute in jedem von Unicode unterstütztem
+Schriftsystem geschrieben werden können (in der Praxis findet das
+aufgrund der Dominanz des Englischen und mangelnder Ressourcen so gut
+wie nicht statt). Die Einzige Ausnahme ist die <span
+class="Abbreviation" data-custom-style="Abbreviation">XML</span>
+Deklaration am Anfang einer Datei
+(<code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>), die
+festlegt, dass es sich um eine XML Datei handelt. Als weitreichende
+Konsequenz legt der Unicode <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>bidi-Algorithmus</em></span> (von
+<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>bidirectional</em></span>)
+links-nach-rechts als die Basisrichtung fest, wodurch z.B. die oben
+erwähnten Satzzeichen an das falsche Ende von rechtsläufigen
+Zeichenketten wandern (fig. 6, Zeilen 37, 38) <span class="citation"
+data-cites="W3CUnicodeBiDiBasics ICUDocumentationBiDi">(<span>„BiDi
+Algorithm“</span> 2021; Ishida 2016)</span>.</p>
+<figure>
+<img
+src="/Users/Shared/BachUni/publications/github/pae326271/assets/images/xml_zuhur-v_2-i_4_annotated.png"
+id="fig:bidi-xml-oxygen"
+alt="Figure 6: Example of bidirectional XML of (Dammūs 1911). The colored arrows indicate reading direction. The reading order is indicated by the numbers below the arrows" />
+<figcaption aria-hidden="true">Figure 6: Example of bidirectional <span
+class="Abbreviation" data-custom-style="Abbreviation">XML</span> of
+<span class="citation"
+data-cites="oclc_1034545644-i_15-div_1.d2e634">(Dammūs 1911)</span>. The
+colored arrows indicate reading direction. The reading order is
+indicated by the numbers below the arrows</figcaption>
+</figure>
+<p>Ostasiatische, logographische Schriften, wie das Chinesische,
+Koreanische oder Japanische, bei denen die Zeichen nicht miteinander
+verbunden sind, erlauben sämtliche Schreibrichtungen und wurden
+historisch in vertikalen Spalten von oben nach unten und von rechts nach
+links geschrieben. Die heute übliche, an das Lateinische angepasste
+Praxis ist eine direkte Folge unzureichender technischer Systeme und des
+ihnen eingeschriebenen <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>linguistic
+imperialism</em></span> des Globalen Nordens <span class="citation"
+data-cites="Obana1997VerticalHorizontalReading">(Obana 1997)</span>.</p>
+<p>Jenseits der grundsätzlichen Unmöglichkeit geschriebenes Arabisch mit
+den vorhandenen Technologien in digitaler Form aufzuzeichnen, erfordern
+der kulturelle Record und Praktiken des Globalen Südens konstante
+Übersetzungen und Transkriptionen, die selbst wiederum mit den
+sozio-technischen Traditionen des Globalen Nordens verwoben sind. So ist
+die klassische Lösung von Wissenschaft wie Kolonialverwaltung für das
+Problem nichtlateinische Schriften mit den vorhandenen technischen
+Apparaten wie Schreib- oder Satzmaschinen für lateinische Schrift
+erfassen zu müssen, die Umschrift in lateinische Buchstaben. Hierbei
+wird zwischen der eher phonetischen <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Transkription</em></span> und der
+buchstabengetreuen <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Transliteration</em></span>
+unterschieden, wobei in der Praxis allerdings beide Ansätze miteinander
+kombiniert werden. Der Titel der von Bulus Shahade von 1919 bis 1938 in
+Jerusalem herausgegebene Wochenzeitung <span class="Transcription"
+data-custom-style="Transcription">Mirʾāt aš-Šarq</span> soll das am
+Beispiel des Arabischen illustrieren. “<span class="Transcription"
+data-custom-style="Transcription">Mirʾāt aš-Šarq</span>” ist die den
+Regeln der <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Deutsche Morgenländische
+Gesellschaft</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">DMG</span>) folgende Umschrift des
+arabischen Titels <span class="Arabic"
+data-custom-style="ArabicScript">مرآة الشرق</span> in lateinische
+Schrift, die zum einen 1:1 Entsprechungen für Buchstaben vorschreibt,
+zum anderen aber um eine phonetische Wiedergabe bemüht ist. Die
+international gebräuchlichere Umschrift dieses Titels nach den Regeln
+des (amerikanischen) <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>International Journal of Middle
+East Studies</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">IJMES</span>) ist “<span
+class="Transcription" data-custom-style="Transcription">Mirʾāt
+al-Sharq</span>”. Schließlich hat die Zeitschrift, da sie im britischen
+Mandatsgebiet Palästina erschien, ihren Titel im Seitenkopf selbst in
+lateinische Schrift als “<span class="Transcription"
+data-custom-style="Transcription">Meraat al-Sherk</span>” angegeben
+<span class="citation" data-cites="EAP119/1/24_website">(British Library
+o. J.b)</span>. Zu dieser Abhängigkeit der Umschrift von der Zielsprache
+kommt noch hinzu, dass sich die Umschrift bei gleichem Alphabet und
+gleicher Zielsprache je nach Ausgangssprache unterscheidet. So haben die
+Katalogisierer_innen des <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Endangered Archives
+Programme</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">EAP</span>) der British Library den
+Osmanischen Titel <span class="Arabic"
+data-custom-style="ArabicScript">يكي تصوير افكر</span> fälschlicherweise
+als <span class="Arabic" data-custom-style="ArabicScript">تصوير
+افكر</span> gelesen, angenommen, dass es sich hierbei um Arabisch
+handelt und dementsprechend “korrekt” als <span class="Transcription"
+data-custom-style="Transcription">Taṣwīr Afkār</span> transkribiert,
+während die richtige <span class="Abbreviation"
+data-custom-style="Abbreviation">IJMES</span> Transkription des
+Osmanischen <span class="Transcription"
+data-custom-style="Transcription">Yeni</span> <span
+class="Transcription" data-custom-style="Transcription">Taṣvīr-i
+Efkār</span> gewesen wäre <span class="citation"
+data-cites="EAP119/1/18_website">(British Library o. J.a)</span>.</p>
+<p>Schließlich muss erwähnt werden, dass alle diese wissenschaftlichen
+Umschriften diakritische Zeichen benötigen. Diese können zwar seit der
+Einführung von Unicode standardmäßig erfasst werden, müssen aber von der
+je benutzen Software und Fonts unterstützt werden und benötigen ein
+gewisses technisches Wissen für die Eingabe. Um die technischen Probleme
+zu umgehen und Software nutzen zu können, die nichtlateinische Schriften
+oder Unicode nicht vollumfänglich unterstützt, existieren mehrere
+Systeme für die 1:1 Transliteration des Arabischen, die die automatische
+und verlustfreie bidirektionale Umwandlung ermöglichen. Das wichtigste
+und in den Digital Humanities gebräuchlichste System ist die <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Buckwalter</em></span>
+Transliteration, da sie mit reinem <span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span> auskommt <span
+class="citation"
+data-cites="Habash+2010+IntroductionToArabic Buckwalter2004ArabicMorphological">(Buckwalter
+2004; Habash 2010, 20, 25–26)</span>. Wie aus der Umschrift “<span
+class="Transcription" data-custom-style="Transcription">mrMp
+Alcrq</span>” für die obige Zeitschrift <span class="Transcription"
+data-custom-style="Transcription">Mirʾāt aš-Šarq</span> deutlich wird,
+haben diese Systeme allerdings einen großen Nachteil: sie sind für
+Menschen nicht intuitiv lesbar und damit eine weitere Zugangsbarriere.
+Andere (historische) technische Transkriptionssysteme umgehen dieses
+Problem indem sie die diakritischen Zeichen der wissenschaftlichen
+Umschriften durch in <span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span> vorhandene Symbole
+ersetzen und <span class="Transcription"
+data-custom-style="Transcription">Mirʾāt aš-Šarq</span> z.B. als “<span
+class="Transcription" data-custom-style="Transcription">mir’_a=t
+al-^sarq</span>” transkribieren <span class="citation"
+data-cites="Romanov2021ArabicBetaCode">(Romanov [2015] 2021)</span>.</p>
+<p>Warum ist eine so ausführliche Diskussion von Zeichenkodierungen,
+Bidi-Algorithmen und Umschriften hier relevant? Weil technische Systeme
+zur Wissensorganisation, wie Bibliothekskataloge, Normdateien, Zensi,
+Kataster etc. etc. ebenso wie wissenschaftliche Sekundärliteratur
+historische Dokumente sind, die auf sich wandelnden technischen Systemen
+aufsetzen, auf den unterschiedlichsten, sich ebenfalls wandelnden,
+(<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>best</em></span>) <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>practices</em></span> basieren
+und von Menschen umgesetzt wurden, die Fehler machen, teilweise die
+Sprachen vor ihnen nicht lesen können und, mit den uns bekannten
+technischen Beschränkungen konfrontiert, Wege suchen das von ihnen
+gesehene so exakt wie möglich abbilden zu können. Die beste, wenn auch
+wegen der hohen Kosten unrealistischste Lösung wäre sämtliche Artefakte
+in nichtlateinischen Schriften erneut vom Original und in den
+Originalschriften zu katalogisieren. Umschriften sollten offensichtlich
+sein oder explizit markiert werden und korrekt und konsequent angewandt
+werden. Bis dahin sind wir allerdings mit den Spolien einer technischen
+Evolution von handschriftlichen Listen über maschinengeschriebenen
+Karteikarten zu Mikrofilmen, digitalen Faksimiles (Scans),
+Texterkennungsalgorithmen und Datenbanken konfrontiert.</p>
+<p>Discoverysysteme sind durchweg nicht darauf ausgelegt die Vielzahl an
+Schreibweisen in mehreren Schriften mit und ohne diakritische Zeichen
+als äquivalent zu betrachten, wenn die Normierung nicht bereits in den
+Datensätzen explizit vorgenommen wurde. Sämtliche Suchfunktionen haben
+ihre Eigentümlichkeiten die allerdings nur selten transparent
+dokumentiert und an die Nutzer_innen kommuniziert werden. Jede_r muss
+durch Versuch und Irrtum herausbekommen ob in nichtlateinischen
+Schriften gesucht werden kann; ob und in welchem Umfang die mögliche
+Vielzahl der Zeichenkodierung für die gleichen Grapheme normalisiert
+wird; ob und in welchem Umfang lateinische Umschriften normalisiert
+werden; ob und in welchem Umfang diakritische Zeichen aus der
+lateinischen Umschrift entfernt werden; ob und in welchem Umfang
+Morphologisierer und Lemmatisierer benutzt werden …</p>
+<p>So sind in der <a
+href="https://zdb-katalog.de/">Zeitschriftendatenbank</a> (<span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span>) …
+arabische Periodikatitel in Bibliotheken in Deutschland und Österreich
+nachgewiesen. Dank Unicode lässt sich die <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> auch nach Titeln in
+arabischer Schrift durchsuchen, allerdings sind solche in den der <span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span>
+zugrunde liegenden Katalogen nur in sehr geringem Umfang erfasst. Die
+notwendigen Umschriften folgen im Prinzip den Regeln der <span
+class="Abbreviation" data-custom-style="Abbreviation">DMG</span> und
+werden von der ZDB korrekt angezeigt. Die Suche vereinfacht die
+Umschrift, indem z.B. Buchstaben mit diakritischen Zeichen auf ihre
+Grundform reduziert werden (“<span class="Transcription"
+data-custom-style="Transcription">ǧ</span>” wird mit “<span
+class="Transcription" data-custom-style="Transcription">g</span>”
+gefunden). Außerdem wird der präfigierte arabische Artikel “<span
+class="Transcription" data-custom-style="Transcription">al-</span>”
+teils als Bestandteil von Nomen teils als eigenständiges Wort behandelt,
+obwohl dies serverseitig einfach zu normalisieren wäre. In der Folge
+lässt sich die beiruter Zeitung <span class="Transcription"
+data-custom-style="Transcription">al-Ǧanna</span> weder in arabischer
+Schrift ( <span class="Arabic"
+data-custom-style="ArabicScript">الجنة</span> ) oder in der
+international gebräuchlichen Umschrift als “<span class="Transcription"
+data-custom-style="Transcription">al-Janna</span>”, noch als “<span
+class="Transcription"
+data-custom-style="Transcription">al-Ǧanna</span>”, sondern nur mit
+“<span class="Transcription"
+data-custom-style="Transcription">Ǧanna</span>” finden (figs. 7-9).
+<span class="Transcription" data-custom-style="Transcription">Mirʾāt
+aš-Šarq</span> wird mit “<span class="Transcription"
+data-custom-style="Transcription">Mirʾat as-sarq</span>” oder “<span
+class="Transcription" data-custom-style="Transcription">Mirʾa*
+sarq</span>” gefunden, aber nicht ohne “<span class="Transcription"
+data-custom-style="Transcription">ʾ</span>”.</p>
+<div class="columns">
+<div class="column">
+<figure>
+<img src="assets/images/zdb_janna-ar.png" id="fig:zdb-ar"
+alt="Figure 7: Suche in der ZDB nach der Zeitschrift al-Ǧanna in arabischer Schrift" />
+<figcaption aria-hidden="true">Figure 7: Suche in der <span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> nach
+der Zeitschrift <span class="Transcription"
+data-custom-style="Transcription">al-Ǧanna</span> in arabischer
+Schrift</figcaption>
+</figure>
+</div><div class="column">
+<figure>
+<img src="assets/images/zdb_janna-ar-Latn.png" id="fig:zdb-dmg"
+alt="Figure 8: Suche in der ZDB nach der Zeitschrift al-Ǧanna in DMG Umschrift (al-Ǧanna)" />
+<figcaption aria-hidden="true">Figure 8: Suche in der <span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> nach
+der Zeitschrift <span class="Transcription"
+data-custom-style="Transcription">al-Ǧanna</span> in <span
+class="Abbreviation" data-custom-style="Abbreviation">DMG</span>
+Umschrift (<span class="Transcription"
+data-custom-style="Transcription">al-Ǧanna</span>)</figcaption>
+</figure>
+</div><div class="column">
+<figure>
+<img src="assets/images/zdb_janna-ar-Latn-no-al.png"
+id="fig:zdb-dmg-defective"
+alt="Figure 9: Suche in der ZDB nach der Zeitschrift al-Ǧanna in DMG Umschrift ohne diakritische Zeichen und den bestimmten Artikel (Ganna)" />
+<figcaption aria-hidden="true">Figure 9: Suche in der <span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> nach
+der Zeitschrift <span class="Transcription"
+data-custom-style="Transcription">al-Ǧanna</span> in <span
+class="Abbreviation" data-custom-style="Abbreviation">DMG</span>
+Umschrift ohne diakritische Zeichen und den bestimmten Artikel (<span
+class="Transcription"
+data-custom-style="Transcription">Ganna</span>)</figcaption>
+</figure>
+</div>
+</div>
+<h1 class="unnumbered" id="bibliography">Literatur</h1>
+<div id="refs" class="references csl-bib-body hanging-indent"
+role="doc-bibliography">
+<div id="ref-ICUDocumentationBiDi" class="csl-entry"
+role="doc-biblioentry">
+<span>„BiDi Algorithm“</span>. 2021. ICU Documentation. 2. Februar 2021.
+<a
+href="https://unicode-org.github.io/icu/userguide/transforms/bidi.html">https://unicode-org.github.io/icu/userguide/transforms/bidi.html</a>.
+</div>
+<div id="ref-EAP119/1/18_website" class="csl-entry"
+role="doc-biblioentry">
+British Library. o. J.a. <span>„تصوير افكار Taṣwīr Afkār (1909)“</span>.
+Endangered Archives Programme. Zugegriffen 24. Januar 2023. <a
+href="https://eap.bl.uk/collection/EAP119-1-18">https://eap.bl.uk/collection/EAP119-1-18</a>.
+</div>
+<div id="ref-EAP119/1/24_website" class="csl-entry"
+role="doc-biblioentry">
+———. o. J.b. <span>„مرأة الشرق Mirʾat Al-Sharq (1922-1936)“</span>.
+Endangered Archives Programme. Zugegriffen 24. Januar 2023. <a
+href="https://eap.bl.uk/collection/EAP119-1-24">https://eap.bl.uk/collection/EAP119-1-24</a>.
+</div>
+<div id="ref-Buckwalter2004ArabicMorphological" class="csl-entry"
+role="doc-biblioentry">
+Buckwalter, Tim. 2004. <span>„Buckwalter Arabic Morphological Analyzer
+Version 2.0“</span>. Linguistic Data Consortium. <a
+href="https://doi.org/10.35111/050Q-5R95">https://doi.org/10.35111/050Q-5R95</a>.
+</div>
+<div id="ref-Crymble2021Technology" class="csl-entry"
+role="doc-biblioentry">
+Crymble, Adam. 2021. <em>Technology and the Historian: Transformations
+in the Digital Age</em>. University of Illinois Press. <a
+href="https://www.press.uillinois.edu/books/?id=p085697">https://www.press.uillinois.edu/books/?id=p085697</a>.
+</div>
+<div id="ref-oclc_1034545644-i_15-div_1.d2e634" class="csl-entry"
+role="doc-biblioentry">
+Dammūs, Ḥalīm Ibrāhīm. 1911. <span>„Ṣiḥāfat Sūriyya wa-Lubnān“</span>
+[The Press of Syria and Lebanon]. <em>al-Zuhūr</em> 2 (4), 1. Juni 1911.
+<a
+href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634</a>.
+</div>
+<div id="ref-2020SDG7Methodology" class="csl-entry"
+role="doc-biblioentry">
+<span>„Defining Energy Access: 2020 Methodology“</span>. 2020. IEA. 13.
+Oktober 2020. <a
+href="https://www.iea.org/data-and-statistics/data-product/sdg7-database">https://www.iea.org/data-and-statistics/data-product/sdg7-database</a>.
+</div>
+<div id="ref-Digital2023GlobalOverviewReport2023" class="csl-entry"
+role="doc-biblioentry">
+<span>„Digital 2023: Global Overview Report“</span>. 2023. DataReportal
+– Global Digital Insights. 26. Januar 2023. <a
+href="https://datareportal.com/reports/digital-2023-global-overview-report">https://datareportal.com/reports/digital-2023-global-overview-report</a>.
+</div>
+<div id="ref-GruendlerArabicScript" class="csl-entry"
+role="doc-biblioentry">
+Gruendler, Beatrice. o. J. <span>„Arabic Script“</span>. In
+<em>Encyclopaedia of the Qurʾān</em>, herausgegeben von Johanna Pink.
+Leiden: Brill. Zugegriffen 24. Januar 2023. <a
+href="https://doi.org/10.1163/1875-3922_q3_EQCOM_00016">https://doi.org/10.1163/1875-3922_q3_EQCOM_00016</a>.
+</div>
+<div id="ref-Habash+2010+IntroductionToArabic" class="csl-entry"
+role="doc-biblioentry">
+Habash, Nizar Y. 2010. <em>Introduction to Arabic Natural Language
+Processing</em>. Synthesis Lectures on Human Language Technologies 10.
+Morgan &amp; Claypool. <a
+href="https://doi.org/ffr8nh">https://doi.org/ffr8nh</a>.
+</div>
+<div id="ref-W3CUnicodeBiDiBasics" class="csl-entry"
+role="doc-biblioentry">
+Ishida, Richard. 2016. <span>„Unicode Bidirectional Algorithm
+basics“</span>. W3C Internationalization (I18n). 9. August 2016. <a
+href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">https://www.w3.org/International/articles/inline-bidi-markup/uba-basics</a>.
+</div>
+<div id="ref-Milo2011ArabicTypography" class="csl-entry"
+role="doc-biblioentry">
+Milo, Thomas. 2011. <span>„Arabic Typography“</span>. In
+<em>Encyclopedia of Arabic Language and Linguistics</em>, herausgegeben
+von Lutz Edzard und Rudolf de Jong. Leiden: Brill. <a
+href="https://doi.org/10.1163/1570-6699_eall_EALL_SIM_000043">https://doi.org/10.1163/1570-6699_eall_EALL_SIM_000043</a>.
+</div>
+<div id="ref-MiloCommentsArabicBlock" class="csl-entry"
+role="doc-biblioentry">
+———. o. J. <span>„Some Comments on the Arabic Block in Unicode“</span>.
+DecoType.
+</div>
+<div id="ref-Milo.Martinez+2019+ANewStrategy" class="csl-entry"
+role="doc-biblioentry">
+Milo, Thomas, und Alicia González Martínez. 2019. <span>„A New Strategy
+for Arabic OCR: Archigraphemes, Letter Blocks, Script Grammar, and shape
+synthesis“</span>. In <em>Proceedings of the 3rd International
+Conference on Digital Access to Textual Cultural Heritage</em>, 93–96.
+DATeCH2019. New York, NY, USA: Association for Computing Machinery. <a
+href="https://doi.org/gmscgz">https://doi.org/gmscgz</a>.
+</div>
+<div id="ref-Nemeth+2017" class="csl-entry" role="doc-biblioentry">
+Nemeth, Titus. 2017. <em>Arabic Type-Making in the Machine Age: The
+Influence of Technology on the Form of Arabic Type, 1908-1993</em>.
+Leiden: Brill. <a
+href="https://doi.org/10.1163/9789004349308">https://doi.org/10.1163/9789004349308</a>.
+</div>
+<div id="ref-Nemeth2018ArabicHotMetal" class="csl-entry"
+role="doc-biblioentry">
+———. 2018. <span>„Arabic Hot Metal: The Origins of the Mechanisation of
+Arabic Typography“</span>. <em>Philological Encounters</em> 3 (4):
+496–523. <a
+href="https://doi.org/10.1163/24519197-12340052">https://doi.org/10.1163/24519197-12340052</a>.
+</div>
+<div id="ref-BCP47" class="csl-entry" role="doc-biblioentry">
+Network Working Group. 2009. <span>„BCP 47: Tags for Identifying
+Languages“</span>. Herausgegeben von A. Phillips und M. Davis. IETF
+Trust. <a
+href="https://www.ietf.org/rfc/bcp/bcp47.txt">https://www.ietf.org/rfc/bcp/bcp47.txt</a>.
+</div>
+<div id="ref-Obana1997VerticalHorizontalReading" class="csl-entry"
+role="doc-biblioentry">
+Obana, Yasuko. 1997. <span>„Vertical or Horizontal? Reading Directions
+in Japanese“</span>. <em>Bulletin of the School of Oriental and African
+Studies, University of London</em> 60 (1): 86–94. <a
+href="https://www.jstor.org/stable/620771">https://www.jstor.org/stable/620771</a>.
+</div>
+<div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
+role="doc-biblioentry">
+Phillipson, Robert. 1997. <span>„Realities and Myths of Linguistic
+Imperialism“</span>. <em>Journal of Multilingual and Multicultural
+Development</em> 18 (3): 238–48. <a
+href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
+</div>
+<div id="ref-Pohl2022Rasmifize" class="csl-entry"
+role="doc-biblioentry">
+Pohl, Oliver. (2020) 2022. <span>„rasmifize“</span>. TypeScript. <a
+href="https://github.com/suchmaske/rasmifize">https://github.com/suchmaske/rasmifize</a>.
+</div>
+<div id="ref-RitchieEtAl2022Energy" class="csl-entry"
+role="doc-biblioentry">
+Ritchie, Hannah, Max Roser, und Pablo Rosado. 2022.
+<span>„Energy“</span>. <em>Our World in Data</em>, Oktober. <a
+href="https://ourworldindata.org/energy-access">https://ourworldindata.org/energy-access</a>.
+</div>
+<div id="ref-Romanov2021ArabicBetaCode" class="csl-entry"
+role="doc-biblioentry">
+Romanov, Maxim. (2015) 2021. <span>„Arabic betaCode“</span>. Python. <a
+href="https://github.com/maximromanov/ArabicBetacode">https://github.com/maximromanov/ArabicBetacode</a>.
+</div>
+<div id="ref-Singh+2018+TheMachineIn" class="csl-entry"
+role="doc-biblioentry">
+Singh, Vaibhav. 2018. <span>„The Machine in the Colony: Technology,
+Politics, and the Typography of Devanagari in the Early Years of
+Mechanization“</span>. <em>Philological Encounters</em> 3 (4): 469–95.
+<a
+href="https://doi.org/10.1163/24519197-12340051">https://doi.org/10.1163/24519197-12340051</a>.
+</div>
+<div id="ref-TaghiZadehEtAl2017NewHybridStemming" class="csl-entry"
+role="doc-biblioentry">
+Taghi-Zadeh, Hossein, Mohammad Hadi Sadreddini, Mohammad Hasan Diyanati,
+und Amir Hossein Rasekh. 2017. <span>„A new hybrid stemming method for
+persian language“</span>. <em>Digital Scholarship in the Humanities</em>
+32 (1): 209–21. <a
+href="https://doi.org/10.1093/llc/fqv053">https://doi.org/10.1093/llc/fqv053</a>.
+</div>
+<div id="ref-TEIP5Guidelines400" class="csl-entry"
+role="doc-biblioentry">
+TEI Consortium. 2020. <span>„TEI P5: Guidelines for Electronic Text
+Encoding and Interchange“</span>. XML. Zenodo. <a
+href="https://doi.org/10.5281/zenodo.3413524">https://doi.org/10.5281/zenodo.3413524</a>.
+</div>
+<div id="ref-VeisiEtAl2020KurdishLanguageProcessing" class="csl-entry"
+role="doc-biblioentry">
+Veisi, Hadi, Mohammad MohammadAmini, und Hawre Hosseini. 2020.
+<span>„Toward Kurdish language processing: Experiments in collecting and
+processing the AsoSoft text corpus“</span>. <em>Digital Scholarship in
+the Humanities</em> 35 (1): 176–93. <a
+href="https://doi.org/10.1093/llc/fqy074">https://doi.org/10.1093/llc/fqy074</a>.
+</div>
+<div id="ref-WorldEnergyOutlook2020" class="csl-entry"
+role="doc-biblioentry">
+<em>World Energy Outlook 2020</em>. 2020. Paris: IEA.
+</div>
+<div id="ref-Zaagsma2022Politics" class="csl-entry"
+role="doc-biblioentry">
+Zaagsma, Gerben. 2022. <span>„Digital History and the Politics of
+Digitization“</span>. <em>Digital Scholarship in the Humanities</em>,
+September, fqac050. <a
+href="https://doi.org/10.1093/llc/fqac050">https://doi.org/10.1093/llc/fqac050</a>.
+</div>
+<div id="ref-oclc_4770057679-i_13-div_8.d1e1249" class="csl-entry"
+role="doc-biblioentry">
+Zakham, Yūsuf. 1907. <span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span> [America
+and Arab Scholars]. <em>al-Muqtabas</em> 2 (1), 14. Februar 1907. <a
+href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
+</div>
+</div>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Für eine Einführung in die Spezifika der arabischen
+Schrift siehe <span class="citation" data-cites="Nemeth+2017">Nemeth
+(2017, 14–22)</span>; <span class="citation"
+data-cites="GruendlerArabicScript">Gruendler (o. J.)</span>; <span
+class="citation" data-cites="Milo2011ArabicTypography">Milo
+(2011)</span>.<a href="#fnref1" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>Zu der Entwicklung von Unicode und seine Anwendung für
+das Arabische siehe <span class="citation"
+data-cites="Nemeth+2017">Nemeth (2017, 400–406)</span>; <span
+class="citation" data-cites="MiloCommentsArabicBlock">Milo
+(o. J.)</span>. Für frühere Kodierungen wie ISO-8859-6 und CP-1256 siehe
+<span class="citation"
+data-cites="Habash+2010+IntroductionToArabic">Habash (2010,
+18–20)</span>. Nemeth <span class="citation"
+data-cites="Nemeth+2017">(2017, 410–34)</span>bietet den umfassendsten
+Überblick über die Arbeit von Thomas Milo, den wahrscheinlich
+profundesten Kritiker digitaler Zugänge zur arabischen Schrift und
+Gründer von DecoType.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
+</body>
+<footer>
+
+</footer>
+</html>
