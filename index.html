@@ -947,30 +947,60 @@ größeren Zeichensätzen und anderen Schreibrichtungen als das Lateinische
 wurde hier weder als ausreichend wichtig noch als genügend profitabel
 betrachtet um sie von Anfang an in die Designprozesse um Hardware und
 Standards mit einzubeziehen <span class="citation"
-data-cites="Nemeth2018ArabicHotMetal Singh+2018+TheMachineIn">(Nemeth
-2018; Singh 2018)</span>. Dazu kommt, dass in der Folge der
+data-cites="Nemeth2018ArabicHotMetal Singh+2018+TheMachineIn Mullaney2017ChineseTypewriter">(Mullaney
+2017; Nemeth 2018; Singh 2018)</span>. Dazu kommt, dass in der Folge der
 Nationsbildungsprozesse des langen neunzehnten Jahrhunderts sich eine
 konzeptuell unzureichende Unterscheidung von Sprachen, Schriften und
-Eingabesystemen auch für Computer durchgesetzt hat. Unicode als der
-inzwischen dominante Standard für die Zeichenkodierung hat zwar von
-Herstellern unabhängigen Austausch und Interoperabilität von Texten in
-arabischer Schrift möglich gemacht, aber gleichzeitig lateinische
-Schriftgrammatik und das Paradigma des Drucks mit beweglichen Lettern
-universalisiert. Wenig überraschend unterstützt Unicode nicht das
-arabische System der Grundformen. Außerdem sind Zeichencodes in einer
-verwirrenden Kombination von Schriften und Nationalsprachen organisiert,
-die zu mehreren Codepoints für den gleichen Glyph führt (also quasi ein
+Eingabesystemen auch für Computer durchgesetzt hat. Damit Computer
+Buchstaben aufzeichnen können, müssen diese mit Hilfe von
+Zeichkodierungen in binäre elektrische Ladungen übersetzt werden. Der
+vielleicht berühmteste und folgenreichste Standard für die elektronische
+Zeichenkodierung ist der <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>American Standard Code for
+Information Interchange</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span>) mit 95 druckbaren
+Zeichen: den Ziffern 0-9, den 26 Buchstaben des englischen Alphabets in
+Groß- und Kleinschreibung und 33 Satzzeichen und Symbolen. <span
+class="Abbreviation" data-custom-style="Abbreviation">ASCII</span> und
+alle anderen, herstellerspezifischen Zeichenkodierungen sind von <a
+href="https://www.unicode.org">Unicode</a> als der dominante Standard
+für die Zeichenkodierung abgelöst worden, aber weiterhin ein häufiger
+kleinster gemeinsamer Nenner (der Anfang von 8-Bit Unicode, <span
+class="Abbreviation" data-custom-style="Abbreviation">UTF-8</span>, ist
+für die 128 <span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span>-Zeichen reserviert).</p>
+<p>Unicode hat Millionen von Codepoints und den von Herstellern
+unabhängigen Austausch und Interoperabilität von Texten auch in einer
+Vielzahl nicht-lateinischer Schriften, darunter seit Version 1.0.0
+Arabisch, ermöglicht.<a href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> Allerdings sind auch bei Unicode die
+zeitgenössischen Schriften des Globalen Nordens der Ausgangspunkt
+gewesen. Viele historische und zeitgenössische Schriften sind weiterhin
+nicht in Unicode erfasst<a href="#fn3" class="footnote-ref" id="fnref3"
+role="doc-noteref"><sup>3</sup></a>, während eine vollkommen neue
+Schrift digitaler Medialität, nämlich Emojis die treibende Kraft hinter
+der heute nahezu universalen Unterstützung von Unicode durch
+Betriebssysteme war.</p>
+<p>Gleichzeitig hat Unicode, als ein von einem in Kalifornien
+inkoporierten Herstellerkonsortium entwickelter Standard, die
+lateinische Schriftgrammatik und das Paradigma des Drucks mit
+beweglichen Lettern universalisiert <span class="citation"
+data-cites="FiormonteEtAl2015PoliticsOfCode">(c.f. Fiormonte u. a. 2015,
+3–4)</span>. Wenig überraschend unterstützt Unicode nicht das arabische
+System der Grundformen. Außerdem sind Zeichencodes in einer verwirrenden
+Kombination von Schriften und (National)Sprachen organisiert, die zu
+mehreren Codepoints für den gleichen Glyph führt (also quasi ein
 türkisches und ein deutsches “ü” als verschiedene Buchstaben).<a
-href="#fn2" class="footnote-ref" id="fnref2"
-role="doc-noteref"><sup>2</sup></a> In der Folge muss sich jede_r, die
-arabische Schrift in einen Computer eingibt, sei es für eine Suche oder
-die Arbeit an einer digitalen Edition, für eine der möglichen
-Repräsentation entscheiden. Desweiteren muss sie entweder historische
-und geographische Varianten “normalisieren” oder visuell passende aber
-technisch falsche Glyphen verwenden. Die daraus folgende Vielfalt der
-Zeichenkodierungen für die gleiche Kette an arabischen Buchstaben hängt
-dann zudem maßgeblich von den Sprach- und Tastatureinstellungen des
-Betriebssystems ab <span class="citation"
+href="#fn4" class="footnote-ref" id="fnref4"
+role="doc-noteref"><sup>4</sup></a> In der Folge muss sich jede_r, die
+arabische Schrift in einen Computer eingibt, sei es für eine Suche nach
+einer Quelle oder die Arbeit an einer digitalen Edition, für eine der
+möglichen Repräsentation entscheiden. Desweiteren muss sie entweder
+historische und geographische Varianten “normalisieren” oder visuell
+passende aber technisch falsche Glyphen verwenden. Die daraus folgende
+Vielfalt der Zeichenkodierungen für die gleiche Kette an arabischen
+Buchstaben hängt dann zudem maßgeblich von den Sprach- und
+Tastatureinstellungen des Betriebssystems ab <span class="citation"
 data-cites="VeisiEtAl2020KurdishLanguageProcessing">(c.f. Veisi,
 MohammadAmini, und Hosseini 2020)</span>. So bevorzugen es
 beispielsweise Arabischschreibende in Ägypten die beiden Punkte unter
@@ -1061,14 +1091,15 @@ data-custom-style="Abbreviation">DFG</span> vorgeschriebenen <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>best
 practices</em></span> entsprechend in <span class="Abbreviation"
 data-custom-style="Abbreviation">XML</span> ausgezeichnet und folgen
-dabei den Richtlinien der <span class="EmphasisCustom"
-data-custom-style="EmphasisCustom"><em>Text Encoding
-Initiative</em></span> (<span class="Abbreviation"
-data-custom-style="Abbreviation">TEI/XML</span>) <span class="citation"
-data-cites="TEIP5Guidelines400">(TEI Consortium 2020)</span>. Dabei
-können die Auszeichnungen schnell so umfangreich werden, dass es für die
-leichtere Handhabung durch menschliche Bearbeiter_innen besser ist,
-diese zu verbergen und die Ansicht eines Dokuments mit <span
+dabei den Richtlinien der <a href="https://www.tei-c.org"><span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Text
+Encoding Initiative</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">TEI</span>)</a> <span class="citation"
+data-cites="TEIP5Guidelines400 DfgPraxisregelnDigitalisierung+2016">(<em>DFG-Praxisregeln
+<span>„Digitalisierung“</span></em> 2016; TEI Consortium 2020)</span>.
+Dabei können die Auszeichnungen schnell so umfangreich werden, dass es
+für die leichtere Handhabung durch menschliche Bearbeiter_innen besser
+ist, diese zu verbergen und die Ansicht eines Dokuments mit <span
 class="Abbreviation" data-custom-style="Abbreviation">CSS</span> zu
 gestalten. Allerdings verhält sich Software für die Bearbeitung von
 digitalen Editionen nicht anders als Webbrowser. Zwar haben die
@@ -1136,20 +1167,24 @@ data-custom-style="EmphasisCustom"><em>linguistic
 imperialism</em></span> des Globalen Nordens <span class="citation"
 data-cites="Obana1997VerticalHorizontalReading">(Obana 1997)</span>.</p>
 <p>Jenseits der grundsätzlichen Unmöglichkeit geschriebenes Arabisch mit
-den vorhandenen Technologien in digitaler Form aufzuzeichnen, erfordern
-der kulturelle Record und Praktiken des Globalen Südens konstante
-Übersetzungen und Transkriptionen, die selbst wiederum mit den
+den vorhandenen Technologien in digitaler Form adäquat aufzuzeichnen,
+erfordern der kulturelle Record und Praktiken des Globalen Südens
+konstante Übersetzungen und Transkriptionen, die selbst wiederum mit den
 sozio-technischen Traditionen des Globalen Nordens verwoben sind. So ist
-die klassische Lösung von Wissenschaft wie Kolonialverwaltung für das
-Problem nichtlateinische Schriften mit den vorhandenen technischen
-Apparaten wie Schreib- oder Satzmaschinen für lateinische Schrift
-erfassen zu müssen, die Umschrift in lateinische Buchstaben. Hierbei
-wird zwischen der eher phonetischen <span class="EmphasisCustom"
+die klassische Lösung von Wissenschaft ebenso wie Kolonialverwaltungen
+für das Problem nichtlateinische Schriften mit den vorhandenen
+technischen Apparaten wie Schreib- oder Satzmaschinen für lateinische
+Schrift erfassen zu müssen, die Umschrift in lateinische Buchstaben.<a
+href="#fn5" class="footnote-ref" id="fnref5"
+role="doc-noteref"><sup>5</sup></a> Hierbei wird zwischen der eher
+phonetischen <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Transkription</em></span> und der
 buchstabengetreuen <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Transliteration</em></span>
 unterschieden, wobei in der Praxis allerdings beide Ansätze miteinander
-kombiniert werden. Der Titel der von Bulus Shahade von 1919 bis 1938 in
+kombiniert werden und Umschriften für die gleiche Kombination von
+Schriften und Sprachen von Entstehungskontext zu Entstehungskontext
+verschieden sind. Der Titel der von Bulus Shahade von 1919 bis 1938 in
 Jerusalem herausgegebene Wochenzeitung <span class="Transcription"
 data-custom-style="Transcription">Mirʾāt aš-Šarq</span> soll das am
 Beispiel des Arabischen illustrieren. “<span class="Transcription"
@@ -1240,61 +1275,140 @@ technischen Beschränkungen konfrontiert, Wege suchen das von ihnen
 gesehene so exakt wie möglich abbilden zu können. Die beste, wenn auch
 wegen der hohen Kosten unrealistischste Lösung wäre sämtliche Artefakte
 in nichtlateinischen Schriften erneut vom Original und in den
-Originalschriften zu katalogisieren. Umschriften sollten offensichtlich
-sein oder explizit markiert werden und korrekt und konsequent angewandt
-werden. Bis dahin sind wir allerdings mit den Spolien einer technischen
-Evolution von handschriftlichen Listen über maschinengeschriebenen
-Karteikarten zu Mikrofilmen, digitalen Faksimiles (Scans),
-Texterkennungsalgorithmen und Datenbanken konfrontiert.</p>
-<p>Discoverysysteme sind durchweg nicht darauf ausgelegt die Vielzahl an
-Schreibweisen in mehreren Schriften mit und ohne diakritische Zeichen
-als äquivalent zu betrachten, wenn die Normierung nicht bereits in den
-Datensätzen explizit vorgenommen wurde. Sämtliche Suchfunktionen haben
-ihre Eigentümlichkeiten die allerdings nur selten transparent
-dokumentiert und an die Nutzer_innen kommuniziert werden. Jede_r muss
-durch Versuch und Irrtum herausbekommen ob in nichtlateinischen
-Schriften gesucht werden kann; ob und in welchem Umfang die mögliche
-Vielzahl der Zeichenkodierung für die gleichen Grapheme normalisiert
-wird; ob und in welchem Umfang lateinische Umschriften normalisiert
-werden; ob und in welchem Umfang diakritische Zeichen aus der
-lateinischen Umschrift entfernt werden; ob und in welchem Umfang
-Morphologisierer und Lemmatisierer benutzt werden …</p>
+Originalschriften zu katalogisieren <span class="citation"
+data-cites="Weinberg1974Transliteration">(vgl. Weinberg 1974)</span>.
+Umschriften sollten offensichtlich sein oder explizit markiert werden
+und korrekt und konsequent angewandt werden. Bis dahin sind wir
+allerdings mit den Spolien einer technischen Evolution von
+handschriftlichen Listen über maschinengeschriebenen Karteikarten zu
+Mikrofilmen, digitalen Faksimiles (Scans), Texterkennungsalgorithmen und
+Datenbanken konfrontiert.</p>
+<p>Bibliographische Discoverysysteme sind durchweg nicht darauf
+ausgelegt die Vielzahl an Schreibweisen in mehreren Schriften mit und
+ohne diakritische Zeichen als äquivalent zu betrachten, wenn die
+Normierung nicht bereits in den Datensätzen explizit vorgenommen wurde.
+Sämtliche Suchfunktionen haben ihre Eigentümlichkeiten, die allerdings
+nur selten transparent dokumentiert und an die Nutzer_innen kommuniziert
+werden. Jede_r muss durch Versuch und Irrtum herausbekommen ob in
+nichtlateinischen Schriften gesucht werden kann; ob und in welchem
+Umfang die mögliche Vielzahl der Zeichenkodierung für die gleichen
+Grapheme normalisiert wird; ob und in welchem Umfang lateinische
+Umschriften normalisiert werden; ob und in welchem Umfang diakritische
+Zeichen aus der lateinischen Umschrift entfernt werden; ob und in
+welchem Umfang Morphologisierer und Lemmatisierer benutzt werden; usw.
+usf.</p>
 <p>So sind in der <a
 href="https://zdb-katalog.de/">Zeitschriftendatenbank</a> (<span
-class="Abbreviation" data-custom-style="Abbreviation">ZDB</span>) …
-arabische Periodikatitel in Bibliotheken in Deutschland und Österreich
-nachgewiesen. Dank Unicode lässt sich die <span class="Abbreviation"
-data-custom-style="Abbreviation">ZDB</span> auch nach Titeln in
-arabischer Schrift durchsuchen, allerdings sind solche in den der <span
-class="Abbreviation" data-custom-style="Abbreviation">ZDB</span>
-zugrunde liegenden Katalogen nur in sehr geringem Umfang erfasst. Die
-notwendigen Umschriften folgen im Prinzip den Regeln der <span
-class="Abbreviation" data-custom-style="Abbreviation">DMG</span> und
-werden von der ZDB korrekt angezeigt. Die Suche vereinfacht die
-Umschrift, indem z.B. Buchstaben mit diakritischen Zeichen auf ihre
-Grundform reduziert werden (“<span class="Transcription"
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span>) 231
+vor 1930 erschienene “arabische” Periodikatitel in Bibliotheken in
+Deutschland und Österreich nachgewiesen. Diese Zahl umfasst einige
+Dubletten und eine Reihe von Titeln in arabischer Schrift aber nicht in
+arabischer Sprache. Dank Unicode lässt sich die <span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> über
+die Suchmaske auf der Webseite auch in arabischer Schrift durchsuchen,
+allerdings ist diese in den der <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> zugrunde liegenden Katalogen
+nur in sehr geringem Umfang erfasst. Die notwendigen Umschriften folgen
+im Prinzip den Regeln der <span class="Abbreviation"
+data-custom-style="Abbreviation">DMG</span> und werden von der <span
+class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> korrekt
+angezeigt. Der Suchalgorithmus vereinfacht die Umschrift, indem z.B.
+Buchstaben mit diakritischen Zeichen auf ihre Grundform reduziert werden
+(“<span class="Transcription"
 data-custom-style="Transcription">ǧ</span>” wird mit “<span
 class="Transcription" data-custom-style="Transcription">g</span>”
-gefunden). Außerdem wird der präfigierte arabische Artikel “<span
-class="Transcription" data-custom-style="Transcription">al-</span>”
-teils als Bestandteil von Nomen teils als eigenständiges Wort behandelt,
-obwohl dies serverseitig einfach zu normalisieren wäre. In der Folge
-lässt sich die beiruter Zeitung <span class="Transcription"
+gefunden). Der präfigierte arabische Artikel “<span
+class="Transcription" data-custom-style="Transcription">al-</span>” wird
+teils als Bestandteil von Nomen, teils als eigenständiges Wort
+behandelt, obwohl dies serverseitig einfach zu normalisieren wäre. In
+der Folge lässt sich die zwischen 1870 und 1885 in Beirut erschienene
+Zeitung <span class="Transcription"
 data-custom-style="Transcription">al-Ǧanna</span> weder in arabischer
 Schrift ( <span class="Arabic"
-data-custom-style="ArabicScript">الجنة</span> ) oder in der
+data-custom-style="ArabicScript">الجنة</span> ) noch in der
 international gebräuchlichen Umschrift als “<span class="Transcription"
-data-custom-style="Transcription">al-Janna</span>”, noch als “<span
-class="Transcription"
+data-custom-style="Transcription">al-Janna</span>”, aber auch nicht mit
+“<span class="Transcription"
 data-custom-style="Transcription">al-Ǧanna</span>”, sondern nur mit
 “<span class="Transcription"
 data-custom-style="Transcription">Ǧanna</span>” finden (figs. 7-9).
 <span class="Transcription" data-custom-style="Transcription">Mirʾāt
 aš-Šarq</span> wird mit “<span class="Transcription"
-data-custom-style="Transcription">Mirʾat as-sarq</span>” oder “<span
-class="Transcription" data-custom-style="Transcription">Mirʾa*
-sarq</span>” gefunden, aber nicht ohne “<span class="Transcription"
-data-custom-style="Transcription">ʾ</span>”.</p>
+data-custom-style="Transcription">Mirʾat as-sarq</span>” gefunden, aber
+solange mensch nicht entdeckt, dass die <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> sogenannte Wildcards
+unterstützt, bei denen ein (!) Buchstabe durch “*” ersetzt wird, also
+“<span class="Transcription"
+data-custom-style="Transcription">Mir<em>a</em> sarq</span>”, muss der
+Suchstring “<span class="Transcription"
+data-custom-style="Transcription">ʾ</span>” für das arabische <span
+class="Transcription" data-custom-style="Transcription">hamza</span>
+enthalten – ein diakritisches Zeichen, dass sich auf keiner
+Standardtastaturbelegung finden lässt. Eine Bildschirmtastatur bietet
+die <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> nicht an. Solche
+browserbasierten Bildschirmtastaturen, bei denen Glyphen mit der Maus
+ausgesucht werden können, finden sich zum Beispiel unter <a
+href="https://www.lexilogos.com/keyboard/"
+class="uri">https://www.lexilogos.com/keyboard/</a>. Die Katalogsuche
+der besitzenden Bibliotheken, der <a
+href="https://stabikat.de">Staatsbibliothek zu Berlin</a> und der <a
+href="https://fu-berlin.primo.exlibrisgroup.com/">Freien Universität
+Berlin</a>, sind hier einfacher zu benutzen, da sie scheinbar den
+Suchstring auf in <span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span> enthaltene Buchstaben
+reduzieren und damit <span class="Transcription"
+data-custom-style="Transcription">Mirʾāt aš-Šarq</span> auch mit “<span
+class="Transcription" data-custom-style="Transcription">Mir’at
+sarq</span>” und sogar “<span class="Transcription"
+data-custom-style="Transcription">Mirat Sarq</span>” finden. Keiner der
+deutsche Kataloge findet die Zeitschrift aber in der international
+gebräuchlichen Umschrift <span class="Transcription"
+data-custom-style="Transcription">Sharq</span> für <span
+class="Transcription" data-custom-style="Transcription">Šarq</span>.</p>
+<p>Französische Kataloge, wie der <a href="https://ccfr.bnf.fr/"><span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Catalogue
+collectif de France</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">CCFR</span>)</a> oder der der <a
+href="https://catalogue.bnf.fr/"><span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Bibliothèqe nationale de
+France</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">BnF</span>)</a> erfordern eine dem
+System der <span class="Abbreviation"
+data-custom-style="Abbreviation">DMG</span> ähnliche Umschrift (<span
+class="Transcription" data-custom-style="Transcription">Mirʾāt
+al-Šarq</span>), scheinen aber ebenfalls den Suchstring auf <span
+class="Abbreviation" data-custom-style="Abbreviation">ASCII</span>
+Buchstaben durch Entfernen von diakritischen Zeichen und Sonderzeichen
+zu reduzieren. Auch hier sind defektive Anfragen nach “<span
+class="Transcription" data-custom-style="Transcription">Mirʾat
+Sarq</span>” und “<span class="Transcription"
+data-custom-style="Transcription">Mirat Sarq</span>” erfolgreich. Die
+<span class="Abbreviation" data-custom-style="Abbreviation">BnF</span>
+hat auch einen großen Teil ihrer arabischen Bestände in Originalschrift
+erfasst, so dass direkt nach <span class="Arabic"
+data-custom-style="ArabicScript">مرآة الشرق</span> gesucht werden kann.
+Der diese Daten aggregierende <span class="Abbreviation"
+data-custom-style="Abbreviation">CCFR</span> unterstützt die Suche in
+arabischer Schrift nicht, hat aber Zugriff auf arabische Daten aus
+anderen Katalogen als dem der <span class="Abbreviation"
+data-custom-style="Abbreviation">BnF</span>. Die meisten für die
+Umschrift benötigten Zeichen können vom <span class="Abbreviation"
+data-custom-style="Abbreviation">CCFR</span> nicht angezeigt werden.</p>
+<p>Auch englischsprachige Kataloge, wie der der [<span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>British
+Library</em></span>][] oder <span class="Abbreviation"
+data-custom-style="Abbreviation">OCLC</span>s [<span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Worldcat</em></span>], erlauben
+Danke Unicode die Suche in arabischer Schrift und reduzieren
+Suchanfragen in lateinischer Schrift auf den <span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span> Zeichensatz. Hier muss
+also, dem <span class="Abbreviation"
+data-custom-style="Abbreviation">IJMES</span>-System entsprechend,
+mindestens nach “<span class="Transcription"
+data-custom-style="Transcription">Mirat Sharq</span>” gesucht
+werden.</p>
 <div class="columns">
 <div class="column">
 <figure>
@@ -1380,11 +1494,33 @@ role="doc-biblioentry">
 Oktober 2020. <a
 href="https://www.iea.org/data-and-statistics/data-product/sdg7-database">https://www.iea.org/data-and-statistics/data-product/sdg7-database</a>.
 </div>
+<div id="ref-DfgPraxisregelnDigitalisierung+2016" class="csl-entry"
+role="doc-biblioentry">
+<em>DFG-Praxisregeln <span>„Digitalisierung“</span></em>. 2016. Bonn:
+Deutsche Forschungsgemeinschaft. <a
+href="http://www.dfg.de/formulare/12_151/12_151_de.pdf">http://www.dfg.de/formulare/12_151/12_151_de.pdf</a>.
+</div>
 <div id="ref-Digital2023GlobalOverviewReport2023" class="csl-entry"
 role="doc-biblioentry">
 <span>„Digital 2023: Global Overview Report“</span>. 2023. DataReportal
 – Global Digital Insights. 26. Januar 2023. <a
 href="https://datareportal.com/reports/digital-2023-global-overview-report">https://datareportal.com/reports/digital-2023-global-overview-report</a>.
+</div>
+<div id="ref-EndangeredAlphabets" class="csl-entry"
+role="doc-biblioentry">
+<span>„Endangered Alphabets – Preserving endangered cultures“</span>.
+o. J.
+https://web.archive.org/web/20230228113928/https://www.endangeredalphabets.com/.
+Zugegriffen 28. Februar 2023. <a
+href="https://www.endangeredalphabets.com/">https://www.endangeredalphabets.com/</a>.
+</div>
+<div id="ref-FiormonteEtAl2015PoliticsOfCode" class="csl-entry"
+role="doc-biblioentry">
+Fiormonte, Domenico, Desmond Schmidt, Paolo Monella, und Paolo Sordi.
+2015. <span>„The Politics of Code. How Digital Representations and
+Languages Shape Culture“</span>. In <em>ISIS Summit Vienna 2015—The
+Information Society at the Crossroads</em>. Vienna: MDPI AG. <a
+href="https://doi.org/gkzc7v">https://doi.org/gkzc7v</a>.
 </div>
 <div id="ref-GruendlerArabicScript" class="csl-entry"
 role="doc-biblioentry">
@@ -1427,6 +1563,13 @@ Conference on Digital Access to Textual Cultural Heritage</em>, 93–96.
 DATeCH2019. New York, NY, USA: Association for Computing Machinery. <a
 href="https://doi.org/gmscgz">https://doi.org/gmscgz</a>.
 </div>
+<div id="ref-Mullaney2017ChineseTypewriter" class="csl-entry"
+role="doc-biblioentry">
+Mullaney, Thomas S. 2017. <em>The Chinese typewriter: A history</em>.
+Studies of the Weatherhead East Asian Institute, Columbia University.
+Cambridge: The MIT Press. <a
+href="https://d-nb.info/1185079467/04">https://d-nb.info/1185079467/04</a>.
+</div>
 <div id="ref-Nemeth+2017" class="csl-entry" role="doc-biblioentry">
 Nemeth, Titus. 2017. <em>Arabic Type-Making in the Machine Age: The
 Influence of Technology on the Form of Arabic Type, 1908-1993</em>.
@@ -1465,6 +1608,12 @@ role="doc-biblioentry">
 Pohl, Oliver. (2020) 2022. <span>„rasmifize“</span>. TypeScript. <a
 href="https://github.com/suchmaske/rasmifize">https://github.com/suchmaske/rasmifize</a>.
 </div>
+<div id="ref-WorldWritingSystems" class="csl-entry"
+role="doc-biblioentry">
+<span>„Project“</span>. 2022. The World’s Writing Systems. September
+2022. <a
+href="https://www.worldswritingsystems.org/project.html">https://www.worldswritingsystems.org/project.html</a>.
+</div>
 <div id="ref-RitchieEtAl2022Energy" class="csl-entry"
 role="doc-biblioentry">
 Ritchie, Hannah, Max Roser, und Pablo Rosado. 2022.
@@ -1475,6 +1624,13 @@ href="https://ourworldindata.org/energy-access">https://ourworldindata.org/energ
 role="doc-biblioentry">
 Romanov, Maxim. (2015) 2021. <span>„Arabic betaCode“</span>. Python. <a
 href="https://github.com/maximromanov/ArabicBetacode">https://github.com/maximromanov/ArabicBetacode</a>.
+</div>
+<div id="ref-ScriptEncodingInitiative" class="csl-entry"
+role="doc-biblioentry">
+<span>„Script Encoding Initiative“</span>. o. J.
+https://web.archive.org/web/20230228215149/https://linguistics.berkeley.edu/sei/.
+Zugegriffen 28. Februar 2023. <a
+href="https://linguistics.berkeley.edu/sei/">https://linguistics.berkeley.edu/sei/</a>.
 </div>
 <div id="ref-Singh+2018+TheMachineIn" class="csl-entry"
 role="doc-biblioentry">
@@ -1506,6 +1662,23 @@ processing the AsoSoft text corpus“</span>. <em>Digital Scholarship in
 the Humanities</em> 35 (1): 176–93. <a
 href="https://doi.org/10.1093/llc/fqy074">https://doi.org/10.1093/llc/fqy074</a>.
 </div>
+<div id="ref-Weinberg1974Transliteration" class="csl-entry"
+role="doc-biblioentry">
+Weinberg, Bella. 1974. <span>„Transliteration in Documentation“</span>.
+<em>Journal of Documentation</em> 30 (1): 18–31. <a
+href="https://doi.org/10.1108/eb026567">https://doi.org/10.1108/eb026567</a>.
+</div>
+<div id="ref-Wellisch1975Transcription" class="csl-entry"
+role="doc-biblioentry">
+Wellisch, Hans H. 1975. <em>Transcription and Transliteration: An
+Annotated Bibliography on Conversion of Scripts</em>. Silver Spring:
+Institute of Modern Languages.
+</div>
+<div id="ref-Wellisch1978Conversion" class="csl-entry"
+role="doc-biblioentry">
+———. 1978. <em>The Conversion of Scripts: Its Nature, History, an
+Utilization</em>. Information Sciences Series. New York: Wiley.
+</div>
 <div id="ref-WorldEnergyOutlook2020" class="csl-entry"
 role="doc-biblioentry">
 <em>World Energy Outlook 2020</em>. 2020. Paris: IEA.
@@ -1535,7 +1708,26 @@ data-cites="GruendlerArabicScript">Gruendler (o. J.)</span>; <span
 class="citation" data-cites="Milo2011ArabicTypography">Milo
 (2011)</span>.<a href="#fnref1" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>Zu der Entwicklung von Unicode und seine Anwendung für
+<li id="fn2"><p>Eine gute Übersicht aller aktuell in Unicode erfassten
+Schriften, Sprachen und Codepoints findet sich unter <a
+href="https://decodeunicode.org/"
+class="uri">https://decodeunicode.org/</a>.<a href="#fnref2"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3"><p>Zwei wichtige Projekte sind <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Endangered Alphabets</em></span>,
+dass bisher undokumentierte Schriften sammelt, und die <a
+href="https://linguistics.berkeley.edu/sei/"><span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Script
+Encoding Initiative</em></span> (<span class="Abbreviation"
+data-custom-style="Abbreviation">SEI</span>)</a>, die bekannte, aber
+nicht in Unicode enthaltene Schriften kartiert und formelle Vorschläge
+für die Aufnahme in Unicode erstellt <span class="citation"
+data-cites="EndangeredAlphabets ScriptEncodingInitiative WorldWritingSystems">(<span>„Endangered
+Alphabets – Preserving endangered cultures“</span> o. J.;
+<span>„Project“</span> 2022; <span>„Script Encoding Initiative“</span>
+o. J.)</span>.<a href="#fnref3" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+<li id="fn4"><p>Zu der Entwicklung von Unicode und seine Anwendung für
 das Arabische siehe <span class="citation"
 data-cites="Nemeth+2017">Nemeth (2017, 400–406)</span>; <span
 class="citation" data-cites="MiloCommentsArabicBlock">Milo
@@ -1546,8 +1738,13 @@ data-cites="Habash+2010+IntroductionToArabic">Habash (2010,
 data-cites="Nemeth+2017">(2017, 410–34)</span>bietet den umfassendsten
 Überblick über die Arbeit von Thomas Milo, den wahrscheinlich
 profundesten Kritiker digitaler Zugänge zur arabischen Schrift und
-Gründer von DecoType.<a href="#fnref2" class="footnote-back"
+Gründer von DecoType.<a href="#fnref4" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
+<li id="fn5"><p>Für frühe, detaillierte Übersichten siehe <span
+class="citation" data-cites="Wellisch1975Transcription">Wellisch
+(1975)</span>; <span class="citation"
+data-cites="Wellisch1978Conversion">Wellisch (1978)</span>.<a
+href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>
