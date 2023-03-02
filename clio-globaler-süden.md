@@ -122,7 +122,7 @@ Ostasiatische, logographische Schriften, wie das Chinesische, Koreanische oder J
 
 ## Transliteration
 
-Jenseits der grundsätzlichen Unmöglichkeit geschriebenes Arabisch mit den vorhandenen Technologien in digitaler Form adäquat aufzuzeichnen, erfordern der kulturelle Record und Praktiken des Globalen Südens konstante Übersetzungen und Transkriptionen, die selbst wiederum mit den sozio-technischen Traditionen des Globalen Nordens verwoben sind. So ist die klassische Lösung von Wissenschaft ebenso wie Kolonialverwaltungen für das Problem nichtlateinische Schriften mit den vorhandenen technischen Apparaten wie Schreib- oder Satzmaschinen für lateinische Schrift erfassen zu müssen, die Umschrift in lateinische Buchstaben.[^cf3] Hierbei wird zwischen der [*Transkription*]{.EmphasisCustom custom-style="EmphasisCustom"} (lautgerechter Wiedergabe) und der [*Transliteration*]{.EmphasisCustom custom-style="EmphasisCustom"} (buchstabengetreuer Wiedergabe des Schriftbildes) unterschieden. In der Praxis werden allerdings beide Ansätze auch miteinander kombiniert. Umschriften für die gleiche Kombination von Ausgangs- und Ziel-Schriften und Sprachen sind von Entstehungskontext zu Entstehungskontext verschieden und unterliegen wie alle sozialen Praktiken einem historischen Wandel. 
+Jenseits der grundsätzlichen Unmöglichkeit geschriebenes Arabisch mit den vorhandenen Technologien in digitaler Form adäquat aufzuzeichnen, erfordern der kulturelle Record und Praktiken des Globalen Südens konstante Übersetzung{--en--} und {--Transkriptionen --}{++Transliteration++}, die selbst wiederum mit den sozio-technischen Traditionen des Globalen Nordens verwoben sind. So ist die klassische Lösung von Wissenschaft ebenso wie Kolonialverwaltungen für das Problem nichtlateinische Schriften mit den vorhandenen technischen Apparaten wie Schreib- oder Satzmaschinen für lateinische Schrift erfassen zu müssen, die Umschrift in lateinische Buchstaben ([@fig:zakham-ijmes]).[^cf3] Hierbei wird zwischen der [*Transkription*]{.EmphasisCustom custom-style="EmphasisCustom"} (lautgerechter Wiedergabe) und der [*Transliteration*]{.EmphasisCustom custom-style="EmphasisCustom"} (buchstabengetreuer Wiedergabe des Schriftbildes) unterschieden. In der Praxis werden allerdings beide Ansätze auch miteinander kombiniert. Umschriften für die gleiche Kombination von Ausgangs- und Ziel-Schriften und Sprachen sind von Entstehungskontext zu Entstehungskontext verschieden und unterliegen wie alle sozialen Praktiken einem historischen Wandel. 
 Der Titel der von Bulus Shahade von 1919 bis 1938 in Jerusalem herausgegebene Wochenzeitung [Mirʾāt aš-Šarq]{.Transcription custom-style="Transcription"} soll das am Beispiel des Arabischen illustrieren. "[Mirʾāt aš-Šarq]{.Transcription custom-style="Transcription"}" ist die den Regeln der [*Deutsche Morgenländische Gesellschaft*]{.EmphasisCustom custom-style="EmphasisCustom"} ([DMG]{.Abbreviation custom-style="Abbreviation"}) folgende Umschrift des arabischen Titels 
 [مرآة الشرق]{.Arabic custom-style="ArabicScript"}
 in lateinische Schrift, die zum einen 1:1 Entsprechungen für Buchstaben vorschreibt, zum anderen aber um eine phonetische Wiedergabe bemüht ist.[^cf4] Die international gebräuchlichere Umschrift dieses Titels nach den Regeln des (amerikanischen) [*International Journal of Middle East Studies*]{.EmphasisCustom custom-style="EmphasisCustom"} ([IJMES]{.Abbreviation custom-style="Abbreviation"}) ist "[Mirʾāt al-Sharq]{.Transcription custom-style="Transcription"}" [@IJMESTransliterationSystem; @ALALC2012Arabic]. Schließlich hat die Zeitschrift, da sie im britischen Mandatsgebiet Palästina erschien, ihren Titel im Seitenkopf selbst in lateinische Schrift als "[Meraat al-Sherk]{.Transcription custom-style="Transcription"}" angegeben [@EAP119/1/24_website].
@@ -136,6 +136,8 @@ Schließlich muss erwähnt werden, dass alle diese wissenschaftlichen Umschrifte
 
  
 
+
+![Transliteration des Textes in @fig:zakham-ar nach dem [IJMES]{.Abbreviation custom-style="Abbreviation"} System](assets/images/arabic_ijmes.png){#fig:zakham-ijmes}
 
 ## Bibliothekskataloge
 
@@ -154,7 +156,7 @@ Französische Kataloge, wie der [[*Catalogue collectif de France*]{.EmphasisCust
  gesucht werden kann. Der diese Daten aggregierende [CCFR]{.Abbreviation custom-style="Abbreviation"} unterstützt die Suche in arabischer Schrift nicht, hat aber Zugriff auf arabische Daten aus anderen Katalogen als dem der [BnF]{.Abbreviation custom-style="Abbreviation"}.
 {--scheinbar keinen Zugriff auf diese Daten der BnF und kann --}Die meisten für die Umschrift benötigten Zeichen können vom [CCFR]{.Abbreviation custom-style="Abbreviation"} nicht angezeigt werden.
 
-Auch englischsprachige Kataloge, wie der der [[*British Library*]{.EmphasisCustom custom-style="EmphasisCustom"}][] oder [OCLC]{.Abbreviation custom-style="Abbreviation"}s [[*Worldcat*]{.EmphasisCustom custom-style="EmphasisCustom"}], erlauben Danke Unicode die Suche in arabischer Schrift und reduzieren Suchanfragen in lateinischer Schrift auf den [ASCII]{.Abbreviation custom-style="Abbreviation"} Zeichensatz. Hier muss also, dem [IJMES]{.Abbreviation custom-style="Abbreviation"}-System entsprechend, mindestens nach "[Mirat Sharq]{.Transcription custom-style="Transcription"}" gesucht werden. 
+Auch englischsprachige Kataloge, wie der der [[*British Library*]{.EmphasisCustom custom-style="EmphasisCustom"}][bl] oder [OCLC]{.Abbreviation custom-style="Abbreviation"}s [[*Worldcat*]{.EmphasisCustom custom-style="EmphasisCustom"}][worldcat], erlauben Danke Unicode die Suche in arabischer Schrift und reduzieren Suchanfragen in lateinischer Schrift auf den [ASCII]{.Abbreviation custom-style="Abbreviation"} Zeichensatz. Hier muss also, dem [IJMES]{.Abbreviation custom-style="Abbreviation"}-System entsprechend, mindestens nach "[Mirat Sharq]{.Transcription custom-style="Transcription"}" gesucht werden. 
 
 ::: columns
 :::: column
@@ -230,6 +232,7 @@ Auch englischsprachige Kataloge, wie der der [[*British Library*]{.EmphasisCusto
 [translatio]: https://www.translatio.uni-bonn.de/online-zeitschriften/arabische-online-zeitschriften 
 [unicode]: https://www.unicode.org
 [wikisource]: https://wikisource.org/ 
+[worldcat]: https://www.worldcat.org
 [zdb]: https://zdb-katalog.de/
 [zenodo]: https://www.zenodo.org
 [zotero]: https://www.zotero.org
