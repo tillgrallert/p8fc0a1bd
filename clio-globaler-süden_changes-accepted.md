@@ -182,15 +182,16 @@ Nur Material, das gesammelt, katalogisiert und dann auch von Kurator_innen gefun
 
 Auffallend ist weiterhin, dass sich ein großer Teil der uns bekannten überlebenden Artefakte in den Kulturerbeinstitutionen des Globalen Nordens befindet und auch dort digitalisiert wurde ([@fig:map-periodicals-holdings]). Dabei wurden 66 oder 28,33% aller digitalisierter Titel von mehreren Institutionen digitalisiert; 21 davon sogar von drei oder mehr. Bei den hohen Kosten und geringen für die Digitalisierung dieser Materialien zur Verfügung stehenden Mitteln, ist eine Koordination dieser Anstrengungen überfällig .
 
-|                         | Arabische Periodika (1798--1918)         | [Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de) |
-| -------------           | -------------------------------  --      | ---------------------------------------------------------------------                |
+
+|  s.                       |     Arabische Periodika (1798--1918)     | [Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de) |
+|-------------------------|------------------------------------------|--------------------------------------------------------------------------------------|
 | Gemeinschaft            | c. 420 Mio. Arabischsprechende           | c. 6.2 Mio. Einwohner_innen                                                          |
 | Periodika               | 2054 Zeitungen und Zeitschriften         | 125 Zeitungen                                                                        |
 | davon digitalisiert     | 156 Titel                                | 125 Titel mit mehr als 1.5 Mio. Seiten                                               |
-| in Prozent              | 7,59                                     | 100                                                                                     |
+| in Prozent              | 7,59                                     | 100                                                                                  |
 | Art der Digitalisierung | fast ausschließlich Faksimiles           | Faksimiles und Volltext                                                              |
 | Zugang                  | Bezahlschranken, Geo-fencing             | Open Access                                                                          |
-| Interface               | vornehmlich ausschließlich Fremdsprachen | Quellen- und Fremdsprachen                                                             |
+| Interface               | vornehmlich ausschließlich Fremdsprachen | Quellen- und Fremdsprachen                                                           |
 
 Table: Beispielhafter Vergleich digitalisierter Quellen zwischen dem Global Süden und Norden {#tbl:digitisation}
 
