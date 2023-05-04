@@ -60,7 +60,7 @@ Universeller Zugang zu Informations- und Kommunikationstechnologien ([ICT]{.Abbr
 
 Schließlich ist Lesen zu können praktisch eine der Grundvoraussetzungen für den Zugang zu Digitalität{-- in unserem Beispiel--} und ein weiteres [SDG]{.Abbreviation custom-style="Abbreviation"}. Auch dabei sind Menschen in Afrika (mit Ausnahme des südlichen Afrika) und Südasien am schlechtesten gestellt. Die Alphabetisierungsrate liegt in diesen Regionen zwischen 49 und 66 Prozent bei Frauen und 67 bis 80 Prozent bei Männern [@Digital2023GlobalOverviewReport2023].
 
-Alphabetisierung ist allerdings an je konkrete Sprachen und Schriften in einer grundsätzlich, wenn auch abnehmend, vielsprachigen Welt geknüpft. Technische Infrastrukturen hingegen basieren alle auf dem Paradigma der lateinischen Schrift und zu ihrer überwiegenden Mehrheit auf der englischen Sprache. Dass Bildschirme das Bild horizontale Zeile für horizontale Zeile aufbauen und zwar von links nach rechts und von oben nach unten ist eben kein Zufall{--, sondern folgt dem Paradigma lateinischer Schriften--}. Inhalte, Interfaces und Standards sind durch die Sprachen des Globalen Nordens dominiert, die bereits die kolonialen Verwaltungssprachen des Globalen Südens waren. Für den globalen Zugang zu Digitalität ist dieser [*linguistic imperialism*]{.EmphasisCustom custom-style="EmphasisCustom"} eine weitere Dimension der Unzugänglichkeit. Er {--verschleiert die kulturelle Gebundenheit und --}erfordert von den Menschen des Globalen Südens neben den eigenen Muttersprachen und ihren Schriftsystemen auch noch die lateinische Schrift und mindestens eine Hegemonialsprache zu erlernen [@Phillipson1997RealitiesAndMyths; @Fiormonte2021Taxation; @Mahony2018Culturala; @MahonyGao2018Linguistic]. {--(Siehe [@fig:translatio-interface; @fig:css; @fig:r] für Beispiele).--}
+Alphabetisierung ist allerdings an je konkrete Sprachen und Schriften in einer grundsätzlich, wenn auch abnehmend, vielsprachigen Welt geknüpft. Technische Infrastrukturen hingegen basieren alle auf dem Paradigma der lateinischen Schrift und zu ihrer überwiegenden Mehrheit auf der englischen Sprache. Dass Bildschirme das Bild horizontale Zeile für horizontale Zeile aufbauen und zwar von links nach rechts und von oben nach unten ist eben kein Zufall{--, sondern folgt dem Paradigma lateinischer Schriften--}. Inhalte, Interfaces und Standards sind durch die Sprachen des Globalen Nordens dominiert, die bereits die kolonialen Verwaltungssprachen des Globalen Südens waren. Für den globalen Zugang zu Digitalität ist dieser [*linguistic imperialism*]{.EmphasisCustom custom-style="EmphasisCustom"} eine weitere Dimension der Unzugänglichkeit. Er {--verschleiert die kulturelle Gebundenheit und --}erfordert von den Menschen des Globalen Südens neben den eigenen Muttersprachen und ihren Schriftsystemen auch noch die lateinische Schrift und mindestens eine Hegemonialsprache zu erlernen [@Phillipson1997RealitiesAndMyths; @Fiormonte2021Taxation; @Mahony2018Culturala; @MahonyGao2018Linguistic]. 
 
 {++[@fig:translatio-interface; @fig:html] illustrieren zwei Aspekte dieses ++}[*linguistic imperialism*]{.EmphasisCustom custom-style="EmphasisCustom"}, die in den folgen Abschnitten diskutiert werden. [@Fig:html] demonstriert, dass [HTML]{.Abbreviation custom-style="Abbreviation"} ([*Hypertext Markup Language*]{.EmphasisCustom custom-style="EmphasisCustom"}) als die Grundlage aller Inhalte im [*World Wide Web*]{.EmphasisCustom custom-style="EmphasisCustom"} einerseits zwingend mit den 26 Buchstaben des englischen Alphabets geschrieben werden muss und anderseits mit Englischkenntnissen im Großen und Ganzen verständlich ist ohne die Dokumentation der Standards zu lesen. Für den Aufbau einer Webpräsenz ist also zumindest die lateinische Schrift unerlässlich [@HTMLLivingStandard2023]. Bis in die Mitte der 2000er Jahre hinein durften auch die Adressen von Webseiten ([URL]{.Abbreviation custom-style="Abbreviation"}, [*Unique Ressource Locator*]{.EmphasisCustom custom-style="EmphasisCustom"}) ausschließlich diese 26 lateinischen Buschstaben enthalten. 
 
@@ -70,18 +70,20 @@ Alphabetisierung ist allerdings an je konkrete Sprachen und Schriften in einer g
 [العرفان]{.Arabic custom-style="Arabic"}
  finden zu können.
 
-::: columns
-:::: column
+![[HTML]{.Abbreviation custom-style="Abbreviation"}-Code für @fig:zakham-ar in Visual Code Studio. In der Standardeinstellung werden Zeichen außerhalb von [ASCII]{.Abbreviation custom-style="Abbreviation"} visuell hervorgehoben](assets/images/html_vscode.png){#fig:html}
 
-![Basales CSS: alles ist mit Englischkenntnissen les- und verstehbar](assets/images/css.png){#fig:css}
+{--::: columns--}
+{--:::: column--}
 
-::::
-:::: Column
+{--![Basales CSS: alles ist mit Englischkenntnissen les- und verstehbar](assets/images/css.png){#fig:css}--}
+
+{--::::--}
+{--:::: Column--}
 
 {--![Rudimentäres R Script: Variabeln und Inhalte können Arabisch sein, führen aber zu Darstellungsproblemen](assets/images/r-arabic.png){#fig:r}--}
 
-::::
-:::
+{--::::--}
+{--:::--}
 
 ![[Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en): Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün).](assets/images/translatio_interface-languages_annotated.png){#fig:translatio-interface}
 
@@ -202,15 +204,15 @@ Auch englischsprachige Kataloge, wie der der [[*British Library*]{.EmphasisCusto
 ::::
 :::
 
+![Verteilung von in Südwestasien und Nordafrika ([SWANA]{.Abbreviation custom-style="Abbreviation"}) zwischen 1789 und 1929 publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme korrespondiert mit der Anzahl der publizierten Titel. Die Größe der Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von digitalisierten Titeln an](assets/images/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:map-periodicals-status}
+
+![Verbindung von Publikations- und Sammlungsorten](assets/images/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:map-periodicals-holdings}
+
 # Digitalisierung
 
 Nur Material, das gesammelt, katalogisiert und dann auch von Kurator_innen gefunden wird, kann überhaupt digitalisiert, d.h. als Bild oder Text in einem digitalen Format remedialisiert, werden. Für arabische Periodika stellt sich dieser Zusammenhang wir folgt dar. Nach zehnjähriger Forschung wissen wir von 3550 Titeln, die weltweit vor 1930 publiziert worden sind. Von diesen haben wir 775 oder 21,83% in Sammlungen lokalisieren können. Von diesen 775 sind wiederum 233 oder 6,56% aller Titel digitalisiert worden ([@fig:map-periodicals-status]) [@Mestyan.etal+2020+JaraidAchronology; @Mestyan.Grallert+2012+ProjectJaraid; @Mestyan.Grallert+2020+JaraIdChronology]. Eine Digitalisierungsquote von einem knappen Drittel der auffindbaren Titel erscheint zunächst überraschend hoch. Allerdings können wir momentan weder den Umfang der Sammlungen noch der Digitalisierung einzelner Publikationen beziffern. Es kann sein, dass nur eine von hunderten Ausgaben in einer Sammlung existiert oder digitalisiert wurde. Außerdem sollten für die Bewertung der Digitalisierungsrate im Vergleich zwischen Globalem Süden und Globalem Norden die absoluten Zahlen nicht aus dem Blick verloren werden. @Tbl:digitisation demonstriert das Missverhältnis beispielhaft.
 
 Auffallend ist weiterhin, dass sich ein großer Teil der uns bekannten überlebenden Artefakte in den Kulturerbeinstitutionen des Globalen Nordens befindet und auch dort digitalisiert wurde ([@fig:map-periodicals-holdings]). Dabei wurden 66 oder 28,33% aller digitalisierter Titel von mehreren Institutionen digitalisiert; 21 davon sogar von drei oder mehr. Bei den hohen Kosten und geringen für die Digitalisierung dieser Materialien zur Verfügung stehenden Mitteln, ist eine Koordination dieser Anstrengungen überfällig .
-
-![Verteilung von in Südwestasien und Nordafrika ([SWANA]{.Abbreviation custom-style="Abbreviation"}) zwischen 1789 und 1929 publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme korrespondiert mit der Anzahl der publizierten Titel. Die Größe der Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von digitalisierten Titeln an](assets/images/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:map-periodicals-status}
-
-![Verbindung von Publikations- und Sammlungsorten](assets/images/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:map-periodicals-holdings}
 
 |                         | Arabische Periodika (1798--1918)         | [Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de) |
 | -------------           | -------------------------------  --      | ---------------------------------------------------------------------                |

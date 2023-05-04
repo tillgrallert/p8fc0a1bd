@@ -70,18 +70,20 @@ Alphabetisierung ist allerdings an je konkrete Sprachen und Schriften in einer g
 [العرفان]{.Arabic custom-style="Arabic"}
  finden zu können.
 
-::: columns
-:::: column
-
-![Basales CSS: alles ist mit Englischkenntnissen les- und verstehbar](assets/images/css.png){#fig:css}
-
-::::
-:::: Column
+![[HTML]{.Abbreviation custom-style="Abbreviation"}-Code für @fig:zakham-ar in Visual Code Studio. In der Standardeinstellung werden Zeichen außerhalb von [ASCII]{.Abbreviation custom-style="Abbreviation"} visuell hervorgehoben](assets/images/html_vscode.png){#fig:html}
 
 
 
-::::
-:::
+
+
+
+
+
+
+
+
+
+
 
 ![[Translatio Bonn](https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en): Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün).](assets/images/translatio_interface-languages_annotated.png){#fig:translatio-interface}
 
@@ -202,15 +204,15 @@ Auch englischsprachige Kataloge, wie der der [[*British Library*]{.EmphasisCusto
 ::::
 :::
 
+![Verteilung von in Südwestasien und Nordafrika ([SWANA]{.Abbreviation custom-style="Abbreviation"}) zwischen 1789 und 1929 publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme korrespondiert mit der Anzahl der publizierten Titel. Die Größe der Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von digitalisierten Titeln an](assets/images/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:map-periodicals-status}
+
+![Verbindung von Publikations- und Sammlungsorten](assets/images/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:map-periodicals-holdings}
+
 # Digitalisierung
 
 Nur Material, das gesammelt, katalogisiert und dann auch von Kurator_innen gefunden wird, kann überhaupt digitalisiert, d.h. als Bild oder Text in einem digitalen Format remedialisiert, werden. Für arabische Periodika stellt sich dieser Zusammenhang wir folgt dar. Nach zehnjähriger Forschung wissen wir von 3550 Titeln, die weltweit vor 1930 publiziert worden sind. Von diesen haben wir 775 oder 21,83% in Sammlungen lokalisieren können. Von diesen 775 sind wiederum 233 oder 6,56% aller Titel digitalisiert worden ([@fig:map-periodicals-status]) [@Mestyan.etal+2020+JaraidAchronology; @Mestyan.Grallert+2012+ProjectJaraid; @Mestyan.Grallert+2020+JaraIdChronology]. Eine Digitalisierungsquote von einem knappen Drittel der auffindbaren Titel erscheint zunächst überraschend hoch. Allerdings können wir momentan weder den Umfang der Sammlungen noch der Digitalisierung einzelner Publikationen beziffern. Es kann sein, dass nur eine von hunderten Ausgaben in einer Sammlung existiert oder digitalisiert wurde. Außerdem sollten für die Bewertung der Digitalisierungsrate im Vergleich zwischen Globalem Süden und Globalem Norden die absoluten Zahlen nicht aus dem Blick verloren werden. @Tbl:digitisation demonstriert das Missverhältnis beispielhaft.
 
 Auffallend ist weiterhin, dass sich ein großer Teil der uns bekannten überlebenden Artefakte in den Kulturerbeinstitutionen des Globalen Nordens befindet und auch dort digitalisiert wurde ([@fig:map-periodicals-holdings]). Dabei wurden 66 oder 28,33% aller digitalisierter Titel von mehreren Institutionen digitalisiert; 21 davon sogar von drei oder mehr. Bei den hohen Kosten und geringen für die Digitalisierung dieser Materialien zur Verfügung stehenden Mitteln, ist eine Koordination dieser Anstrengungen überfällig .
-
-![Verteilung von in Südwestasien und Nordafrika ([SWANA]{.Abbreviation custom-style="Abbreviation"}) zwischen 1789 und 1929 publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme korrespondiert mit der Anzahl der publizierten Titel. Die Größe der Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von digitalisierten Titeln an](assets/images/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png){#fig:map-periodicals-status}
-
-![Verbindung von Publikations- und Sammlungsorten](assets/images/map-data-set-periodical-holdings-global-north-na_mapped.png){#fig:map-periodicals-holdings}
 
 |                         | Arabische Periodika (1798--1918)         | [Der Erste Weltkrieg im Spiegel hessischer Regionalzeitungen](https://hwk1.hebis.de) |
 | -------------           | -------------------------------  --      | ---------------------------------------------------------------------                |
