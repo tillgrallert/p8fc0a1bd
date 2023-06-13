@@ -10,9 +10,6 @@
   <title>Digitalisierung des Kulturerbes des globalen Südens</title>
   <style>
     html {
-      line-height: 1.5;
-      font-family: Georgia, serif;
-      font-size: 20px;
       color: #1a1a1a;
       background-color: #fdfdfd;
     }
@@ -31,13 +28,16 @@
     @media (max-width: 600px) {
       body {
         font-size: 0.9em;
-        padding: 1em;
+        padding: 12px;
       }
       h1 {
         font-size: 1.8em;
       }
     }
     @media print {
+      html {
+        background-color: white;
+      }
       body {
         background-color: transparent;
         color: black;
@@ -87,9 +87,10 @@
       color: #606060;
     }
     code {
-      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
       font-size: 85%;
       margin: 0;
+      hyphens: manual;
     }
     pre {
       margin: 1em 0;
@@ -161,11 +162,12 @@
       vertical-align: middle;
     }
     .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for citations */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
     }
-    .hanging div.csl-entry {
+    .hanging-indent div.csl-entry {
       margin-left:2em;
       text-indent:-2em;
     }
@@ -179,8 +181,7 @@
     }
     div.csl-indent {
       margin-left: 2em;
-    }
-  </style>
+    }  </style>
   <style type="text/css">
         /* general settings for the whole page */
        body,
@@ -664,7 +665,11 @@ der Wissensorganisation: Bibliothekskataloge und Findmittel</a></li>
 id="toc-digitalisierung">Digitalisierung</a>
 <ul>
 <li><a href="#zugang-zu-digitalisaten"
-id="toc-zugang-zu-digitalisaten">Zugang zu Digitalisaten</a></li>
+id="toc-zugang-zu-digitalisaten">Zugang zu Digitalisaten</a>
+<ul>
+<li><a href="#schattenbibliotheken"
+id="toc-schattenbibliotheken">Schattenbibliotheken</a></li>
+</ul></li>
 </ul></li>
 <li><a href="#bibliography" id="toc-bibliography">Literatur</a></li>
 </ul>
@@ -691,10 +696,11 @@ data-custom-style="StrongCustom"><strong>Folgen</strong></span> hat das
 für sie oder andere?” werden von uns häufig auf Diskussionen um
 Datenschutz und Copyright reduziert. Aber schon bei der
 Auseinandersetzung um den 3D-Scan der Büste der Nofretete wird deutlich,
-dass es im Kern um vielschichtige globale Machtverhältnisse, um
-Deutungshoheiten und um das Recht historisch marginalisierter Menschen
-zu sprechen und gehört zu werden, kurz um das Recht auf die eigene
-Geschichte und Geschichten geht.</p>
+dass es im Kern um vielschichtige globale Machtverhältnisse, um sich im
+digitalen fortschreibende (neo)koloniale Sammlungspolitiken und
+Wissensordnungen, um Deutungshoheiten und um das Recht historisch
+marginalisierter Menschen zu sprechen und gehört zu werden, kurz um das
+Recht auf die eigene Geschichte und Geschichten geht.</p>
 <p>Dieses Versprechen verschleiert zum anderen die Abhängigkeit der je
 konkreten Zugänglichkeit von sozio-technischen Infrastrukturen. Diese
 Infrastrukturen verweben Wissensordnungen, Zeichensysteme, juristische
@@ -713,14 +719,16 @@ Regeln für die Übersetzung von Sequenzen von Ladungen in Symbole und die
 Übersetzung dieser Symbole in für Menschen wahrnehmbare sensorische
 Reize z.B. als auf einem Trägermaterial geschriebener Text, gesprochener
 Laut oder ertastbares Relief. Scheinbar statischer Text auf einem
-Bildschirm wird mindestens 60 mal die Sekunde neu gezeichnet. Dafür
-benötigt es eine stabile Stromversorgung, eine Fülle an endlichen
-natürlichen Ressourcen und menschlicher Arbeitskraft zur Erzeugung und
-Verteilung des Stroms sowie zur Herstellung und Installation des
-Bildschirmes und der für den Betrieb notwendigen Hard- und Software,
-globale Lieferketten, sowie in Standards (und best practices) gegossene
-Wissensordnungen, damit all diese Bestandteile zueinander passen und
-miteinander interagieren können.</p>
+Bildschirm wird mindestens 60 mal die Sekunde neu gezeichnet– dass dies
+in horizontalen Zeilen von links nach rechts und von oben nach geschieht
+ist kein Zufall und wird im Verlauf dieses Textes eine Rolle spielen.
+Doch zunächst benötigt diese Darstellung eine stabile Stromversorgung,
+eine Fülle an endlichen natürlichen Ressourcen und menschlicher
+Arbeitskraft zur Erzeugung und Verteilung des Stroms sowie zur
+Herstellung und Installation des Bildschirmes und der für den Betrieb
+notwendigen Hard- und Software, globale Lieferketten, sowie in Standards
+(und best practices) gegossene Wissensordnungen, damit all diese
+Bestandteile zueinander passen und miteinander interagieren können.</p>
 <p>Überblick über den folgenden Text:</p>
 <ul>
 <li>Ich werde den Gegenstand vor dem Hintergrund vornehmlich des
@@ -728,7 +736,7 @@ vornehmlich arabischen, textuellen Kulturerbes der Gesellschaften des
 östlichen Mittelmeerraumes vorstellen.</li>
 <li>Hintergrund ist meine eigene Expertise, auf deren Basis ich nur
 wenig zu anderen Regionen des Globalen Südens sagen kann</li>
-<li>Das Konzept des Globalen Südens wird urz vorgestellt</li>
+<li>Das Konzept des Globalen Südens wird kurz vorgestellt</li>
 </ul>
 <h1
 id="das-fundament-für-den-zugang-strom-internet-und-alphabetisierung">Das
@@ -763,13 +771,12 @@ durchschnittlicher Laptop verbraucht aber bei vierstündigem täglichen
 Betrieb 84 kWh im Jahr. Fig. 1 illustriert die Situation mit dem Slogan
 “Du bist so schön, wie eine zusätzliche Stunde Strom”, der Mitte der
 2010er Jahre in arabischsprachigen Ländern weite Verbreitung fand.</p>
-<figure>
+<figure id="fig:strom-baghdad">
 <img src="assets/images/tweet_%20627223846244847616.png"
-id="fig:strom-baghdad"
-alt="Figure 1: Protestierender am 31. Juli 2015 in Baghdad. Auf dem Schild steht “Liebling, Du bist so schön, wie eine zusätzliche Stunde Strom”, Quelle: Twitter" />
-<figcaption aria-hidden="true">Figure 1: Protestierender am 31. Juli
-2015 in Baghdad. Auf dem Schild steht “Liebling, Du bist so schön, wie
-eine zusätzliche Stunde Strom”, Quelle: <a
+alt="Protestierender am 31. Juli 2015 in Baghdad. Auf dem Schild steht “Liebling, Du bist so schön, wie eine zusätzliche Stunde Strom”, Quelle: Twitter" />
+<figcaption>Figure 1: Protestierender am 31. Juli 2015 in Baghdad. Auf
+dem Schild steht “Liebling, Du bist so schön, wie eine zusätzliche
+Stunde Strom”, Quelle: <a
 href="https://twitter.com/aya_mansour_11_/status/627223846244847616">Twitter</a></figcaption>
 </figure>
 <p>Universeller Zugang zu Informations- und Kommunikationstechnologien
@@ -803,40 +810,62 @@ geknüpft. Technische Infrastrukturen hingegen basieren alle auf dem
 Paradigma der lateinischen Schrift und zu ihrer überwiegenden Mehrheit
 auf der englischen Sprache. Dass Bildschirme das Bild horizontale Zeile
 für horizontale Zeile aufbauen und zwar von links nach rechts und von
-oben nach unten ist eben kein Zufall. Inhalte und Interfaces sind durch
-die Sprachen des Globalen Nordens dominiert, die bereits die kolonialen
-Verwaltungssprachen des Globalen Südens waren. Für den globalen Zugang
-zu Digitalität ist dieser <span class="EmphasisCustom"
+oben nach unten ist eben kein Zufall. Inhalte, Interfaces und Standards
+sind durch die Sprachen des Globalen Nordens dominiert, die bereits die
+kolonialen Verwaltungssprachen des Globalen Südens waren. Für den
+globalen Zugang zu Digitalität ist dieser <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>linguistic
-imperialism</em></span> eine weitere Hürde <span class="citation"
-data-cites="Phillipson1997RealitiesAndMyths">(Phillipson 1997)</span>.
-Er erfordert von den Menschen des Globalen Südens neben den eigenen
+imperialism</em></span> eine weitere Dimension der Unzugänglichkeit. Er
+erfordert von den Menschen des Globalen Südens neben den eigenen
 Muttersprachen und ihren Schriftsystemen auch noch die lateinische
-Schrift und mindestens eine Hegemonialsprache zu erlernen (Siehe
-figs. 2-4 für Beispiele).</p>
-<div class="columns">
-<div class="column">
-<figure>
-<img src="assets/images/css.png" id="fig:css"
-alt="Figure 2: Basales CSS: alles ist mit Englischkenntnissen les- und verstehbar" />
-<figcaption aria-hidden="true">Figure 2: Basales CSS: alles ist mit
-Englischkenntnissen les- und verstehbar</figcaption>
+Schrift und mindestens eine Hegemonialsprache zu erlernen <span
+class="citation"
+data-cites="Phillipson1997RealitiesAndMyths Fiormonte2021Taxation Mahony2018Culturala MahonyGao2018Linguistic">(Phillipson
+1997; Fiormonte 2021; Mahony 2018; Mahony und Gao 2018)</span>.</p>
+<p>figs. 2, 3 illustrieren zwei Aspekte dieses <span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>linguistic
+imperialism</em></span>, die in den folgen Abschnitten diskutiert
+werden. Fig. 2 demonstriert, dass <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML</span> (<span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Hypertext
+Markup Language</em></span>) als die Grundlage aller Inhalte im <span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>World Wide
+Web</em></span> einerseits zwingend mit den 26 Buchstaben des englischen
+Alphabets geschrieben werden muss und anderseits mit Englischkenntnissen
+im Großen und Ganzen verständlich ist ohne die Dokumentation der
+Standards zu lesen. Für den Aufbau einer Webpräsenz ist also zumindest
+die lateinische Schrift unerlässlich <span class="citation"
+data-cites="HTMLLivingStandard2023">(Web Hypertext Application
+Technology Working Group 2023)</span>. Bis in die Mitte der 2000er Jahre
+hinein durften auch die Adressen von Webseiten (<span
+class="Abbreviation" data-custom-style="Abbreviation">URL</span>, <span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Unique
+Ressource Locator</em></span>) ausschließlich diese 26 lateinischen
+Buschstaben enthalten.</p>
+<p>fig. 3 zeigt die Weboberfläche eines Projektes zur Digitalisierung
+arabischer, persischer und osmanischer Periodika der Universität Bonn.
+Um diese nutzen zu können, müssen Nutzer_innen entweder Deutsch oder
+Englisch beherrschen um sich in den Steuerelementen und Rahmentexten der
+Webseite zurecht zu finden. Außerdem müssen sie Deutsch und eine für die
+deutsche Wissenschaft spezifische Umschrift des Arabischen in
+lateinische Buchstaben verstehen und eingeben können um über die
+Metadatensuche im Katalog die Digitalisate der hier dargestellten, ab
+1909 von <span class="Arabic" data-custom-style="Arabic">احمد عارف
+زين</span> in Sidon herausgegebenen Zeitschrift <span class="Arabic"
+data-custom-style="Arabic">العرفان</span> finden zu können.</p>
+<figure id="fig:html">
+<img src="assets/images/html_vscode.png"
+alt="HTML-Code für fig. 4 in Visual Code Studio. In der Standardeinstellung werden Zeichen außerhalb von ASCII visuell hervorgehoben" />
+<figcaption>Figure 2: <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML</span>-Code für fig. 4 in Visual
+Code Studio. In der Standardeinstellung werden Zeichen außerhalb von
+<span class="Abbreviation" data-custom-style="Abbreviation">ASCII</span>
+visuell hervorgehoben</figcaption>
 </figure>
-</div><div class="Column">
-<figure>
-<img src="assets/images/r-arabic.png" id="fig:r"
-alt="Figure 3: Rudimentäres R Script: Variabeln und Inhalte können Arabisch sein, führen aber zu Darstellungsproblemen" />
-<figcaption aria-hidden="true">Figure 3: Rudimentäres R Script:
-Variabeln und Inhalte können Arabisch sein, führen aber zu
-Darstellungsproblemen</figcaption>
-</figure>
-</div>
-</div>
-<figure>
+<figure id="fig:translatio-interface">
 <img src="assets/images/translatio_interface-languages_annotated.png"
-id="fig:translatio-interface"
-alt="Figure 4: Translatio Bonn: Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün)." />
-<figcaption aria-hidden="true">Figure 4: <a
+alt="Translatio Bonn: Englisches Interface (gelb), Arabisch in deutscher Umschrift (lila), Deutsch (grün)." />
+<figcaption>Figure 3: <a
 href="https://digitale-sammlungen.ulb.uni-bonn.de/ulbbnioa/periodical/titleinfo/3384757?lang=en">Translatio
 Bonn</a>: Englisches Interface (gelb), Arabisch in deutscher Umschrift
 (lila), Deutsch (grün).</figcaption>
@@ -870,9 +899,9 @@ verschiedene Formen haben kann. Diakritische Zeichen (<span
 class="Transcription" data-custom-style="Transcription">iʿjām</span>) in
 Form von Punkten über- oder unterhalb des <span class="Transcription"
 data-custom-style="Transcription">rasm</span> ermöglichen ansonsten
-gleiche Grundformen zu unterscheiden (figs. 5, 6). Je nach Schreibstil
+gleiche Grundformen zu unterscheiden (figs. 4, 5). Je nach Schreibstil
 (das Arabische kennt sechs kanonische Schreibstile) oder Typefont bilden
-mehrere aufeinanderfolgende Formen Ligaturen (fig. 5). Sowohl Ligaturen
+mehrere aufeinanderfolgende Formen Ligaturen (fig. 4). Sowohl Ligaturen
 als auch einzelne Buchstaben sitzen nicht notwendig auf einer einzigen
 Grundlinie und die Grundlinien können aus der Horizontalen geneigt sein.
 Trotz der Vielzahl der Sprachen aus verschiedenen Sprachfamilien, gibt
@@ -890,23 +919,21 @@ allem am Ende des Wortes konsequent weggelassen.<a href="#fn1"
 class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></p>
 <div class="columns">
 <div class="column">
-<figure>
-<img src="assets/images/arabic-ligatures.png" id="fig:zakham-ar"
-alt="Figure 5: Anfang von Zakham (1907). Einige Ligaturen sind beispielhaft hervorgehoben." />
-<figcaption aria-hidden="true">Figure 5: Anfang von <span
-class="citation" data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham
-(1907)</span>. Einige Ligaturen sind beispielhaft
-hervorgehoben.</figcaption>
+<figure id="fig:zakham-ar">
+<img src="assets/images/arabic-ligatures.png"
+alt="Anfang von Zakham (1907). Einige Ligaturen sind beispielhaft hervorgehoben." />
+<figcaption>Figure 4: Anfang von <span class="citation"
+data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham (1907)</span>.
+Einige Ligaturen sind beispielhaft hervorgehoben.</figcaption>
 </figure>
 </div><div class="column">
-<figure>
-<img src="assets/images/arabic_rasm.png" id="fig:zakham-ar-rasm"
-alt="Figure 6: Pseudo-rasm des Textes in fig. 5. Mit Pohl ([2020] 2022) erzeugt." />
-<figcaption aria-hidden="true">Figure 6: Pseudo-<span
-class="Transcription" data-custom-style="Transcription">rasm</span> des
-Textes in fig. 5. Mit <span class="citation"
-data-cites="Pohl2022Rasmifize">Pohl ([2020] 2022)</span>
-erzeugt.</figcaption>
+<figure id="fig:zakham-ar-rasm">
+<img src="assets/images/arabic_rasm.png"
+alt="Pseudo-rasm des Textes in fig. 4. Mit Pohl ([2020] 2022) erzeugt." />
+<figcaption>Figure 5: Pseudo-<span class="Transcription"
+data-custom-style="Transcription">rasm</span> des Textes in fig. 4. Mit
+<span class="citation" data-cites="Pohl2022Rasmifize">Pohl ([2020]
+2022)</span> erzeugt.</figcaption>
 </figure>
 </div>
 </div>
@@ -920,52 +947,84 @@ Zeichensätzen und anderen Schreibrichtungen als das Lateinische wurde
 hier weder als ausreichend wichtig noch als genügend profitabel
 betrachtet, um sie von Anfang an in die Designprozesse um Hardware und
 Standards mit einzubeziehen <span class="citation"
-data-cites="Nemeth2018ArabicHotMetal Singh+2018+TheMachineIn Mullaney2017ChineseTypewriter">(Mullaney
-2017; Nemeth 2018; Singh 2018)</span>. Dazu kommt, dass sich in der
+data-cites="Nemeth2018ArabicHotMetal Singh+2018+TheMachineIn Mullaney2017ChineseTypewriter">(Nemeth
+2018; Singh 2018; Mullaney 2017)</span>. Dazu kommt, dass sich in der
 Folge der Nationsbildungsprozesse des langen neunzehnten Jahrhunderts
-eine konzeptuell unzureichende Unterscheidung von Sprachen, Schriften
-und Eingabesystemen auch für Computer durchgesetzt hat.</p>
+mit ihrer Betonung von Nationalsprachen eine konzeptuell unzureichende
+Unterscheidung von Sprachen, Schriften und Eingabesystemen auch für
+Computer durchgesetzt hat.</p>
 <p>Damit Computer Buchstaben aufzeichnen können, müssen diese mit Hilfe
 von Zeichkodierungen in binäre elektrische Ladungen übersetzt werden.
-Der vielleicht berühmteste und folgenreichste Standard für die
-elektronische Zeichenkodierung ist der <span class="EmphasisCustom"
+Damit diese Informationen ausgetauscht werden können, bedarf es
+Standards. Der vielleicht berühmteste und folgenreichste Standard für
+die elektronische Zeichenkodierung ist der <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>American Standard Code for
 Information Interchange</em></span> (<span class="Abbreviation"
-data-custom-style="Abbreviation">ASCII</span>) mit 95 druckbaren
-Zeichen: den Ziffern 0-9, den 26 Buchstaben des englischen Alphabets in
-Groß- und Kleinschreibung und 33 Satzzeichen und Symbolen. <span
-class="Abbreviation" data-custom-style="Abbreviation">ASCII</span> und
-herstellerspezifische Zeichenkodierungen sind von <a
-href="https://www.unicode.org">Unicode</a> als dominanter Standard für
-die Zeichenkodierung abgelöst worden, aber weiterhin ein häufiger
-kleinster gemeinsamer Nenner (der Anfang von 8-Bit Unicode, <span
-class="Abbreviation" data-custom-style="Abbreviation">UTF-8</span>, ist
-für die 128 <span class="Abbreviation"
-data-custom-style="Abbreviation">ASCII</span>-Zeichen reserviert).</p>
-<p>Unicode hat Millionen von Codepoints und den von Herstellern
-unabhängigen Austausch und Interoperabilität von Texten auch in einer
-Vielzahl nicht-lateinischer Schriften, darunter seit Version 1.0.0
-Arabisch, ermöglicht.<a href="#fn2" class="footnote-ref" id="fnref2"
+data-custom-style="Abbreviation">ASCII</span>) in der Version von 1967
+mit der <span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span> zu einem <span
+class="Abbreviation" data-custom-style="Abbreviation">ISO</span>
+Standard wurde (<span class="Abbreviation"
+data-custom-style="Abbreviation">ISO 646</span>). Dieser umfasst 95
+druckbaren Zeichen: die Ziffern 0-9, die 26 Buchstaben des englischen
+Alphabets in Groß- und Kleinschreibung und 33 Satzzeichen und Symbolen.
+<span class="Abbreviation" data-custom-style="Abbreviation">ASCII</span>
+ist eigentlich nur für das Englische geeignet – schon Deutsch oder
+Französisch können nicht direkt abgebildet werden – und neben allen
+anderen, herstellerspezifischen Zeichenkodierungen von Unicode mit einer
+Million Codepoints als dominanter Standard für die Zeichenkodierung seit
+den 2000ern abgelöst worden <span class="citation"
+data-cites="Wittern2013Character">(Wittern 2013)</span>. Aber <span
+class="Abbreviation" data-custom-style="Abbreviation">ASCII</span> ist
+weiterhin ein häufiger kleinster gemeinsamer Nenner. So ist, zum
+Beispiel, der Anfang von 8-Bit Unicode, <span class="Abbreviation"
+data-custom-style="Abbreviation">UTF-8</span>, für die 128 <span
+class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span>-Zeichen reserviert und
+auch die aktuellste Fassung des <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML</span> Standards beschränkt Tag-
+und Attributnamen auf die 26 Buchstaben des englischen Alphabets in
+<span class="Abbreviation"
+data-custom-style="Abbreviation">ASCII</span>-Kodierung <span
+class="citation" data-cites="HTMLLivingStandard2023">(Web Hypertext
+Application Technology Working Group 2023, Abschn. 13.1.2)</span>. Das
+heisst aber auch, dass es für englische Texte und ihre Auszeichnung
+keinen Unterschied zwischen ASCII und Unicode gibt, womit die Einführung
+von Unicode keine Änderungen und Umgewöhnungen erforderte.</p>
+<p>Unicode hat den von Herstellern unabhängigen Austausch und
+Interoperabilität von Texten auch in einer Vielzahl nicht-lateinischer
+Schriften, darunter seit Version 1.0.0 Arabisch, ermöglicht.<a
+href="#fn2" class="footnote-ref" id="fnref2"
 role="doc-noteref"><sup>2</sup></a> Allerdings sind auch bei Unicode die
 zeitgenössischen Schriften des Globalen Nordens der Ausgangspunkt
-gewesen. Viele historische und zeitgenössische Schriften sind weiterhin
-nicht in Unicode erfasst<a href="#fn3" class="footnote-ref" id="fnref3"
+gewesen. Viele historische Schriften und zeitgenössische Schriften des
+Globalen Südens sind weiterhin nicht in Unicode (momentan in Version 15)
+erfasst<a href="#fn3" class="footnote-ref" id="fnref3"
 role="doc-noteref"><sup>3</sup></a>, während eine vollkommen neue
 Schrift digitaler Medialität, nämlich Emojis die treibende Kraft hinter
 der heute nahezu universalen Unterstützung von Unicode durch
 Betriebssysteme war.</p>
 <p>Gleichzeitig ist Unicode ein, von einem in Kalifornien inkorporierten
 Herstellerkonsortium von Adobe, Airbnb, Amazon, Apple, Yat, Google,
-ETCO, Meta, Microsoft, Netflix, SAP und Salesforce, gepflegter Standard
-und hat die lateinische Schriftgrammatik und das Paradigma des Drucks
-mit beweglichen Lettern universalisiert <span class="citation"
+ETCO, Meta, Microsoft, Netflix, SAP und Salesforce, gepflegter und in
+Englisch verfasster Standard und hat die lateinische Schriftgrammatik
+und das Paradigma des Drucks mit beweglichen Lettern universalisiert
+<span class="citation"
 data-cites="FiormonteEtAl2015PoliticsOfCode">(c.f. Fiormonte u. a. 2015,
 3–4)</span>. Wenig überraschend unterstützt Unicode nicht das arabische
-System der Grundformen. Außerdem sind Zeichencodes in einer verwirrenden
-Kombination von Schriften und (National)Sprachen organisiert, die zu
-mehreren Codepoints für den gleichen Glyph führt (also quasi ein
-türkisches und ein deutsches “ü” als verschiedene Buchstaben).<a
-href="#fn4" class="footnote-ref" id="fnref4"
+System der Grundformen. Obwohl zwei der Prinzipien des Unicode Standards
+lauten, dass abstrakte Zeichen und nicht ihre graphische Form (<span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>characters, not
+glyphs</em></span>) erfasst werden und dass es innerhalb einer Schrift
+keine Duplikate geben solle (<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>unification</em></span>) <span
+class="citation" data-cites="Unicode15">(The Unicode Consortium 2022,
+15–18, 21–22)</span>, kommt es vor allem für nicht-westliche
+Zeichensysteme zu einer verwirrenden Kombination von Schriften und
+(National)Sprachen, die zu mehreren Codepoints für das gleiche Zeichen
+führt (also quasi ein türkisches und ein deutsches “ü” als verschiedene
+Buchstaben).<a href="#fn4" class="footnote-ref" id="fnref4"
 role="doc-noteref"><sup>4</sup></a> In der Folge muss sich jede_r, die
 arabische Schrift in einen Computer eingibt, sei es für eine Suche nach
 einer Quelle oder die Arbeit an einer digitalen Edition, für eine der
@@ -998,7 +1057,17 @@ Entwickler_innen zu einer unbekannten Menge von <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>false
 negative</em></span>s <span class="citation"
 data-cites="Milo.Martinez+2019+ANewStrategy">(Milo und Martínez
-2019)</span>.</p>
+2019)</span>. Ein weiteres Beispiel sind die indo-arabischen Ziffern
+0-9. Obwohl diese funktional gleich sind, beinhaltet Unicode mehrere
+volle Sätze von Codepoints für <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>indische</em></span>, <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>arabische</em></span> und <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>europäische</em></span> Ziffern
+und bis vor wenigen Jahren hat die meiste Software ausschließlich
+letztere als Ziffern erkannt und verarbeitet, während erstere und ihre
+Subvarianten als Buchstaben behandelt wurden.</p>
 <p>Doch Zeichenkodierung ist für die Mensch-Maschine Interaktion nicht
 ausreichend, die Codepoints müssen auch korrekt auf einer
 zweidimensionalen Fläche angezeigt werden. Damit sind wir bei einer
@@ -1006,19 +1075,50 @@ weiteren Schicht der Unzugänglichkeit für das textuelle Erbe des
 Globalen Südens. Denn die korrekte Darstellung arabischer Schriften von
 rechts nach links, rechtsbündig und mit verbundenen Buchstaben ist
 weiterhin unzuverlässig und hängt von Betriebssystem und
-Software-Anwendungen ab. Das gilt auch für das Internet. <span
+Software-Anwendungen ab. Beispiele für dieses Problem haben alle schon
+einmal gesehen, die in Deutschland im öffentlichen Personennahverkehr
+unterwegs waren und dort mit den wohlmeinenden Versuchen Werbetreibender
+konfrontiert waren: Arabische Schrift unverbunden und von links nach
+rechts (Der Umstand, dass solche Plakate gedruckt und aufgehängt werden,
+deutet darauf hin, dass keine_r der Verantwortlichen ein Lektorat in
+allen relevanten Sprachen für nötig erachtet).</p>
+<div class="columns">
+<div class="column">
+<figure id="fig:arabic-fail-covid">
+<img src="assets/images/ErLBbWwVgAErjHy.jpg"
+alt="“Arabische” Werbung Abstand zu halten um sich und andere vor Covid-19 zu schützen, Washentaw County, Health Department. Quelle: Twitter" />
+<figcaption>Figure 6: “Arabische” Werbung Abstand zu halten um sich und
+andere vor Covid-19 zu schützen, Washentaw County, Health Department.
+Quelle: <a
+href="https://twitter.com/2awbi2atiye/status/1347351918268489728">Twitter</a></figcaption>
+</figure>
+</div><div class="column">
+<figure id="fig:arabic-fail-covid-corrected">
+<img src="assets/images/ErO3qtUVkAEUAQ_.jpg"
+alt="Korrigierte Fassung nachdem Twitternutzer_innen auf die Fehler hinwiesen. Quelle: Twitter" />
+<figcaption>Figure 7: Korrigierte Fassung nachdem Twitternutzer_innen
+auf die Fehler hinwiesen. Quelle: <a
+href="https://twitter.com/wcpublichealth/status/1347622725469130752">Twitter</a></figcaption>
+</figure>
+</div>
+</div>
+<p>Das gilt auch für das <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>World Wide Web</em></span>. <span
 class="Abbreviation" data-custom-style="Abbreviation">HTML5</span>
 (<span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Hypertext Markup
 Language</em></span>) ist der aktuelle Standard für die Strukturierung
-und Präsentation von Inhalten im World Wide Web. <span
-class="Abbreviation" data-custom-style="Abbreviation">HTML5</span> wird
-als ein “lebender Standard” von der <span class="EmphasisCustom"
+und Präsentation von Inhalten im World Wide Web <span class="citation"
+data-cites="HTMLLivingStandard2023">(Web Hypertext Application
+Technology Working Group 2023)</span>. <span class="Abbreviation"
+data-custom-style="Abbreviation">HTML5</span> wird als ein “lebender
+Standard” von der <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Web Hypertext Application
 Technology Working Group</em></span> (<span class="Abbreviation"
 data-custom-style="Abbreviation">WHATWG</span>) unterhalten, einem
 weiteren Industriekonsortium, dessen Mitglieder die führenden Hersteller
-von Webbrowsern, darunter Apple, Google, Microsoft und Mozilla, sind.
+von Webbrowsern, darunter Apple, Google, Microsoft und Mozilla, sind
+und, bis auf Mozilla, bereits ja auch Teil des Unicode-Konsortiums sind.
 <span class="Abbreviation" data-custom-style="Abbreviation">HTML5</span>
 hat, inspiriert durch den älteren <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Extensible Markup
@@ -1029,8 +1129,11 @@ von Inhalten explizit und eindeutig in Form von <span
 class="Abbreviation" data-custom-style="Abbreviation">BCP 47</span>
 Sprachtags, wie z.B. “de” für deutsch oder “ar-Arab-EG” für arabisch in
 arabischer Schrift mit den für Ägypten üblichen Präferenzen, festlegen
-lassen <span class="citation" data-cites="BCP47">(Network Working Group
-2009)</span>. Die Darstellung von Inhalten in <span class="Abbreviation"
+<span class="citation"
+data-cites="BCP47 Arnold2022MultilingualResearchProjects">(Network
+Working Group 2009; für eine Kritik dieses Standards die Auszeichnung
+von Transliterationen ostasiatischer Schriften siehe Arnold
+2022)</span>. Die Darstellung von Inhalten in <span class="Abbreviation"
 data-custom-style="Abbreviation">HTML5</span> wird mit <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Cascading
 Style Sheets</em></span> (<span class="Abbreviation"
@@ -1045,20 +1148,21 @@ data-custom-style="Abbreviation">CSS</span>. Auch hier setzen
 lateinische Schriften die Norm. Selbst wenn eine Webseite den Inhalt als
 arabisch deklariert, wird dieser fälschlich als links-bündig angezeigt.
 Die notwendige Korrektur erfordert nur eine (sehr) kurze Zeile Code
-(<code>*[lang^="ar"] {direction:rtl;}</code>) – und zwar von jede_r, die
+(<code>*[lang="ar"] {direction:rtl;}</code>) – und zwar von jede_r, die
 Texte in rechts-nach-links Schriften online publizieren will. Auch ist
 das Problem nicht ausschließlich ästhetischer Natur. Satzzeichen am Ende
 der Zeile rutschen ohne diese Korrektur an den Anfang (Siehe die letzte
-Zeile in fig. 7).</p>
-<figure>
+Zeile in fig. 8).</p>
+<figure id="fig:zakham-ar-failure">
 <img src="assets/images/arabic_failure-browser.png"
-id="fig:zakham-ar-failure"
-alt="Figure 7: Fehlerhafte Darstellung von Zakham (1907) in modernen Webbrowsern mit dem mitgelieferten CSS." />
-<figcaption aria-hidden="true">Figure 7: Fehlerhafte Darstellung von
-<span class="citation"
+alt="Fehlerhafte Darstellung von Zakham (1907) in modernen Webbrowsern mit dem mitgelieferten CSS. Die Testdatei steht unter https://doi.org/10.5281/zenodo.7781543 zur Verfügung." />
+<figcaption>Figure 8: Fehlerhafte Darstellung von <span class="citation"
 data-cites="oclc_4770057679-i_13-div_8.d1e1249">Zakham (1907)</span> in
 modernen Webbrowsern mit dem mitgelieferten <span class="Abbreviation"
-data-custom-style="Abbreviation">CSS</span>.</figcaption>
+data-custom-style="Abbreviation">CSS</span>. Die Testdatei steht unter
+<a href="https://doi.org/10.5281/zenodo.7781543"
+class="uri">https://doi.org/10.5281/zenodo.7781543</a> zur
+Verfügung.</figcaption>
 </figure>
 <p>Die eingeschränkte Unterstützung ist nicht auf den Konsum von
 Inhalten beschränkt. Digitale wissenschaftliche Editionen (<span
@@ -1074,18 +1178,19 @@ dabei den Richtlinien der <a href="https://www.tei-c.org"><span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Text
 Encoding Initiative</em></span> (<span class="Abbreviation"
 data-custom-style="Abbreviation">TEI</span>)</a> <span class="citation"
-data-cites="TEIP5Guidelines400 DfgPraxisregelnDigitalisierung+2016 AltenhonerEtAl2023DFGPraxisregeln">(Altenhöner
-u. a. 2023; <em>DFG-Praxisregeln <span>„Digitalisierung“</span></em>
-2016; TEI Consortium 2020)</span>. Dabei können die Auszeichnungen
-schnell so umfangreich werden, dass es für die leichtere Handhabung
-durch menschliche Bearbeiter_innen besser ist, diese zu verbergen und
-die Ansicht eines Dokuments mit <span class="Abbreviation"
-data-custom-style="Abbreviation">CSS</span> zu gestalten. Allerdings
-verhält sich Software für die Bearbeitung von digitalen Editionen nicht
-anders als Webbrowser. Zwar haben die Entwickler des populären oXygen
-<span class="Abbreviation" data-custom-style="Abbreviation">XML</span>
-Editors die notwendigen Zeilen auf unseren Vorschlag hin 2015 zu ihrem
-<span class="Abbreviation" data-custom-style="Abbreviation">CSS</span>
+data-cites="TEIP5Guidelines400 DfgPraxisregelnDigitalisierung+2016 AltenhonerEtAl2023DFGPraxisregeln">(TEI
+Consortium 2020; <em>DFG-Praxisregeln
+<span>„Digitalisierung“</span></em> 2016; Altenhöner u. a. 2023)</span>.
+Dabei können die Auszeichnungen schnell so umfangreich werden, dass es
+für die leichtere Handhabung durch menschliche Bearbeiter_innen besser
+ist, diese zu verbergen und die Ansicht eines Dokuments mit <span
+class="Abbreviation" data-custom-style="Abbreviation">CSS</span> zu
+gestalten. Allerdings verhält sich Software für die Bearbeitung von
+digitalen Editionen nicht anders als Webbrowser. Zwar haben die
+Entwickler des populären oXygen <span class="Abbreviation"
+data-custom-style="Abbreviation">XML</span> Editors die notwendigen
+Zeilen auf unseren Vorschlag hin 2015 zu ihrem <span
+class="Abbreviation" data-custom-style="Abbreviation">CSS</span>
 hinzugefügt, aber diese Unterstützung ist auf das Arabische und einige
 wenige andere rechtsläufige Schriften sowie <span class="Abbreviation"
 data-custom-style="Abbreviation">TEI/XML</span> beschränkt.</p>
@@ -1120,15 +1225,14 @@ data-custom-style="EmphasisCustom"><em>bidi-Algorithmus</em></span> (von
 data-custom-style="EmphasisCustom"><em>bidirectional</em></span>)
 links-nach-rechts als die Basisrichtung fest, wodurch z.B. die oben
 erwähnten Satzzeichen an das falsche Ende von rechtsläufigen
-Zeichenketten wandern (fig. 8, Zeilen 37, 38) <span class="citation"
-data-cites="W3CUnicodeBiDiBasics ICUDocumentationBiDi">(<span>„BiDi
-Algorithm“</span> 2021; Ishida 2016)</span>.</p>
-<figure>
+Zeichenketten wandern (fig. 9, Zeilen 37, 38) <span class="citation"
+data-cites="W3CUnicodeBiDiBasics ICUDocumentationBiDi">(Ishida 2016;
+<span>„BiDi Algorithm“</span> 2021)</span>.</p>
+<figure id="fig:bidi-xml-oxygen">
 <img
 src="/Users/Shared/BachUni/publications/github/pae326271/assets/images/xml_zuhur-v_2-i_4_annotated.png"
-id="fig:bidi-xml-oxygen"
-alt="Figure 8: Example of bidirectional XML of (Dammūs 1911). The colored arrows indicate reading direction. The reading order is indicated by the numbers below the arrows" />
-<figcaption aria-hidden="true">Figure 8: Example of bidirectional <span
+alt="Example of bidirectional XML of (Dammūs 1911). The colored arrows indicate reading direction. The reading order is indicated by the numbers below the arrows" />
+<figcaption>Figure 9: Example of bidirectional <span
 class="Abbreviation" data-custom-style="Abbreviation">XML</span> of
 <span class="citation"
 data-cites="oclc_1034545644-i_15-div_1.d2e634">(Dammūs 1911)</span>. The
@@ -1155,7 +1259,7 @@ die klassische Lösung von Wissenschaft ebenso wie Kolonialverwaltungen
 für das Problem nichtlateinische Schriften mit den vorhandenen
 technischen Apparaten wie Schreib- oder Satzmaschinen für lateinische
 Schrift erfassen zu müssen, die Umschrift in lateinische Buchstaben
-(fig. 9).<a href="#fn5" class="footnote-ref" id="fnref5"
+(fig. 10).<a href="#fn5" class="footnote-ref" id="fnref5"
 role="doc-noteref"><sup>5</sup></a> Hierbei wird zwischen der <span
 class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Transkription</em></span>
@@ -1206,8 +1310,8 @@ class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Endangered
 Archives Programme</em></span> (<span class="Abbreviation"
 data-custom-style="Abbreviation">EAP</span>) der British Library den
 Osmanischen Titel <span class="Arabic" data-custom-style="Arabic">يكي
-تصوير افكر</span> fälschlicherweise als <span class="Arabic"
-data-custom-style="Arabic">تصوير افكر</span> gelesen, angenommen, dass
+تصوير افكار</span> fälschlicherweise als <span class="Arabic"
+data-custom-style="Arabic">تصوير افكار</span> gelesen, angenommen, dass
 es sich hierbei um Arabisch handelt und dementsprechend “korrekt” als
 <span class="Transcription" data-custom-style="Transcription">Taṣwīr
 Afkār</span> transkribiert, während die richtige <span
@@ -1232,8 +1336,8 @@ data-custom-style="EmphasisCustom"><em>Buckwalter</em></span>
 Transliteration, da sie mit reinem <span class="Abbreviation"
 data-custom-style="Abbreviation">ASCII</span> auskommt <span
 class="citation"
-data-cites="Habash+2010+IntroductionToArabic Buckwalter2004ArabicMorphological">(Buckwalter
-2004; Habash 2010, 20, 25–26)</span>. Wie aus der Umschrift “<span
+data-cites="Habash+2010+IntroductionToArabic Buckwalter2004ArabicMorphological">(Habash
+2010, 20, 25–26; Buckwalter 2004)</span>. Wie aus der Umschrift “<span
 class="Transcription" data-custom-style="Transcription">mrMp
 Alcrq</span>” für die obige Zeitschrift <span class="Transcription"
 data-custom-style="Transcription">Mirʾāt aš-Šarq</span> deutlich wird,
@@ -1249,12 +1353,12 @@ class="Transcription" data-custom-style="Transcription">mir’_a=t
 al-^sarq</span>” transkribieren <span class="citation"
 data-cites="Romanov2021ArabicBetaCode">(vgl. Romanov [2015]
 2021)</span>.</p>
-<figure>
-<img src="assets/images/arabic_ijmes.png" id="fig:zakham-ijmes"
-alt="Figure 9: Transliteration des Textes in fig. 5 nach dem IJMES System" />
-<figcaption aria-hidden="true">Figure 9: Transliteration des Textes in
-fig. 5 nach dem <span class="Abbreviation"
-data-custom-style="Abbreviation">IJMES</span> System</figcaption>
+<figure id="fig:zakham-ijmes">
+<img src="assets/images/arabic_ijmes.png"
+alt="Transliteration des Textes in fig. 4 nach dem IJMES System" />
+<figcaption>Figure 10: Transliteration des Textes in fig. 4 nach dem
+<span class="Abbreviation" data-custom-style="Abbreviation">IJMES</span>
+System</figcaption>
 </figure>
 <h2
 id="systeme-der-wissensorganisation-bibliothekskataloge-und-findmittel">Systeme
@@ -1339,7 +1443,7 @@ data-custom-style="Transcription">al-Janna</span>”, aber auch nicht mit
 “<span class="Transcription"
 data-custom-style="Transcription">al-Ǧanna</span>”, sondern nur mit
 “<span class="Transcription"
-data-custom-style="Transcription">Ǧanna</span>” finden (figs. 10-12).
+data-custom-style="Transcription">Ǧanna</span>” finden (figs. 11-13).
 <span class="Transcription" data-custom-style="Transcription">Mirʾāt
 aš-Šarq</span> wird mit “<span class="Transcription"
 data-custom-style="Transcription">Mirʾat as-sarq</span>” gefunden, aber
@@ -1417,43 +1521,59 @@ data-custom-style="Transcription">Mirat Sharq</span>” gesucht
 werden.</p>
 <div class="columns">
 <div class="column">
-<figure>
-<img src="assets/images/zdb_janna-ar.png" id="fig:zdb-ar"
-alt="Figure 10: Suche in der ZDB nach der Zeitschrift al-Ǧanna in arabischer Schrift" />
-<figcaption aria-hidden="true">Figure 10: Suche in der <span
-class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> nach
-der Zeitschrift <span class="Transcription"
-data-custom-style="Transcription">al-Ǧanna</span> in arabischer
-Schrift</figcaption>
+<figure id="fig:zdb-ar">
+<img src="assets/images/zdb_janna-ar.png"
+alt="Suche in der ZDB nach der Zeitschrift al-Ǧanna in arabischer Schrift" />
+<figcaption>Figure 11: Suche in der <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> nach der Zeitschrift <span
+class="Transcription" data-custom-style="Transcription">al-Ǧanna</span>
+in arabischer Schrift</figcaption>
 </figure>
 </div><div class="column">
-<figure>
-<img src="assets/images/zdb_janna-ar-Latn.png" id="fig:zdb-dmg"
-alt="Figure 11: Suche in der ZDB nach der Zeitschrift al-Ǧanna in DMG Umschrift (al-Ǧanna)" />
-<figcaption aria-hidden="true">Figure 11: Suche in der <span
-class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> nach
-der Zeitschrift <span class="Transcription"
-data-custom-style="Transcription">al-Ǧanna</span> in <span
-class="Abbreviation" data-custom-style="Abbreviation">DMG</span>
-Umschrift (<span class="Transcription"
+<figure id="fig:zdb-dmg">
+<img src="assets/images/zdb_janna-ar-Latn.png"
+alt="Suche in der ZDB nach der Zeitschrift al-Ǧanna in DMG Umschrift (al-Ǧanna)" />
+<figcaption>Figure 12: Suche in der <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> nach der Zeitschrift <span
+class="Transcription" data-custom-style="Transcription">al-Ǧanna</span>
+in <span class="Abbreviation"
+data-custom-style="Abbreviation">DMG</span> Umschrift (<span
+class="Transcription"
 data-custom-style="Transcription">al-Ǧanna</span>)</figcaption>
 </figure>
 </div><div class="column">
-<figure>
+<figure id="fig:zdb-dmg-defective">
 <img src="assets/images/zdb_janna-ar-Latn-no-al.png"
-id="fig:zdb-dmg-defective"
-alt="Figure 12: Suche in der ZDB nach der Zeitschrift al-Ǧanna in DMG Umschrift ohne diakritische Zeichen und den bestimmten Artikel (Ganna)" />
-<figcaption aria-hidden="true">Figure 12: Suche in der <span
-class="Abbreviation" data-custom-style="Abbreviation">ZDB</span> nach
-der Zeitschrift <span class="Transcription"
-data-custom-style="Transcription">al-Ǧanna</span> in <span
-class="Abbreviation" data-custom-style="Abbreviation">DMG</span>
-Umschrift ohne diakritische Zeichen und den bestimmten Artikel (<span
-class="Transcription"
+alt="Suche in der ZDB nach der Zeitschrift al-Ǧanna in DMG Umschrift ohne diakritische Zeichen und den bestimmten Artikel (Ganna)" />
+<figcaption>Figure 13: Suche in der <span class="Abbreviation"
+data-custom-style="Abbreviation">ZDB</span> nach der Zeitschrift <span
+class="Transcription" data-custom-style="Transcription">al-Ǧanna</span>
+in <span class="Abbreviation"
+data-custom-style="Abbreviation">DMG</span> Umschrift ohne diakritische
+Zeichen und den bestimmten Artikel (<span class="Transcription"
 data-custom-style="Transcription">Ganna</span>)</figcaption>
 </figure>
 </div>
 </div>
+<figure id="fig:map-periodicals-status">
+<img
+src="assets/images/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png"
+alt="Verteilung von in Südwestasien und Nordafrika (SWANA) zwischen 1789 und 1929 publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme korrespondiert mit der Anzahl der publizierten Titel. Die Größe der Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von digitalisierten Titeln an" />
+<figcaption>Figure 14: Verteilung von in Südwestasien und Nordafrika
+(<span class="Abbreviation"
+data-custom-style="Abbreviation">SWANA</span>) zwischen 1789 und 1929
+publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme
+korrespondiert mit der Anzahl der publizierten Titel. Die Größe der
+Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von
+digitalisierten Titeln an</figcaption>
+</figure>
+<figure id="fig:map-periodicals-holdings">
+<img
+src="assets/images/map-data-set-periodical-holdings-global-north-na_mapped.png"
+alt="Verbindung von Publikations- und Sammlungsorten" />
+<figcaption>Figure 15: Verbindung von Publikations- und
+Sammlungsorten</figcaption>
+</figure>
 <h1 id="digitalisierung">Digitalisierung</h1>
 <p>Nur Material, das gesammelt, katalogisiert und dann auch von
 Kurator_innen gefunden wird, kann überhaupt digitalisiert, d.h. als Bild
@@ -1462,103 +1582,43 @@ arabische Periodika stellt sich dieser Zusammenhang wir folgt dar. Nach
 zehnjähriger Forschung wissen wir von 3550 Titeln, die weltweit vor 1930
 publiziert worden sind. Von diesen haben wir 775 oder 21,83% in
 Sammlungen lokalisieren können. Von diesen 775 sind wiederum 233 oder
-6,56% aller Titel digitalisiert worden (fig. 13) <span class="citation"
-data-cites="Mestyan.etal+2020+JaraidAchronology Mestyan.Grallert+2012+ProjectJaraid Mestyan.Grallert+2020+JaraIdChronology">(Mestyan
-und Grallert 2012–2015, 2020; Mestyan, Grallert, und et al.
-2020)</span>. Eine Digitalisierungsquote von einem knappen Drittel der
-auffindbaren Titel erscheint zunächst überraschend hoch. Allerdings
-können wir momentan weder den Umfang der Sammlungen noch der
-Digitalisierung einzelner Publikationen beziffern. Es kann sein, dass
-nur eine von hunderten Ausgaben in einer Sammlung existiert oder
-digitalisiert wurde. Außerdem sollten für die Bewertung der
-Digitalisierungsrate im Vergleich zwischen Globalem Süden und Globalem
-Norden die absoluten Zahlen nicht aus dem Blick verloren werden. tbl. 1
-demonstriert das Missverhältnis beispielhaft.</p>
+6,56% aller Titel digitalisiert worden (fig. 14) <span class="citation"
+data-cites="Mestyan.etal+2020+JaraidAchronology Mestyan.Grallert+2012+ProjectJaraid Mestyan.Grallert+2020+JaraIdChronology">(Mestyan,
+Grallert, und et al. 2020; Mestyan und Grallert 2012–2015, 2020)</span>.
+Eine Digitalisierungsquote von einem knappen Drittel der auffindbaren
+Titel erscheint zunächst überraschend hoch. Allerdings können wir
+momentan weder den Umfang der Sammlungen noch der Digitalisierung
+einzelner Publikationen beziffern. Es kann sein, dass nur eine von
+hunderten Ausgaben in einer Sammlung existiert oder digitalisiert wurde.
+Außerdem sollten für die Bewertung der Digitalisierungsrate im Vergleich
+zwischen Globalem Süden und Globalem Norden die absoluten Zahlen nicht
+aus dem Blick verloren werden. [Tbl:digitisation] demonstriert das
+Missverhältnis beispielhaft.</p>
+<div class="line-block">                        | Arabische Periodika
+(1798–1918) | <a href="https://hwk1.hebis.de">Der Erste Weltkrieg im
+Spiegel hessischer Regionalzeitungen</a> |<br />
+————- | ——————————- – | ——————————————————————— |<br />
+Gemeinschaft | c. 420 Mio. Arabischsprechende | c. 6.2 Mio.
+Einwohner_innen |<br />
+Periodika | 2054 Zeitungen und Zeitschriften | 125 Zeitungen |<br />
+davon digitalisiert | 156 Titel | 125 Titel mit mehr als 1.5 Mio. Seiten
+|<br />
+in Prozent | 7,59 | 100 |<br />
+Art der Digitalisierung | fast ausschließlich Faksimiles | Faksimiles
+und Volltext |<br />
+Zugang | Bezahlschranken, Geo-fencing | Open Access |<br />
+Interface | vornehmlich ausschließlich Fremdsprachen | Quellen- und
+Fremdsprachen |</div>
+<p>Table: Beispielhafter Vergleich digitalisierter Quellen zwischen dem
+Global Süden und Norden {#tbl:digitisation}</p>
 <p>Auffallend ist weiterhin, dass sich ein großer Teil der uns bekannten
 überlebenden Artefakte in den Kulturerbeinstitutionen des Globalen
-Nordens befindet und auch dort digitalisiert wurde (fig. 14). Dabei
+Nordens befindet und auch dort digitalisiert wurde (fig. 15). Dabei
 wurden 66 oder 28,33% aller digitalisierter Titel von mehreren
 Institutionen digitalisiert; 21 davon sogar von drei oder mehr. Bei den
 hohen Kosten und geringen für die Digitalisierung dieser Materialien zur
 Verfügung stehenden Mitteln, ist eine Koordination dieser Anstrengungen
 überfällig .</p>
-<div id="tbl:digitisation">
-<table>
-<caption>Table 1: Beispielhafter Vergleich digitalisierter Quellen
-zwischen dem Global Süden und Norden</caption>
-<colgroup>
-<col style="width: 16%" />
-<col style="width: 27%" />
-<col style="width: 56%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>s.</th>
-<th>Arabische Periodika (1798–1918)</th>
-<th><a href="https://hwk1.hebis.de">Der Erste Weltkrieg im Spiegel
-hessischer Regionalzeitungen</a></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Gemeinschaft</td>
-<td>c. 420 Mio. Arabischsprechende</td>
-<td>c. 6.2 Mio. Einwohner_innen</td>
-</tr>
-<tr class="even">
-<td>Periodika</td>
-<td>2054 Zeitungen und Zeitschriften</td>
-<td>125 Zeitungen</td>
-</tr>
-<tr class="odd">
-<td>davon digitalisiert</td>
-<td>156 Titel</td>
-<td>125 Titel mit mehr als 1.5 Mio. Seiten</td>
-</tr>
-<tr class="even">
-<td>in Prozent</td>
-<td>7,59</td>
-<td>100</td>
-</tr>
-<tr class="odd">
-<td>Art der Digitalisierung</td>
-<td>fast ausschließlich Faksimiles</td>
-<td>Faksimiles und Volltext</td>
-</tr>
-<tr class="even">
-<td>Zugang</td>
-<td>Bezahlschranken, Geo-fencing</td>
-<td>Open Access</td>
-</tr>
-<tr class="odd">
-<td>Interface</td>
-<td>vornehmlich ausschließlich Fremdsprachen</td>
-<td>Quellen- und Fremdsprachen</td>
-</tr>
-</tbody>
-</table>
-</div>
-<figure>
-<img
-src="assets/images/map-data-set-periodicals_1789-1929-scatterpie-mena-label_en.png"
-id="fig:map-periodicals-status"
-alt="Figure 13: Verteilung von in Südwestasien und Nordafrika (SWANA) zwischen 1789 und 1929 publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme korrespondiert mit der Anzahl der publizierten Titel. Die Größe der Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von digitalisierten Titeln an" />
-<figcaption aria-hidden="true">Figure 13: Verteilung von in Südwestasien
-und Nordafrika (<span class="Abbreviation"
-data-custom-style="Abbreviation">SWANA</span>) zwischen 1789 und 1929
-publizierten arabischen Periodikatiteln. Die Größe der Tortendiagramme
-korrespondiert mit der Anzahl der publizierten Titel. Die Größe der
-Tortenstücke zeigt die Anteile von in Sammlungen nachgewiesenen und von
-digitalisierten Titeln an</figcaption>
-</figure>
-<figure>
-<img
-src="assets/images/map-data-set-periodical-holdings-global-north-na_mapped.png"
-id="fig:map-periodicals-holdings"
-alt="Figure 14: Verbindung von Publikations- und Sammlungsorten" />
-<figcaption aria-hidden="true">Figure 14: Verbindung von Publikations-
-und Sammlungsorten</figcaption>
-</figure>
 <p>Als Nutzer_innen wünschen wir uns natürlich umfangreiche <span
 class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>wissenschaftliche digitale
@@ -1610,19 +1670,36 @@ und Wrisley 2022)</span>. Generell basiert <span class="Abbreviation"
 data-custom-style="Abbreviation">HTR</span> auf Schrift- und
 Sprachmodellen, die mit Hilfe von sogenannter <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Ground
-Truth</em></span> trainiert werden müssen. Die Qualität der Erkennung
-hängt direkt von der Güte, dem Zuschnitt und dem Umfang der <span
+Truth</em></span> – einer so exakt wie möglichen, diplomatischen
+Abschrift des Originals – trainiert werden müssen. Die Qualität der
+Erkennung hängt direkt von der Güte, dem Zuschnitt und dem Umfang der
+<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Ground Truth</em></span> ab,
+wobei graphisch komplexere Schriftsysteme, Fonts oder Hände
+umfangreichere <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Ground Truth</em></span>
+benötigen als das zeitgenössische, gedruckte Englisch. Je näher Genre
+und Schriftbild eines zu erkennenden Textes an der ursprünglichen <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Ground
-Truth</em></span> ab. Je näher Genre und Schriftbild eines zu
-erkennenden Textes an der <span class="EmphasisCustom"
-data-custom-style="EmphasisCustom"><em>Ground Truth</em></span> sind,
-desto niedriger ist die erwartbare <span class="Abbreviation"
-data-custom-style="Abbreviation">CER</span>. Die verfügbaren bzw.
-mitgelieferten Modelle haben einen klaren Bias auf die Sprachen und
-Schriften des Globalen Nordens, was nicht zuletzt daran liegt, dass für
-deren Training umfangreichere Korpora digitaler wissenschaftlicher
-Editionen aus den letzen vierzig Jahren zur Verfügung stehen. Außerdem
-benötigt und verbraucht <span class="Abbreviation"
+Truth</em></span> sind, desto niedriger ist die erwartbare <span
+class="Abbreviation" data-custom-style="Abbreviation">CER</span>. Das
+Erstellen von <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Ground Truth</em></span>
+erfordert mindestens das zweimalige, voneinander unabhängige Abschreiben
+eines Textes, wobei Ersteller_innen bevorzugt die Schrift aber nicht die
+Sprache können sollen, damit sich keine unbewussten Korrekturen und
+Normalisierungen einschleichen. Das manuelle Transkribieren ist teuer
+und wird bevorzugt in Länder des Globalen Südens ausgelagert. Dabei
+rächt sich für Sprachen, die die arabische Schrift verwenden, die
+Vielfalt von Codepoints für den gleichen Glyph in Unicode. Ein auf den
+in Pakistan gängigen Tastaturen für Urdu abgeschriebener arabischer
+Text, ist ohne eine zusätzliche Transkribierung kein funktional
+arabischer Text.</p>
+<p>Die verfügbaren bzw. mitgelieferten Modelle haben einen klaren Bias
+auf die Sprachen und Schriften des Globalen Nordens, was nicht zuletzt
+daran liegt, dass für deren Training umfangreichere Korpora digitaler
+wissenschaftlicher Editionen aus den letzen vierzig Jahren zur Verfügung
+stehen. Außerdem benötigt und verbraucht <span class="Abbreviation"
 data-custom-style="Abbreviation">ML</span> enorme Ressourcen: von der
 Arbeitszeit für die Erstellung der <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Ground Truth</em></span> und das
@@ -1632,8 +1709,8 @@ Anforderungen an die notwendige Hardware und Netzwerkinfrastrukturen bis
 zum enormen Stromverbrauch für Training und Erkennung <span
 class="citation"
 data-cites="Alkaoud.Syed+2020+OnTheImportance Strubell.etal+2019+EnergyAndPolicy Baillot.etal+2021+DigitalHumanitiesAnd BenderEtal2021StochasticParrots">(c.f.
-Alkaoud und Syed 2020, p. 124; Baillot u. a. 2021; Bender u. a. 2021;
-Strubell, Ganesh, und McCallum 2019)</span>. Neben der ethischen Frage
+Alkaoud und Syed 2020, p. 124; Strubell, Ganesh, und McCallum 2019;
+Baillot u. a. 2021; Bender u. a. 2021)</span>. Neben der ethischen Frage
 inwiefern angesichts der multiplen planetaren Krisen der Verbrauch einer
 kleinen Reihenhaussiedlung für das Training eines Sprachmodells
 gerechtfertigt ist, stellen diese Anforderungen eine weitere
@@ -1654,8 +1731,8 @@ Arabische haben daher signifikant über 25% liegende <span
 class="Abbreviation" data-custom-style="Abbreviation">CER</span> <span
 class="citation"
 data-cites="Alghamdi.Teahan+2017+ExperimentalEvaluationArabic Alkhateeb.etal+2017+ArabicOpticalCharacter Märgner+2012a Habash+2010+IntroductionToArabic">(Alghamdi
-und Teahan 2017; Alkhateeb, Abu Doush, und Albsoul 2017; Habash 2010;
-cf. Märgner und El Abed 2012)</span>. In der Folge hält z.B. das <span
+und Teahan 2017; Alkhateeb, Abu Doush, und Albsoul 2017; cf. Märgner und
+El Abed 2012; Habash 2010)</span>. In der Folge hält z.B. das <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Internet
 Archive</em></span> Arabisch für “not currently OCRable” <span
 class="citation" data-cites="KurdAli+1923+GharaibAlGharba">(item
@@ -1675,8 +1752,8 @@ Zeichenketten die gefunden werden müssten, aber nicht werden, lässt sich
 unmöglich quantifizieren. Dadurch sind derartige “Volltexte” nicht für
 die systematische Forschung geeignet und liefern maximal anekdotische
 Nachweise <span class="citation"
-data-cites="Grallert2022DHQ Grallert2021GG">(Grallert 2021, 64–65; 2022,
-Abschn. 13)</span>.</p>
+data-cites="Grallert2022DHQ Grallert2021GG">(Grallert 2022, Abschn. 13;
+2021, 64–65)</span>.</p>
 <h2 id="zugang-zu-digitalisaten">Zugang zu Digitalisaten</h2>
 <p>Jenseits der Arten von Digitalisaten, heißt <span
 class="EmphasisCustom"
@@ -1690,7 +1767,7 @@ class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Application Programming
 Interfaces</em></span> (<span class="Abbreviation"
 data-custom-style="Abbreviation">API</span>s) oder die Möglichkeit mehr
-als einzelne Seiten auf einmal herunterzuladen, versteckt (tbl. 2).
+als einzelne Seiten auf einmal herunterzuladen, versteckt (tbl. 1).
 Beispielsweise wird die in Kairo und später Damaskus von Muḥammad Kurd
 ʿAlī zwischen 1906 und 1917/18 herausgegebene Zeitschrift <span
 class="Transcription"
@@ -1703,7 +1780,7 @@ href="https://catalog.hathitrust.org/Record/008882293">Princeton
 University</a> sind von Google gescannt worden und offen auf der <a
 href="http://catalog.hathitrust.org/"><span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>HathiTrust</em></span>
-Platform</a> zugänglich – allerdings nur für Angehörige von
+Plattform</a> zugänglich – allerdings nur für Angehörige von
 Institutionen, die Mitglied bei HathiTrust sind, und die
 us-amerikanische Öffentlichkeit. Dies wird über Nutzer_innen-Konten und
 <span class="Abbreviation"
@@ -1740,7 +1817,7 @@ Kontext des ersten Weltkrieges und der Auflösung des Osmanischen Reiches
 ihr Erscheinen einstellte.</p>
 <div id="tbl:platforms-access">
 <table>
-<caption>Table 2: Zugänglichkeit von Plattformen für Digitalisate
+<caption>Table 1: Zugänglichkeit von Plattformen für Digitalisate
 arabischer Periodika</caption>
 <colgroup>
 <col style="width: 28%" />
@@ -1917,21 +1994,115 @@ href="https://www.translatio.uni-bonn.de/online-zeitschriften/arabische-online-z
 </tbody>
 </table>
 </div>
-<div class="aside">
-<p>Fehlender Abschnitt zu Schattenbibliotheken und pirate care</p>
-</div>
+<h3 id="schattenbibliotheken">Schattenbibliotheken</h3>
+<p>Eine zentrale Quelle für Digitalisate der textuellen Kulturgüter des
+Globalen Südens sind Schattenbibliotheken. Dabei bezieht sich der von
+Lawrence Liang geprägte Begriff auf die Zweigbibliothek der antiken
+Bibliothek von Alexandria, die einen kompletten Satz von Kopien aller
+Werke für den Gebrauch durch Gelehrte, die nicht mit dem Museion
+verbunden waren, enthielt und die, anders als ihre berühmte Mutter,
+nicht zerstört wurde. Schattenbibliotheken in einem solchen Sinne
+kombinieren den universalen Anspruch das Wissen der Welt zu sammeln, mit
+je zeitgenössischen Techniken der Vervielfältigung und operieren im
+Schatten formaler <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Discovery-Systeme</em></span> und
+regulativer Regime zur Durchsetzung von Urheber- und Verwertungsrechten
+<span class="citation"
+data-cites="Liang2012ShadowLibraries Karaganis2018Introduction Thylstrup+2018">(Liang
+2012; Karaganis 2018a; für die infrapolitischen Fragen siehe Thylstrup
+2018, 79–100)</span>. Ihnen gemeinsam ist, dass sie, anders als
+Plattformen wie <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Academia.edu</em></span>, <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Scribd</em></span> oder <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Researchgate</em></span> mit den
+durch die Nutzer_innen begangenen, umfangreichen Verletzungen der
+Urheber- und Verwertungsrechte keine direkten monetären Interessen
+verfolgen. Vielmehr komplementieren sie formale Ergebnisse der
+Massendigitalisierung wie <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Europeana</em></span>, <span
+class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>HathiTrust</em></span>, die
+Plattformen der Fachinformationsdienste (<span class="Abbreviation"
+data-custom-style="Abbreviation">FID</span>) <a
+href="https://africanstudieslibrary.org/en/">Afrikastudien</a>, Asien
+(<a href="https://crossasia.org"><span class="Abbreviation"
+data-custom-style="Abbreviation">CrossAsia</span></a>), <a
+href="https://fid-lateinamerika.de/recherche/">Lateinamerika, Karibik
+und Latino Studies</a>, Nahost-, Nordafrika- und Islamstudien (<a
+href="https://www.menalib.de"><span class="Abbreviation"
+data-custom-style="Abbreviation">MENALib</span></a>) und <a
+href="https://fid-cassib.de/">Zentralasien - Autochthone Kulturen und
+Sprachen</a> oder, für die Sprachen des östlichen Mittelmeerraumes, die
+<a href="https://dlmenetwork.org/library"><span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Digital Library of the Middle
+East</em></span></a>, <a href="http://dlib.nyu.edu/aco/"><span
+class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Arabic
+Collections Online</em></span></a> oder die <a
+href="https://www.qdl.qa/en"><span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Qatar Digital
+Library</em></span></a>. Für viele Sprachen und Regionen sind
+Schattenbibliotheken die einzige vorhandene Quelle von Digitalisaten
+<span class="citation" data-cites="Karaganis2018ShadowLibraries">(siehe
+die Beiträge in Karaganis 2018b)</span>. Die bekanntesten
+Schattenbibliotheken sind sicherlich <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Library Genesis</em></span>,
+<span class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>Z
+Library</em></span> und <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Sci-Hub</em></span>, die vor
+allem Zugang zu wissenschaftlichen Texten bieten <span class="citation"
+data-cites="Tenen+2014a Eve2022LessonsLibrary Seer+2017+VonDerSchattenbibliothek">(Tenen
+und Foxman 2014; Eve 2022; Seer 2017)</span>. Für Texte jenseits dieser
+Genregrenzen, sind <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Project Gutenberg</em></span> und
+das <a href="https://archive.org/"><span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Text Archive</em></span> des
+<span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Internet Archive</em></span>s</a>
+zu nennen. Letzteres umfasst auch große Bestände in Sprachen des
+Globalen Südens. Es liegt in der Natur der Sache, dass hier keine
+umfassende Liste von Schattenbibliotheken produziert werden kann, aber
+für das Arabische haben sich <a href="http://www.shamela.ws/"><span
+class="Transcription" data-custom-style="Transcription">al-Maktaba
+al-Shāmila</span></a>, <a href="http://almeshkat.net/"><span
+class="Transcription"
+data-custom-style="Transcription">Mishkāt</span></a>, <a
+href="http://saaid.net/"><span class="Transcription"
+data-custom-style="Transcription">Ṣayyid al-Fawāʾid</span></a> und <a
+href="http://www.alwaraq.net/"><span class="Transcription"
+data-custom-style="Transcription">al-Waraq</span></a> als relativ
+dauerhafte Unternehmungen erwiesen <span class="citation"
+data-cites="Verkinderen+2020+AlMaktabaAlShamilaShort">(Verkinderen
+2020)</span>. Vor allem der Rückgriff auf Digitalisate von <span
+class="Transcription" data-custom-style="Transcription">al-Maktaba
+al-Shāmila</span> ist in der Wissenschaft weit verbreitet, auch wenn er
+so gut wie nie offengelegt wird <span class="citation"
+data-cites="Grallert2022DHQ Miller+2018">(Grallert 2022, Abschn. 30;
+Miller, Romanov, und Savant 2018, 104)</span>.</p>
+<p>Die Qualität der bibliographischen Metadaten in den
+Schattenbibliotheken ist teilweise noch wesentlich schlechter als bei
+ihren formaleren Schwestern. Das betrifft vor allem die Klassifizierung
+von Sprachen. So beinhaltet vor allem das <span class="EmphasisCustom"
+data-custom-style="EmphasisCustom"><em>Text Archive</em></span> eine
+große, aber unbekannte Anzahl von Texten in anderen Sprachen innerhalb
+des als englisch markierten Corpus. Die häufig ursprünglich notwendige
+Umschrift mit lateinischen Buchstaben unterliegt bei durch Nutzer_innen
+bereitgestellten Digitalisaten und ihren Beschreibungen, anders als bei
+offiziellen Bibliothekskatalogen und Discovery-Systemen, keinerlei
+formaler Kontrolle.</p>
 <h1 class="unnumbered" id="bibliography">Literatur</h1>
 <div id="refs" class="references csl-bib-body hanging-indent"
-role="doc-bibliography">
+role="list">
 <div id="ref-Alghamdi.Teahan+2017+ExperimentalEvaluationArabic"
-class="csl-entry" role="doc-biblioentry">
+class="csl-entry" role="listitem">
 Alghamdi, Mansoor, und William Teahan. 2017. <span>„Experimental
 evaluation of Arabic OCR systems“</span>. <em>PSU Research Review</em> 1
 (3): 229–41. <a
 href="https://doi.org/gh4457">https://doi.org/gh4457</a>.
 </div>
 <div id="ref-Alkaoud.Syed+2020+OnTheImportance" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Alkaoud, Mohamed, und Mairaj Syed. 2020. <span>„On the Importance of
 Tokenization in Arabic Embedding Models“</span>. In <em>Proceedings of
 the Fifth Arabic Natural Language Processing Workshop</em>, 119–29.
@@ -1939,35 +2110,43 @@ Barcelona, Spain (Online): Association for Computational Linguistics. <a
 href="https://aclanthology.org/2020.wanlp-1.11">https://aclanthology.org/2020.wanlp-1.11</a>.
 </div>
 <div id="ref-Alkhateeb.etal+2017+ArabicOpticalCharacter"
-class="csl-entry" role="doc-biblioentry">
+class="csl-entry" role="listitem">
 Alkhateeb, Faisal, Iyad Abu Doush, und Abdelraoaf Albsoul. 2017.
 <span>„Arabic Optical Character Recognition Software: A Review“</span>.
 <em>Pattern Recognition and Image Analysis</em> 27 (4): 763–76. <a
 href="https://doi.org/gh445n">https://doi.org/gh445n</a>.
 </div>
 <div id="ref-AltenhonerEtAl2023DFGPraxisregeln" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Altenhöner, Reinhard, Andreas Berger, Christian Bracht, Paul Klimpel,
 Sebastian Meyer, Andreas Neuburger, Thomas Stäcker, und Regine Stein.
 2023. <span>„DFG-Praxisregeln <span>‚Digitalisierung‘</span>.
 Aktualisierte Fassung 2022.“</span> <a
 href="https://zenodo.org/record/7435724">https://zenodo.org/record/7435724</a>.
 </div>
+<div id="ref-Arnold2022MultilingualResearchProjects" class="csl-entry"
+role="listitem">
+Arnold, Matthias. 2022. <span>„Multilingual Research Projects: Non-Latin
+Script Challenges for Making Use of Standards, Authority Files, and
+Character Recognition“</span>. <em>Digital Studies / Le champ
+numérique</em> 12 (1). <a
+href="https://doi.org/10.16995/dscn.8110">https://doi.org/10.16995/dscn.8110</a>.
+</div>
 <div id="ref-Baillot.etal+2021+DigitalHumanitiesAnd" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Baillot, Anne, James Baker, Madiha Zahrah Choksi, Alex Gil, Ana Lam,
 Alicia Peaker, Walter Scholger, Torsten Roeder, und Jo Lindsay Walton.
 2021. <span>„Digital Humanities and the Climate Crisis: A
 Manifesto“</span>. 2021. <a
 href="https://dhc-barnard.github.io/envdh/">https://dhc-barnard.github.io/envdh/</a>.
 </div>
-<div id="ref-Bauer1996Arabic" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Bauer1996Arabic" class="csl-entry" role="listitem">
 Bauer, Thomas. 1996. <span>„Arabic Writing“</span>. In <em>The world’s
 writing systems</em>, herausgegeben von William Bright und Peter T.
 Daniels, 559–63. New York: Oxford University Press.
 </div>
 <div id="ref-BenderEtal2021StochasticParrots" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Bender, Emily M., Timnit Gebru, Angelina McMillan-Major, und Shmargaret
 Shmitchell. 2021. <span>„On the Dangers of Stochastic Parrots: Can
 Language Models Be Too Big? 🦜“</span>. In <em>Proceedings of the 2021
@@ -1976,38 +2155,35 @@ ACM Conference on Fairness, Accountability, and Transparency</em>,
 Machinery. <a
 href="https://doi.org/10.1145/3442188.3445922">https://doi.org/10.1145/3442188.3445922</a>.
 </div>
-<div id="ref-ICUDocumentationBiDi" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-ICUDocumentationBiDi" class="csl-entry" role="listitem">
 <span>„BiDi Algorithm“</span>. 2021. ICU Documentation. 2. Februar 2021.
 <a
 href="https://unicode-org.github.io/icu/userguide/transforms/bidi.html">https://unicode-org.github.io/icu/userguide/transforms/bidi.html</a>.
 </div>
-<div id="ref-Bingham+2010" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Bingham+2010" class="csl-entry" role="listitem">
 Bingham, Adrian. 2010. <span>„<span>‚The Digitization of Newspaper
 Archives: Opportunities and Challenges for Historians‘</span>“</span>.
 <em>Twentieth Century British History</em> 21 (2): 225–31. <a
-href="https://doi.org/fsqbgx">https://doi.org/fsqbgx</a>.
+href="https://doi.org/10.1093/tcbh/hwq007">https://doi.org/10.1093/tcbh/hwq007</a>.
 </div>
-<div id="ref-Brake+2012" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Brake+2012" class="csl-entry" role="listitem">
 Brake, Laurel. 2012. <span>„The Longevity Of <span>‚Ephemera‘</span>:
 Library Editions of Nineteenth-Century Periodicals and
 Newspapers“</span>. <em>Media History</em> 18 (1): 7–20. <a
-href="https://doi.org/b7x6ps">https://doi.org/b7x6ps</a>.
+href="https://doi.org/10.1080/13688804.2011.632192">https://doi.org/10.1080/13688804.2011.632192</a>.
 </div>
-<div id="ref-EAP119/1/18_website" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-EAP119/1/18_website" class="csl-entry" role="listitem">
 British Library. o. J.a. <span>„تصوير افكار Taṣwīr Afkār (1909)“</span>.
 Endangered Archives Programme. Zugegriffen 24. Januar 2023. <a
 href="https://eap.bl.uk/collection/EAP119-1-18">https://eap.bl.uk/collection/EAP119-1-18</a>.
 </div>
-<div id="ref-EAP119/1/24_website" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-EAP119/1/24_website" class="csl-entry" role="listitem">
 ———. o. J.b. <span>„مرأة الشرق Mirʾat Al-Sharq (1922-1936)“</span>.
 Endangered Archives Programme. Zugegriffen 24. Januar 2023. <a
 href="https://eap.bl.uk/collection/EAP119-1-24">https://eap.bl.uk/collection/EAP119-1-24</a>.
 </div>
 <div id="ref-BrockelmannEtAl1935Transliteration" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Brockelmann, Carl, August Fischer, W. Heffening, und Franz Taeschner.
 1935. <em>Die Transliteration der arabischen Schrift in ihrer Anwendung
 auf die Hauptliteratursprachen der islamischen Welt. Denkschrift, dem
@@ -2018,43 +2194,41 @@ Brockhaus. <a
 href="https://www.aai.uni-hamburg.de/voror/medien/dmg.pdf">https://www.aai.uni-hamburg.de/voror/medien/dmg.pdf</a>.
 </div>
 <div id="ref-Buckwalter2004ArabicMorphological" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Buckwalter, Tim. 2004. <span>„Buckwalter Arabic Morphological Analyzer
 Version 2.0“</span>. Linguistic Data Consortium. <a
 href="https://doi.org/10.35111/050Q-5R95">https://doi.org/10.35111/050Q-5R95</a>.
 </div>
-<div id="ref-Crymble2021Technology" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-Crymble2021Technology" class="csl-entry" role="listitem">
 Crymble, Adam. 2021. <em>Technology and the Historian: Transformations
 in the Digital Age</em>. University of Illinois Press. <a
 href="https://www.press.uillinois.edu/books/?id=p085697">https://www.press.uillinois.edu/books/?id=p085697</a>.
 </div>
 <div id="ref-oclc_1034545644-i_15-div_1.d2e634" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Dammūs, Ḥalīm Ibrāhīm. 1911. <span>„Ṣiḥāfat Sūriyya wa-Lubnān“</span>
 [The Press of Syria and Lebanon]. <em>al-Zuhūr</em> 2 (4), 1. Juni 1911.
 <a
 href="https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634">https://openarabicpe.github.io/journal_al-zuhur/tei/oclc_1034545644-i_15.TEIP5.xml#div_1.d2e634</a>.
 </div>
-<div id="ref-2020SDG7Methodology" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-2020SDG7Methodology" class="csl-entry" role="listitem">
 <span>„Defining Energy Access: 2020 Methodology“</span>. 2020. IEA. 13.
 Oktober 2020. <a
 href="https://www.iea.org/data-and-statistics/data-product/sdg7-database">https://www.iea.org/data-and-statistics/data-product/sdg7-database</a>.
 </div>
 <div id="ref-DfgPraxisregelnDigitalisierung+2016" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 <em>DFG-Praxisregeln <span>„Digitalisierung“</span></em>. 2016. Bonn:
 Deutsche Forschungsgemeinschaft. <a
 href="http://www.dfg.de/formulare/12_151/12_151_de.pdf">http://www.dfg.de/formulare/12_151/12_151_de.pdf</a>.
 </div>
 <div id="ref-Digital2023GlobalOverviewReport2023" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 <span>„Digital 2023: Global Overview Report“</span>. 2023. DataReportal
 – Global Digital Insights. 26. Januar 2023. <a
 href="https://datareportal.com/reports/digital-2023-global-overview-report">https://datareportal.com/reports/digital-2023-global-overview-report</a>.
 </div>
-<div id="ref-DIN31635201107" class="csl-entry" role="doc-biblioentry">
+<div id="ref-DIN31635201107" class="csl-entry" role="listitem">
 <span>„DIN 31635:2011-07, Information und Dokumentation - Umschrift des
 arabischen Alphabets für die Sprachen Arabisch, Osmanisch-Türkisch,
 Persisch, Kurdisch, Urdu und Paschtu“</span>. 2011. DIN 31635:2011-07.
@@ -2063,75 +2237,87 @@ https://web.archive.org/web/20230301234810/https://www.beuth.de/de/norm/din-3163
 <a
 href="https://doi.org/10.31030/1760820">https://doi.org/10.31030/1760820</a>.
 </div>
-<div id="ref-website_eapb" class="csl-entry" role="doc-biblioentry">
+<div id="ref-website_eapb" class="csl-entry" role="listitem">
 <span>„Early Arabic Printed Books from the British Library“</span>.
 2019. 16. September 2019. <a
 href="https://web.archive.org/web/20190916173504/https://p-www.gale.com/primary-sources/early-arabic-printed-books-from-the-british-library">https://web.archive.org/web/20190916173504/https://p-www.gale.com/primary-sources/early-arabic-printed-books-from-the-british-library</a>.
 </div>
-<div id="ref-EndangeredAlphabets" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-EndangeredAlphabets" class="csl-entry" role="listitem">
 <span>„Endangered Alphabets – Preserving endangered cultures“</span>.
 o. J.
 https://web.archive.org/web/20230228113928/https://www.endangeredalphabets.com/.
 Zugegriffen 28. Februar 2023. <a
 href="https://www.endangeredalphabets.com/">https://www.endangeredalphabets.com/</a>.
 </div>
+<div id="ref-Eve2022LessonsLibrary" class="csl-entry" role="listitem">
+Eve, Martin Paul. 2022. <span>„Lessons from the Library: Extreme
+Minimalist Scaling at Pirate Ebook Platforms“</span>. Herausgegeben von
+Alex Gil und Roopika Risam. <em>Digital Humanities Quarterly</em> 16 (2,
+"Minimal Computing"). <a
+href="http://digitalhumanities.org/dhq/vol/16/2/000587/000587.html">http://digitalhumanities.org/dhq/vol/16/2/000587/000587.html</a>.
+</div>
+<div id="ref-Fiormonte2021Taxation" class="csl-entry" role="listitem">
+Fiormonte, Domenico. 2021. <span>„Taxation Against Overrepresentation?
+The Consequences of Monolingualism for Digital Humanities“</span>. In
+<em>Alternative Historiographies of the Digital Humanities</em>,
+herausgegeben von Dorothy Kim und Adeline Koh, 333–76. Earth: punctum
+books. <a
+href="https://doi.org/10.53288/0274.1.00">https://doi.org/10.53288/0274.1.00</a>.
+</div>
 <div id="ref-FiormonteEtAl2015PoliticsOfCode" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Fiormonte, Domenico, Desmond Schmidt, Paolo Monella, und Paolo Sordi.
 2015. <span>„The Politics of Code. How Digital Representations and
 Languages Shape Culture“</span>. In <em>ISIS Summit Vienna 2015—The
 Information Society at the Crossroads</em>. Vienna: MDPI AG. <a
 href="https://doi.org/gkzc7v">https://doi.org/gkzc7v</a>.
 </div>
-<div id="ref-Gooding+2018" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Gooding+2018" class="csl-entry" role="listitem">
 Gooding, Paul. (2017) 2018. <em>Historic Newspapers in the Digital Age:
 <span>„Search All about It“</span></em>. London: Routledge, Taylor &amp;
 Francis.
 </div>
-<div id="ref-Grallert2021GG" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Grallert2021GG" class="csl-entry" role="listitem">
 Grallert, Till. 2021. <span>„Catch Me If You Can! Approaching the Arabic
 Press of the Late Ottoman Eastern Mediterranean Through Digital
 History“</span>. Herausgegeben von Simone Lässig. <em>Geschichte Und
 Gesellschaft</em> 47 (1, Digital History): 58–89. <a
-href="https://doi.org/gkhrjr">https://doi.org/gkhrjr</a>.
+href="https://doi.org/10.13109/gege.2021.47.1.58">https://doi.org/10.13109/gege.2021.47.1.58</a>.
 </div>
-<div id="ref-Grallert2022DHQ" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Grallert2022DHQ" class="csl-entry" role="listitem">
 ———. 2022. <span>„Open Arabic Periodical Editions: A Framework for
 Bootstrapped Scholarly Editions Outside the Global North“</span>.
 Herausgegeben von Roopika Risam und Alex Gil. <em>Digital Humanities
 Quarterly</em> 16 (2, "Minimal Computing"). <a
 href="http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html">http://digitalhumanities.org/dhq/vol/16/2/000593/000593.html</a>.
 </div>
-<div id="ref-GruendlerArabicScript" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-GruendlerArabicScript" class="csl-entry" role="listitem">
 Gruendler, Beatrice. o. J. <span>„Arabic Script“</span>. In
 <em>Encyclopaedia of the Qurʾān</em>, herausgegeben von Johanna Pink.
 Leiden: Brill. Zugegriffen 24. Januar 2023. <a
 href="https://doi.org/10.1163/1875-3922_q3_EQCOM_00016">https://doi.org/10.1163/1875-3922_q3_EQCOM_00016</a>.
 </div>
 <div id="ref-Habash+2010+IntroductionToArabic" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Habash, Nizar Y. 2010. <em>Introduction to Arabic Natural Language
 Processing</em>. Synthesis Lectures on Human Language Technologies 10.
 Morgan &amp; Claypool. <a
 href="https://doi.org/ffr8nh">https://doi.org/ffr8nh</a>.
 </div>
 <div id="ref-IJMESTransliterationSystem" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 <span>„IJMES Transliteration System for Arabic, Persian, and
 Turkish“</span>. o. J. International Journal of Middle East Studies.
 https://web.archive.org/web/20221012191104/http://www.cambridge.org/core/services/aop-file-manager/file/57d83390f6ea5a022234b400/TransChart.pdf.
 Zugegriffen 1. März 2023. <a
 href="https://www.cambridge.org/core/services/aop-file-manager/file/57d83390f6ea5a022234b400/TransChart.pdf">https://www.cambridge.org/core/services/aop-file-manager/file/57d83390f6ea5a022234b400/TransChart.pdf</a>.
 </div>
-<div id="ref-W3CUnicodeBiDiBasics" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-W3CUnicodeBiDiBasics" class="csl-entry" role="listitem">
 Ishida, Richard. 2016. <span>„Unicode Bidirectional Algorithm
 basics“</span>. W3C Internationalization (I18n). 9. August 2016. <a
 href="https://www.w3.org/International/articles/inline-bidi-markup/uba-basics">https://www.w3.org/International/articles/inline-bidi-markup/uba-basics</a>.
 </div>
-<div id="ref-ISO2331984" class="csl-entry" role="doc-biblioentry">
+<div id="ref-ISO2331984" class="csl-entry" role="listitem">
 <span>„ISO 233:1984, Documentation — Transliteration of Arabic
 Characters into Latin Characters“</span>. 1984. ISO 233:1984.
 International Standards Organization.
@@ -2139,7 +2325,20 @@ https://web.archive.org/web/20230302005520/https://www.iso.org/standard/4117.htm
 <a
 href="https://www.iso.org/standard/4117.html">https://www.iso.org/standard/4117.html</a>.
 </div>
-<div id="ref-Kiessling+2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Karaganis2018Introduction" class="csl-entry"
+role="listitem">
+Karaganis, Joe. 2018a. <span>„Introduction: Access from Above, Access
+from Below“</span>. In <em>Shadow Libraries</em>, herausgegeben von Joe
+Karaganis, 1–1. Boston: The MIT Press. <a
+href="https://doi.org/10.7551/mitpress/11339.001.0001">https://doi.org/10.7551/mitpress/11339.001.0001</a>.
+</div>
+<div id="ref-Karaganis2018ShadowLibraries" class="csl-entry"
+role="listitem">
+———, Hrsg. 2018b. <em>Shadow Libraries</em>. International Development
+Research Centre. Boston: The MIT Press. <a
+href="https://doi.org/10.7551/mitpress/11339.001.0001">https://doi.org/10.7551/mitpress/11339.001.0001</a>.
+</div>
+<div id="ref-Kiessling+2017" class="csl-entry" role="listitem">
 Kiessling, Benjamin, Matthew Thomas Miller, Maxim Romanov, und Sarah
 Bowen Savant. 2017. <span>„Important New Developments in Arabographic
 Optical Character Recognition (OCR)“</span>. <em>Al-ʿUṣūr Al-Wuṣṭā</em>
@@ -2147,7 +2346,7 @@ Optical Character Recognition (OCR)“</span>. <em>Al-ʿUṣūr Al-Wuṣṭā</e
 href="https://www.middleeastmedievalists.com/wp-content/uploads/2017/11/UW-25-Savant-et-al.pdf">https://www.middleeastmedievalists.com/wp-content/uploads/2017/11/UW-25-Savant-et-al.pdf</a>.
 </div>
 <div id="ref-KirmizialtinWrisley2022AutomatedTranscription"
-class="csl-entry" role="doc-biblioentry">
+class="csl-entry" role="listitem">
 Kirmizialtin, Suphan, und David Wrisley. 2022. <span>„Automated
 Transcription of Non-Latin Script Periodicals: A Case Study in the
 Ottoman Turkish Print Archive“</span>. <em>Digital Humanities
@@ -2155,56 +2354,81 @@ Quarterly</em> 16 (2). <a
 href="http://www.digitalhumanities.org/dhq/vol/16/2/000577/000577.html">http://www.digitalhumanities.org/dhq/vol/16/2/000577/000577.html</a>.
 </div>
 <div id="ref-KurdAli+1923+GharaibAlGharba" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Kurd ʿAlī, Muḥammad. 1923. <em>Gharāʾib al-Gharb</em> [The Oddities of
 the West]. 2. Aufl. Bd. 1. Miṣr: al-Maṭbaʿa al-Raḥmāniyya. <a
 href="http://archive.org/details/1_20191109_20191109_1843">http://archive.org/details/1_20191109_20191109_1843</a>.
 </div>
-<div id="ref-ALALC2012Arabic" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Liang2012ShadowLibraries" class="csl-entry"
+role="listitem">
+Liang, Lawrence. 2012. <span>„Shadow Libraries“</span>. <em>E-Flux
+Journal</em>, Nr. 37 (September), September 2012. <a
+href="https://www.e-flux.com/journal/37/61228/shadow-libraries/">https://www.e-flux.com/journal/37/61228/shadow-libraries/</a>.
+</div>
+<div id="ref-ALALC2012Arabic" class="csl-entry" role="listitem">
 Library of Congress. 2012. <span>„Arabic Romanization Table“</span>.
 Library of Congress.
 https://web.archive.org/web/20230119163442/https://www.loc.gov/catdir/cpso/romanization/arabic.pdf.
 <a
 href="https://www.loc.gov/catdir/cpso/romanization/arabic.pdf">https://www.loc.gov/catdir/cpso/romanization/arabic.pdf</a>.
 </div>
-<div id="ref-Märgner+2012a" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Mahony2018Culturala" class="csl-entry" role="listitem">
+Mahony, Simon. 2018. <span>„Cultural Diversity and the Digital
+Humanities“</span>. <em>Fudan Journal of the Humanities and Social
+Sciences</em> 11 (3): 371–88. <a
+href="https://doi.org/gmr968">https://doi.org/gmr968</a>.
+</div>
+<div id="ref-MahonyGao2018Linguistic" class="csl-entry" role="listitem">
+Mahony, Simon, und Jin Gao. 2018. <span>„Linguistic and Cultural
+Hegemony in the Digital Humanities“</span>. In <em>Proceedings of the
+Digital Humanities Congress 2018</em>, herausgegeben von Lana Pitcher
+und Michael Pidd. Sheffield: The Digital Humanities Institute. <a
+href="https://www.dhi.ac.uk/books/dhc2018/linguistic-and-cultural-hegemony-in-the-digital-humanities/">https://www.dhi.ac.uk/books/dhc2018/linguistic-and-cultural-hegemony-in-the-digital-humanities/</a>.
+</div>
+<div id="ref-Märgner+2012a" class="csl-entry" role="listitem">
 Märgner, Volker, und Haikal El Abed, Hrsg. 2012. <em>Guide to OCR for
 Arabic Scripts</em>. London: Springer. <a
 href="https://doi.org/10.1007/978-1-4471-4072-6">https://doi.org/10.1007/978-1-4471-4072-6</a>.
 </div>
 <div id="ref-Mestyan.Grallert+2012+ProjectJaraid" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Mestyan, Adam, und Till Grallert. 2012–2015. <span>„A Chronology of
 Nineteenth-Century Periodicals in Arabic (1800-1900): A Research
 Tool“</span>. 2012–2015. <a
 href="https://web.archive.org/web/20160422071133/https://www.zmo.de/jaraid/">https://web.archive.org/web/20160422071133/https://www.zmo.de/jaraid/</a>.
 </div>
 <div id="ref-Mestyan.Grallert+2020+JaraIdChronology" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 ———. 2020. <span>„Jara’id: A Chronology of Arabic Periodicals
 (1800-1929). 2020 Edition“</span>. 2020. <a
 href="https://projectjaraid.github.io/">https://projectjaraid.github.io/</a>.
 </div>
 <div id="ref-Mestyan.etal+2020+JaraidAchronology" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Mestyan, Adam, Till Grallert, und et al. 2020. <span>„Jarāʾid: A
 chronology of Arabic periodicals (1800-1929)“</span>. Zenodo. <a
 href="https://doi.org/10.5281/zenodo.4399240">https://doi.org/10.5281/zenodo.4399240</a>.
 </div>
+<div id="ref-Miller+2018" class="csl-entry" role="listitem">
+Miller, Matthew Thomas, Maxim G Romanov, und Sarah Bowen Savant. 2018.
+<span>„Digitizing the Textual Heritage of the Premodern Islamicate
+World: Principles and Plans“</span>. <em>International Journal of Middle
+East Studies</em> 50 (1): 103–9. <a
+href="https://doi.org/10.1017/s0020743817000964">https://doi.org/10.1017/s0020743817000964</a>.
+</div>
 <div id="ref-Milo2011ArabicTypography" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Milo, Thomas. 2011. <span>„Arabic Typography“</span>. In
 <em>Encyclopedia of Arabic Language and Linguistics</em>, herausgegeben
 von Lutz Edzard und Rudolf de Jong. Leiden: Brill. <a
 href="https://doi.org/10.1163/1570-6699_eall_EALL_SIM_000043">https://doi.org/10.1163/1570-6699_eall_EALL_SIM_000043</a>.
 </div>
-<div id="ref-MiloCommentsArabicBlock" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-MiloCommentsArabicBlock" class="csl-entry" role="listitem">
 ———. o. J. <span>„Some Comments on the Arabic Block in Unicode“</span>.
 DecoType.
 </div>
 <div id="ref-Milo.Martinez+2019+ANewStrategy" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Milo, Thomas, und Alicia González Martínez. 2019. <span>„A New Strategy
 for Arabic OCR: Archigraphemes, Letter Blocks, Script Grammar, and shape
 synthesis“</span>. In <em>Proceedings of the 3rd International
@@ -2213,76 +2437,78 @@ DATeCH2019. New York, NY, USA: Association for Computing Machinery. <a
 href="https://doi.org/gmscgz">https://doi.org/gmscgz</a>.
 </div>
 <div id="ref-Mullaney2017ChineseTypewriter" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Mullaney, Thomas S. 2017. <em>The Chinese typewriter: A history</em>.
 Studies of the Weatherhead East Asian Institute, Columbia University.
 Cambridge: The MIT Press. <a
 href="https://d-nb.info/1185079467/04">https://d-nb.info/1185079467/04</a>.
 </div>
-<div id="ref-Nemeth+2017" class="csl-entry" role="doc-biblioentry">
+<div id="ref-Nemeth+2017" class="csl-entry" role="listitem">
 Nemeth, Titus. 2017. <em>Arabic Type-Making in the Machine Age: The
 Influence of Technology on the Form of Arabic Type, 1908-1993</em>.
 Leiden: Brill. <a
 href="https://doi.org/10.1163/9789004349308">https://doi.org/10.1163/9789004349308</a>.
 </div>
 <div id="ref-Nemeth2018ArabicHotMetal" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 ———. 2018. <span>„Arabic Hot Metal: The Origins of the Mechanisation of
 Arabic Typography“</span>. <em>Philological Encounters</em> 3 (4):
 496–523. <a
 href="https://doi.org/10.1163/24519197-12340052">https://doi.org/10.1163/24519197-12340052</a>.
 </div>
-<div id="ref-BCP47" class="csl-entry" role="doc-biblioentry">
+<div id="ref-BCP47" class="csl-entry" role="listitem">
 Network Working Group. 2009. <span>„BCP 47: Tags for Identifying
 Languages“</span>. Herausgegeben von A. Phillips und M. Davis. IETF
 Trust. <a
 href="https://www.ietf.org/rfc/bcp/bcp47.txt">https://www.ietf.org/rfc/bcp/bcp47.txt</a>.
 </div>
 <div id="ref-Obana1997VerticalHorizontalReading" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Obana, Yasuko. 1997. <span>„Vertical or Horizontal? Reading Directions
 in Japanese“</span>. <em>Bulletin of the School of Oriental and African
 Studies, University of London</em> 60 (1): 86–94. <a
 href="https://doi.org/10.1017/S0041977X0002958X">https://doi.org/10.1017/S0041977X0002958X</a>.
 </div>
 <div id="ref-Phillipson1997RealitiesAndMyths" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Phillipson, Robert. 1997. <span>„Realities and Myths of Linguistic
 Imperialism“</span>. <em>Journal of Multilingual and Multicultural
 Development</em> 18 (3): 238–48. <a
 href="https://doi.org/db3cnb">https://doi.org/db3cnb</a>.
 </div>
-<div id="ref-Pohl2022Rasmifize" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-Pohl2022Rasmifize" class="csl-entry" role="listitem">
 Pohl, Oliver. (2020) 2022. <span>„rasmifize“</span>. TypeScript. <a
 href="https://github.com/suchmaske/rasmifize">https://github.com/suchmaske/rasmifize</a>.
 </div>
-<div id="ref-WorldWritingSystems" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-WorldWritingSystems" class="csl-entry" role="listitem">
 <span>„Project“</span>. 2022. The World’s Writing Systems. September
 2022. <a
 href="https://www.worldswritingsystems.org/project.html">https://www.worldswritingsystems.org/project.html</a>.
 </div>
-<div id="ref-RitchieEtAl2022Energy" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-RitchieEtAl2022Energy" class="csl-entry" role="listitem">
 Ritchie, Hannah, Max Roser, und Pablo Rosado. 2022.
 <span>„Energy“</span>. <em>Our World in Data</em>, Oktober. <a
 href="https://ourworldindata.org/energy-access">https://ourworldindata.org/energy-access</a>.
 </div>
 <div id="ref-Romanov2021ArabicBetaCode" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Romanov, Maxim. (2015) 2021. <span>„Arabic betaCode“</span>. Python. <a
 href="https://github.com/maximromanov/ArabicBetacode">https://github.com/maximromanov/ArabicBetacode</a>.
 </div>
 <div id="ref-ScriptEncodingInitiative" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 <span>„Script Encoding Initiative“</span>. o. J.
 https://web.archive.org/web/20230228215149/https://linguistics.berkeley.edu/sei/.
 Zugegriffen 28. Februar 2023. <a
 href="https://linguistics.berkeley.edu/sei/">https://linguistics.berkeley.edu/sei/</a>.
 </div>
-<div id="ref-Singh+2018+TheMachineIn" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-Seer+2017+VonDerSchattenbibliothek" class="csl-entry"
+role="listitem">
+Seer, Veil. 2017. <span>„Von der Schattenbibliothek zum
+Forschungskorpus. Ein Gespräch über Sci-Hub und die Folgen für die
+Wissenschaft“</span>. <em>LIBREAS. Library Ideas</em> 32: 6.
+</div>
+<div id="ref-Singh+2018+TheMachineIn" class="csl-entry" role="listitem">
 Singh, Vaibhav. 2018. <span>„The Machine in the Colony: Technology,
 Politics, and the Typography of Devanagari in the Early Years of
 Mechanization“</span>. <em>Philological Encounters</em> 3 (4): 469–95.
@@ -2290,7 +2516,7 @@ Mechanization“</span>. <em>Philological Encounters</em> 3 (4): 469–95.
 href="https://doi.org/10.1163/24519197-12340051">https://doi.org/10.1163/24519197-12340051</a>.
 </div>
 <div id="ref-Strubell.etal+2019+EnergyAndPolicy" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Strubell, Emma, Ananya Ganesh, und Andrew McCallum. 2019. <span>„Energy
 and Policy Considerations for Deep Learning in NLP“</span>. In
 <em>Proceedings of the 57th Annual Meeting of the Association for
@@ -2299,57 +2525,87 @@ for Computational Linguistics. <a
 href="https://doi.org/ggbgzx">https://doi.org/ggbgzx</a>.
 </div>
 <div id="ref-TaghiZadehEtAl2017NewHybridStemming" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Taghi-Zadeh, Hossein, Mohammad Hadi Sadreddini, Mohammad Hasan Diyanati,
 und Amir Hossein Rasekh. 2017. <span>„A new hybrid stemming method for
 persian language“</span>. <em>Digital Scholarship in the Humanities</em>
 32 (1): 209–21. <a
 href="https://doi.org/10.1093/llc/fqv053">https://doi.org/10.1093/llc/fqv053</a>.
 </div>
-<div id="ref-TEIP5Guidelines400" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-TEIP5Guidelines400" class="csl-entry" role="listitem">
 TEI Consortium. 2020. <span>„TEI P5: Guidelines for Electronic Text
 Encoding and Interchange“</span>. XML. Zenodo. <a
 href="https://doi.org/10.5281/zenodo.3413524">https://doi.org/10.5281/zenodo.3413524</a>.
 </div>
+<div id="ref-Tenen+2014a" class="csl-entry" role="listitem">
+Tenen, Dennis, und Maxwell Foxman. 2014. <span>„Book Piracy as Peer
+Preservation“</span>. <em>Computational Culture</em>, Nr. 4 (November).
+<a
+href="http://computationalculture.net/article/book-piracy-as-peer-preservation">http://computationalculture.net/article/book-piracy-as-peer-preservation</a>.
+</div>
+<div id="ref-Unicode15" class="csl-entry" role="listitem">
+The Unicode Consortium. 2022. <span>„The Unicode Standard: Version 15.0
+– Core Specification“</span>. Mountain View: Unicode Consortium. <a
+href="https://www.unicode.org/versions/Unicode15.0.0/">https://www.unicode.org/versions/Unicode15.0.0/</a>.
+</div>
+<div id="ref-Thylstrup+2018" class="csl-entry" role="listitem">
+Thylstrup, Nanna Bonde. 2018. <em>The Politics of Mass
+Digitization</em>. Cambridge: The MIT Press.
+</div>
 <div id="ref-VeisiEtAl2020KurdishLanguageProcessing" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Veisi, Hadi, Mohammad MohammadAmini, und Hawre Hosseini. 2020.
 <span>„Toward Kurdish language processing: Experiments in collecting and
 processing the AsoSoft text corpus“</span>. <em>Digital Scholarship in
 the Humanities</em> 35 (1): 176–93. <a
 href="https://doi.org/10.1093/llc/fqy074">https://doi.org/10.1093/llc/fqy074</a>.
 </div>
+<div id="ref-Verkinderen+2020+AlMaktabaAlShamilaShort" class="csl-entry"
+role="listitem">
+Verkinderen, Peter. 2020. <span>„Al-Maktaba Al-Shāmila: A Short
+History“</span>. <em>KITAB</em> (blog).
+https://web.archive.org/web/20210620230248/http://kitab-project.org/2020/12/03/al-maktaba-al-shamila-a-short-history/.
+3. Dezember 2020. <a
+href="http://kitab-project.org/2020/12/03/al-maktaba-al-shamila-a-short-history/">http://kitab-project.org/2020/12/03/al-maktaba-al-shamila-a-short-history/</a>.
+</div>
+<div id="ref-HTMLLivingStandard2023" class="csl-entry" role="listitem">
+Web Hypertext Application Technology Working Group. 2023. <span>„HTML:
+Living Standard“</span>. 24. März 2023. <a
+href="https://html.spec.whatwg.org/multipage/">https://html.spec.whatwg.org/multipage/</a>.
+</div>
 <div id="ref-Weinberg1974Transliteration" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Weinberg, Bella. 1974. <span>„Transliteration in Documentation“</span>.
 <em>Journal of Documentation</em> 30 (1): 18–31. <a
 href="https://doi.org/10.1108/eb026567">https://doi.org/10.1108/eb026567</a>.
 </div>
 <div id="ref-Wellisch1975Transcription" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Wellisch, Hans H. 1975. <em>Transcription and Transliteration: An
 Annotated Bibliography on Conversion of Scripts</em>. Silver Spring:
 Institute of Modern Languages.
 </div>
-<div id="ref-Wellisch1978Conversion" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-Wellisch1978Conversion" class="csl-entry" role="listitem">
 ———. 1978. <em>The Conversion of Scripts: Its Nature, History, an
 Utilization</em>. Information Sciences Series. New York: Wiley.
 </div>
-<div id="ref-WorldEnergyOutlook2020" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-Wittern2013Character" class="csl-entry" role="listitem">
+Wittern, Christian. 2013. <span>„Character Encoding“</span>. In <em>A
+Companion to Digital Literary Studies</em>, herausgegeben von Ray
+Siemens und Susan Schreibman, 564–76. Chichester: Wiley-Blackwell. <a
+href="https://doi.org/10.1002/9781405177504.ch31">https://doi.org/10.1002/9781405177504.ch31</a>.
+</div>
+<div id="ref-WorldEnergyOutlook2020" class="csl-entry" role="listitem">
 <em>World Energy Outlook 2020</em>. 2020. Paris: IEA.
 </div>
-<div id="ref-Zaagsma2022Politics" class="csl-entry"
-role="doc-biblioentry">
+<div id="ref-Zaagsma2022Politics" class="csl-entry" role="listitem">
 Zaagsma, Gerben. 2022. <span>„Digital History and the Politics of
 Digitization“</span>. <em>Digital Scholarship in the Humanities</em>,
 September, fqac050. <a
 href="https://doi.org/10.1093/llc/fqac050">https://doi.org/10.1093/llc/fqac050</a>.
 </div>
 <div id="ref-oclc_4770057679-i_13-div_8.d1e1249" class="csl-entry"
-role="doc-biblioentry">
+role="listitem">
 Zakham, Yūsuf. 1907. <span>„Amīrkā wa-ʿulamāʾ al-ʿArab“</span> [America
 and Arab Scholars]. <em>al-Muqtabas</em> 2 (1), 14. Februar 1907. <a
 href="https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249">https://OpenArabicPE.github.io/journal_al-muqtabas/tei/oclc_4770057679-i_13.TEIP5.xml#div_8.d1e1249</a>.
@@ -2382,9 +2638,9 @@ data-custom-style="Abbreviation">SEI</span>)</a>, die bekannte, aber
 nicht in Unicode enthaltene Schriften kartiert und formelle Vorschläge
 für die Aufnahme in Unicode erstellt <span class="citation"
 data-cites="EndangeredAlphabets ScriptEncodingInitiative WorldWritingSystems">(<span>„Endangered
-Alphabets – Preserving endangered cultures“</span> o. J.;
-<span>„Project“</span> 2022; <span>„Script Encoding Initiative“</span>
-o. J.)</span>.<a href="#fnref3" class="footnote-back"
+Alphabets – Preserving endangered cultures“</span> o. J.; <span>„Script
+Encoding Initiative“</span> o. J.; <span>„Project“</span>
+2022)</span>.<a href="#fnref3" class="footnote-back"
 role="doc-backlink">↩︎</a></p></li>
 <li id="fn4"><p>Zu der Entwicklung von Unicode und seine Anwendung für
 das Arabische siehe <span class="citation"
@@ -2394,7 +2650,7 @@ class="citation" data-cites="MiloCommentsArabicBlock">Milo
 <span class="citation"
 data-cites="Habash+2010+IntroductionToArabic">Habash (2010,
 18–20)</span>. Nemeth <span class="citation"
-data-cites="Nemeth+2017">(2017, 410–34)</span>bietet den umfassendsten
+data-cites="Nemeth+2017">(2017, 410–34)</span> bietet den umfassendsten
 Überblick über die Arbeit von Thomas Milo, den wahrscheinlich
 profundesten Kritiker digitaler Zugänge zur arabischen Schrift und
 Gründer von DecoType.<a href="#fnref4" class="footnote-back"
