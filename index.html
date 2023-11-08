@@ -507,6 +507,13 @@
         span.c_license img {
           width: 60px;
         }
+        /************** highlights etc. *************/
+        .green {
+          color: green;
+        }
+        .red {
+          color: red;
+        }
         /* badges and shields */
             #sec-badges {
               display: block;
@@ -869,7 +876,7 @@ erfordert von den Menschen des Globalen Südens neben den eigenen
 Muttersprachen und ihren Schriftsystemen auch noch die lateinische
 Schrift und mindestens eine Hegemonialsprache zu erlernen <span
 class="citation"
-data-cites="Phillipson1997RealitiesAndMyths Fiormonte2021Taxation Mahony2018Culturala MahonyGao2018Linguistic">(Phillipson
+data-cites="Phillipson1997RealitiesAndMyths Fiormonte2021Taxation Mahony2018Cultural MahonyGao2018Linguistic">(Phillipson
 1997; Fiormonte 2021; Mahony 2018; Mahony und Gao 2018)</span>.</p>
 <p>figs. 2, 3 illustrieren zwei Aspekte dieses <span
 class="EmphasisCustom" data-custom-style="EmphasisCustom"><em>linguistic
@@ -1173,12 +1180,13 @@ hat, inspiriert durch den älteren <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Extensible Markup
 Language</em></span> (<span class="Abbreviation"
 data-custom-style="Abbreviation">XML</span>) Standard, ein globales
-<code>@lang</code> Attribute eingeführt. Damit lassen sich die Sprachen
-von Inhalten explizit und eindeutig in Form von <span
-class="Abbreviation" data-custom-style="Abbreviation">BCP 47</span>
-Sprachtags, wie z.B. “de” für deutsch oder “ar-Arab-EG” für arabisch in
-arabischer Schrift mit den für Ägypten üblichen Präferenzen, festlegen
-<span class="citation"
+<span class="CodeSpan"
+data-custom-style="CodeSpan"><code>@lang</code></span> Attribute
+eingeführt. Damit lassen sich die Sprachen von Inhalten explizit und
+eindeutig in Form von <span class="Abbreviation"
+data-custom-style="Abbreviation">BCP 47</span> Sprachtags, wie z.B. “de”
+für deutsch oder “ar-Arab-EG” für arabisch in arabischer Schrift mit den
+für Ägypten üblichen Präferenzen, festlegen <span class="citation"
 data-cites="BCP47 Arnold2022MultilingualResearchProjects">(Network
 Working Group 2009; für eine Kritik dieses Standards für die
 Auszeichnung von Transliterationen ostasiatischer Schriften siehe Arnold
@@ -1190,18 +1198,20 @@ data-custom-style="Abbreviation">CSS</span>) festgelegt. Doch obwohl
 <span class="Abbreviation" data-custom-style="Abbreviation">HTML5</span>
 bereits vor fünfzehn Jahren veröffentlicht wurde und weiterhin von einem
 Industriekonsortium entwickelt wird, nutzt keiner der führenden
-Webbrowser <code>@lang</code> für die Wahl eines korrekten Schriftsatzes
-oder die Entscheidung über die Links- oder Rechtsbündigkeit eines Textes
-in seinem mitgelieferten <span class="Abbreviation"
-data-custom-style="Abbreviation">CSS</span>. Auch hier setzen
-lateinische Schriften die Norm. Selbst wenn eine Webseite den Inhalt als
-arabisch deklariert, wird dieser fälschlich als links-bündig angezeigt.
-Die notwendige Korrektur erfordert nur eine (sehr) kurze Zeile Code
-(<code>*[lang="ar"] {direction:rtl;}</code>) – und zwar von jede_r, die
-Texte in rechts-nach-links Schriften online publizieren will. Auch ist
-das Problem nicht ausschließlich ästhetischer Natur. Satzzeichen am Ende
-der Zeile rutschen ohne diese Korrektur an den Anfang (Siehe die letzte
-Zeile in fig. 8).</p>
+Webbrowser <span class="CodeSpan"
+data-custom-style="CodeSpan"><code>@lang</code></span> für die Wahl
+eines korrekten Schriftsatzes oder die Entscheidung über die Links- oder
+Rechtsbündigkeit eines Textes in seinem mitgelieferten <span
+class="Abbreviation" data-custom-style="Abbreviation">CSS</span>. Auch
+hier setzen lateinische Schriften die Norm. Selbst wenn eine Webseite
+den Inhalt als arabisch deklariert, wird dieser fälschlich als
+links-bündig angezeigt. Die notwendige Korrektur erfordert nur eine
+(sehr) kurze Zeile Code (<span class="CodeSpan"
+data-custom-style="CodeSpan"><code>*[lang="ar"] {direction:rtl;}</code></span>)
+– und zwar von jede_r, die Texte in rechts-nach-links Schriften online
+publizieren will. Auch ist das Problem nicht ausschließlich ästhetischer
+Natur. Satzzeichen am Ende der Zeile rutschen ohne diese Korrektur an
+den Anfang (Siehe die letzte Zeile in fig. 8).</p>
 <figure id="fig:zakham-ar-failure">
 <img src="assets/images/arabic_failure-browser.png"
 alt="Fehlerhafte Darstellung von Zakham (1907) in modernen Webbrowsern mit dem mitgelieferten CSS. Die Testdatei steht unter https://doi.org/10.5281/zenodo.7781543 zur Verfügung." />
@@ -1265,9 +1275,9 @@ Schriftsystem geschrieben werden können (in der Praxis findet das
 aufgrund der Dominanz des Englischen und mangelnder Ressourcen so gut
 wie nicht statt). Die Einzige Ausnahme ist die <span
 class="Abbreviation" data-custom-style="Abbreviation">XML</span>
-Deklaration am Anfang einer Datei
-(<code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code>), die
-festlegt, dass es sich um eine XML Datei handelt. Als weitreichende
+Deklaration am Anfang einer Datei (<span class="CodeSpan"
+data-custom-style="CodeSpan"><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;</code></span>),
+die festlegt, dass es sich um eine XML Datei handelt. Als weitreichende
 Konsequenz legt der Unicode <span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>bidi-Algorithmus</em></span> (von
 <span class="EmphasisCustom"
@@ -1498,9 +1508,13 @@ aš-Šarq</span> wird mit “<span class="Transcription"
 data-custom-style="Transcription">Mirʾat as-sarq</span>” gefunden, aber
 solange mensch nicht entdeckt, dass die <span class="Abbreviation"
 data-custom-style="Abbreviation">ZDB</span> sogenannte Wildcards
-unterstützt, bei denen ein (!) Buchstabe durch “<code>*</code>” ersetzt
-wird, also “<code>Mir*a* sarq</code>”, muss der Suchstring
-“<code>ʾ</code>” für das arabische <span class="Transcription"
+unterstützt, bei denen ein (!) Buchstabe durch “<span class="CodeSpan"
+data-custom-style="CodeSpan"><code>*</code></span>” ersetzt wird, also
+“<span class="CodeSpan"
+data-custom-style="CodeSpan"><code>Mir*a* sarq</code></span>”, muss der
+Suchstring “<span class="CodeSpan"
+data-custom-style="CodeSpan"><code>ʾ</code></span>” für das arabische
+<span class="Transcription"
 data-custom-style="Transcription">hamza</span> enthalten – ein
 diakritisches Zeichen, dass sich auf keiner Standardtastaturbelegung
 finden lässt. Eine Bildschirmtastatur bietet die <span
@@ -1560,7 +1574,7 @@ oder <span class="Abbreviation"
 data-custom-style="Abbreviation">OCLC</span>s <a
 href="https://www.worldcat.org"><span class="EmphasisCustom"
 data-custom-style="EmphasisCustom"><em>Worldcat</em></span></a>,
-erlauben durch Unicode die Suche in arabischer Schrift und reduzieren
+erlauben durch Unicode die Suche in arabischer Schrift. Sie reduzieren
 allerdings Suchanfragen in lateinischer Schrift auf den <span
 class="Abbreviation" data-custom-style="Abbreviation">ASCII</span>
 Zeichensatz. Hier muss also, dem <span class="Abbreviation"
@@ -2507,11 +2521,11 @@ https://web.archive.org/web/20230119163442/https://www.loc.gov/catdir/cpso/roman
 <a
 href="https://www.loc.gov/catdir/cpso/romanization/arabic.pdf">https://www.loc.gov/catdir/cpso/romanization/arabic.pdf</a>.
 </div>
-<div id="ref-Mahony2018Culturala" class="csl-entry" role="listitem">
+<div id="ref-Mahony2018Cultural" class="csl-entry" role="listitem">
 Mahony, Simon. 2018. <span>„Cultural Diversity and the Digital
 Humanities“</span>. <em>Fudan Journal of the Humanities and Social
 Sciences</em> 11 (3): 371–88. <a
-href="https://doi.org/gmr968">https://doi.org/gmr968</a>.
+href="https://doi.org/10.1007/s40647-018-0216-0">https://doi.org/10.1007/s40647-018-0216-0</a>.
 </div>
 <div id="ref-MahonyGao2018Linguistic" class="csl-entry" role="listitem">
 Mahony, Simon, und Jin Gao. 2018. <span>„Linguistic and Cultural
